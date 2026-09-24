@@ -1,0 +1,474 @@
+{
+ "tile": [
+  1,
+  -1
+ ],
+ "bounds": [
+  150,
+  -450,
+  450,
+  -150
+ ],
+ "source": "Yandex z19",
+ "traced_by": "lane1",
+ "complete": true,
+ "features": [
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     365.49,
+     -152.59
+    ],
+    [
+     374.7,
+     -152.63
+    ],
+    [
+     374.56,
+     -183.33
+    ],
+    [
+     365.35,
+     -183.28
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     324.48,
+     -154.58
+    ],
+    [
+     331.06,
+     -154.61
+    ],
+    [
+     330.99,
+     -168.86
+    ],
+    [
+     324.41,
+     -168.83
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     265.94,
+     -150.0
+    ],
+    [
+     313.08,
+     -150.0
+    ],
+    [
+     313.01,
+     -161.88
+    ],
+    [
+     300.95,
+     -162.26
+    ],
+    [
+     277.93,
+     -162.15
+    ],
+    [
+     276.76,
+     -177.06
+    ],
+    [
+     265.8,
+     -177.0
+    ]
+   ],
+   "note": "paved courtyard of plots/garages, several cars parked loosely"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     320.57,
+     -150.0
+    ],
+    [
+     331.53,
+     -150.0
+    ],
+    [
+     331.39,
+     -176.54
+    ],
+    [
+     320.43,
+     -176.49
+    ]
+   ],
+   "note": "N-S drive between buildings (model: private plot)"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     166.08,
+     -166.66
+    ],
+    [
+     186.91,
+     -166.76
+    ],
+    [
+     186.84,
+     -182.11
+    ],
+    [
+     166.01,
+     -182.0
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     168.35,
+     -152.42
+    ],
+    [
+     190.27,
+     -152.52
+    ],
+    [
+     190.23,
+     -161.29
+    ],
+    [
+     168.3,
+     -161.19
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "plaza",
+   "poly": [
+    [
+     409.17,
+     -190.51
+    ],
+    [
+     428.9,
+     -190.6
+    ],
+    [
+     428.86,
+     -197.84
+    ],
+    [
+     409.13,
+     -197.74
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     163.82,
+     -334.16
+    ],
+    [
+     190.13,
+     -334.29
+    ],
+    [
+     190.05,
+     -350.73
+    ],
+    [
+     163.74,
+     -350.6
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     196.27,
+     -335.41
+    ],
+    [
+     209.86,
+     -335.48
+    ],
+    [
+     209.71,
+     -366.17
+    ],
+    [
+     197.65,
+     -366.12
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     141.82,
+     -349.4
+    ],
+    [
+     152.78,
+     -349.45
+    ],
+    [
+     152.69,
+     -369.19
+    ],
+    [
+     141.72,
+     -369.14
+    ]
+   ],
+   "note": "bare sand/soil patch W of red-roof building, open (no canopy), no play equipment discernible"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "garden",
+   "poly": [
+    [
+     437.21,
+     -423.5
+    ],
+    [
+     438.84,
+     -403.77
+    ],
+    [
+     438.49,
+     -384.04
+    ],
+    [
+     440.77,
+     -367.6
+    ],
+    [
+     448.51,
+     -353.39
+    ],
+    [
+     450.0,
+     -353.14
+    ],
+    [
+     450.0,
+     -450.0
+    ],
+    [
+     437.29,
+     -450.0
+    ]
+   ],
+   "note": "open bare-earth clearing at E edge of park, continues into tile (2,-1)"
+  },
+  {
+   "type": "footpath",
+   "line": [
+    [
+     278.4,
+     -259.95
+    ],
+    [
+     282.28,
+     -260.4
+    ],
+    [
+     290.59,
+     -264.83
+    ],
+    [
+     294.94,
+     -272.52
+    ],
+    [
+     295.34,
+     -280.2
+    ],
+    [
+     291.58,
+     -287.86
+    ],
+    [
+     282.13,
+     -292.2
+    ],
+    [
+     278.3,
+     -292.18
+    ]
+   ],
+   "width": 1.5,
+   "surface": "paving"
+  },
+  {
+   "type": "building_missing",
+   "poly": [
+    [
+     277.93,
+     -162.15
+    ],
+    [
+     300.95,
+     -162.26
+    ],
+    [
+     300.9,
+     -173.23
+    ],
+    [
+     277.88,
+     -173.11
+    ]
+   ],
+   "levels": 1
+  },
+  {
+   "type": "building_missing",
+   "poly": [
+    [
+     300.93,
+     -167.96
+    ],
+    [
+     312.55,
+     -168.02
+    ],
+    [
+     312.5,
+     -178.32
+    ],
+    [
+     300.88,
+     -178.27
+    ]
+   ],
+   "levels": 1
+  },
+  {
+   "type": "building_missing",
+   "poly": [
+    [
+     169.34,
+     -173.91
+    ],
+    [
+     182.49,
+     -173.97
+    ],
+    [
+     182.47,
+     -179.23
+    ],
+    [
+     169.31,
+     -179.17
+    ]
+   ],
+   "levels": 1
+  },
+  {
+   "type": "building_missing",
+   "poly": [
+    [
+     202.03,
+     -367.23
+    ],
+    [
+     210.15,
+     -367.27
+    ],
+    [
+     210.1,
+     -376.48
+    ],
+    [
+     201.99,
+     -376.44
+    ]
+   ],
+   "levels": 1
+  },
+  {
+   "type": "building_missing",
+   "poly": [
+    [
+     154.54,
+     -348.37
+    ],
+    [
+     159.37,
+     -348.39
+    ],
+    [
+     159.28,
+     -365.93
+    ],
+    [
+     154.46,
+     -365.91
+    ]
+   ],
+   "levels": 1
+  },
+  {
+   "type": "building_missing",
+   "poly": [
+    [
+     191.81,
+     -350.74
+    ],
+    [
+     197.51,
+     -350.77
+    ],
+    [
+     197.45,
+     -361.73
+    ],
+    [
+     191.75,
+     -361.7
+    ]
+   ],
+   "levels": 1
+  }
+ ],
+ "notes": "N of the main E-W road (y~-240): dense low-rise blocks; paved courtyard with garage/shed rows at (266..313,-150..-178) whose small buildings are missing from the model; cars parked in yards at (365..375,-153..-183) and (324..331,-155..-169); on-street parking along the N-S street x~240-250 exists on both curbs but was not traced (ambiguous lane). S of the road, west: 5-storey blocks whose yards are under dense canopy - no parking bays or play equipment visible, nothing invented. Red-roof (kindergarten-like) building at (155..198,-348..-366): wings/annex added as building_missing, paved yards N/E; bare sand patch W but no equipment discernible at this resolution. Park (x>240, y<-250): dense canopy; model paths coincide with visible path traces; added D-shaped path around the flower bed at (278..295,-260..-292) joining the N-S park path at x~278.4. Bare-earth clearing at the E edge (x>437, y<-353). No fences traced (no private-plot boundaries clearly visible). Imagery 0.22 m/px nominal but soft; coordinates +-1 m. Buildings win over area polygons; parking wins over yard."
+}

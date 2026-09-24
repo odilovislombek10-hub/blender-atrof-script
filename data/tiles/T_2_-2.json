@@ -1,0 +1,480 @@
+{
+ "tile": [
+  2,
+  -2
+ ],
+ "bounds": [
+  450,
+  -750,
+  750,
+  -450
+ ],
+ "source": "Yandex z18/z19",
+ "traced_by": "landB10",
+ "complete": true,
+ "features": [
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     531.86,
+     -569.55
+    ],
+    [
+     532.26,
+     -577.01
+    ],
+    [
+     518.88,
+     -577.6
+    ],
+    [
+     518.92,
+     -569.05
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "yard",
+   "poly": [
+    [
+     596.5,
+     -604.0
+    ],
+    [
+     596.5,
+     -552.0
+    ],
+    [
+     619.0,
+     -552.0
+    ],
+    [
+     619.0,
+     -604.0
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     644.22,
+     -511.53
+    ],
+    [
+     646.99,
+     -528.64
+    ],
+    [
+     635.8,
+     -529.03
+    ],
+    [
+     635.45,
+     -511.92
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     656.12,
+     -592.06
+    ],
+    [
+     656.72,
+     -604.12
+    ],
+    [
+     649.7,
+     -604.31
+    ],
+    [
+     649.32,
+     -592.25
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "plaza",
+   "poly": [
+    [
+     750.0,
+     -629.98
+    ],
+    [
+     748.74,
+     -630.59
+    ],
+    [
+     747.6,
+     -631.0
+    ],
+    [
+     746.43,
+     -631.29
+    ],
+    [
+     745.24,
+     -631.47
+    ],
+    [
+     744.03,
+     -631.53
+    ],
+    [
+     742.82,
+     -631.47
+    ],
+    [
+     741.63,
+     -631.29
+    ],
+    [
+     740.46,
+     -631.0
+    ],
+    [
+     739.32,
+     -630.59
+    ],
+    [
+     738.23,
+     -630.08
+    ],
+    [
+     737.2,
+     -629.46
+    ],
+    [
+     736.23,
+     -628.74
+    ],
+    [
+     734.92,
+     -627.49
+    ],
+    [
+     734.15,
+     -626.56
+    ],
+    [
+     733.48,
+     -625.55
+    ],
+    [
+     732.91,
+     -624.49
+    ],
+    [
+     732.26,
+     -622.8
+    ],
+    [
+     731.86,
+     -621.03
+    ],
+    [
+     731.73,
+     -619.23
+    ],
+    [
+     731.86,
+     -617.43
+    ],
+    [
+     732.26,
+     -615.66
+    ],
+    [
+     732.91,
+     -613.97
+    ],
+    [
+     733.64,
+     -612.65
+    ],
+    [
+     733.68,
+     -604.49
+    ],
+    [
+     747.06,
+     -604.55
+    ],
+    [
+     747.05,
+     -607.31
+    ],
+    [
+     748.74,
+     -607.87
+    ],
+    [
+     750.0,
+     -608.48
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     656.14,
+     -700.66
+    ],
+    [
+     656.31,
+     -712.06
+    ],
+    [
+     651.7,
+     -712.48
+    ],
+    [
+     635.25,
+     -712.4
+    ],
+    [
+     634.13,
+     -718.1
+    ],
+    [
+     581.5,
+     -718.72
+    ],
+    [
+     580.93,
+     -700.74
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     653.8,
+     -639.03
+    ],
+    [
+     653.84,
+     -631.36
+    ],
+    [
+     658.01,
+     -631.38
+    ],
+    [
+     657.89,
+     -656.37
+    ],
+    [
+     642.76,
+     -656.3
+    ],
+    [
+     642.18,
+     -638.98
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     584.14,
+     -463.15
+    ],
+    [
+     551.69,
+     -463.87
+    ],
+    [
+     550.18,
+     -458.6
+    ],
+    [
+     524.97,
+     -457.17
+    ],
+    [
+     472.34,
+     -456.48
+    ],
+    [
+     472.38,
+     -450.0
+    ],
+    [
+     582.01,
+     -450.0
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     550.15,
+     -463.86
+    ],
+    [
+     558.8,
+     -489.78
+    ],
+    [
+     545.63,
+     -491.91
+    ],
+    [
+     545.73,
+     -472.17
+    ],
+    [
+     481.04,
+     -471.43
+    ],
+    [
+     481.08,
+     -464.19
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     626.92,
+     -459.4
+    ],
+    [
+     627.79,
+     -459.41
+    ],
+    [
+     632.7,
+     -487.5
+    ],
+    [
+     559.47,
+     -487.15
+    ],
+    [
+     558.26,
+     -463.9
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     626.92,
+     -459.4
+    ],
+    [
+     584.14,
+     -463.15
+    ],
+    [
+     582.01,
+     -450.0
+    ],
+    [
+     625.4,
+     -450.0
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "yard",
+   "poly": [
+    [
+     528.3,
+     -689.53
+    ],
+    [
+     528.1,
+     -732.07
+    ],
+    [
+     519.33,
+     -732.03
+    ],
+    [
+     519.53,
+     -689.49
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "yard",
+   "poly": [
+    [
+     549.53,
+     -698.4
+    ],
+    [
+     549.47,
+     -711.56
+    ],
+    [
+     533.68,
+     -711.49
+    ],
+    [
+     533.74,
+     -698.33
+    ]
+   ]
+  },
+  {
+   "type": "alley",
+   "line": [
+    [
+     521.87,
+     -636.87
+    ],
+    [
+     523.1,
+     -628.6
+    ],
+    [
+     524.3,
+     -620.5
+    ]
+   ],
+   "width": 6,
+   "surface": "asphalt"
+  }
+ ],
+ "notes": "Landscape-only pass (buildings/walls skipped). Views: Yandex z18 overview + z19 close views: complex+cottages (560,-560), avenue/east blocks (690,-560), south parking/cottage lanes (620,-690), N strip vacant lot/fenced compound (560,-470), SW lane (525,-690). Parking (cars visible in all): big asphalt lot S of the cottage row (581-656,-700..-719) - the model's E-W road strip (y~-702..-709) runs through its middle, the lot is one open asphalt area; lot SE of the complex by the W carriageway (642-658,-631..-656) incl. cars on the modelled sidewalk strip; pocket with ~5 cars NE of the complex (636-647,-511..-529); 3 cars E of the complex by the internal exit road (650-657,-592..-604). Yards: complex inner courtyard (596.5-619,-552..-604) as paving - deep shadow, row of small trees in planters, no play equipment discernible (not marked playground); asphalt turnaround at the dead end of the N cottage lane (519-532,-569..-578); paved (red pavers) 8-9 m dead-end lane S of the E-W lane (519-528,-690..-732) that the model only has as a thin entrance strip; walled paved fountain courtyard (534-549,-698..-711). N strip: continuation of tile 2,-1's bare-soil vacant lot S of y-450 (473-584, to the tree row/fence ~y-458..-463), bare ground N/E of the white 2-storey building (482-559,-463..-492), fenced bare-soil compound with sheds/vehicle tracks (558-633,-459..-488) and the S part of a second fenced soil yard with trucks (582-629,-450..-463). Plaza: round paved plaza with central monument/fountain S of the institute (centre ~747,-619, r~12 m) + band to the building steps, clipped at x=750 (rest belongs to tile 3,-2). Alley: 6 m asphalt extension of the S cottage lane stub north from the model's end (522,-637) to the cottage at (524,-620.5); the N and S cottage lanes do NOT connect (houses in between). No footpaths/playgrounds/sport courts visible in this tile. Not traced: forest W of x~490 (canopy = lawn; model trail kept; model playground (441-456,-497..-506) and red-dashed P15 (478-497,-725..-741) are under dense canopy, no equipment visible); private cottage gardens; E khrushchevka yards (x>700,y>-560) under canopy - model parking lane on the E carriageway matches the parked cars; SE (x>690,y<-640) only buildings/sidewalks at z18. Cars along the W carriageway river-side curb left as road (ambiguous parked vs moving). Tall-building roofs are shifted by parallax; ground features traced at ground level. Coordinates +-1 m."
+}

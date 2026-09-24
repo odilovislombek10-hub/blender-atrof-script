@@ -1,0 +1,695 @@
+{
+ "tile": [
+  2,
+  0
+ ],
+ "bounds": [
+  450,
+  -150,
+  750,
+  150
+ ],
+ "source": "Yandex z18/z19",
+ "traced_by": "landA7",
+ "complete": true,
+ "features": [
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "sport",
+   "poly": [
+    [
+     577.2,
+     38.02
+    ],
+    [
+     607.46,
+     38.32
+    ],
+    [
+     607.41,
+     26.48
+    ],
+    [
+     577.15,
+     26.62
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "turf",
+   "use": "sport",
+   "poly": [
+    [
+     611.9,
+     37.25
+    ],
+    [
+     632.1,
+     41.98
+    ],
+    [
+     641.99,
+     1.37
+    ],
+    [
+     621.14,
+     -3.36
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "sport",
+   "poly": [
+    [
+     631.5,
+     -9.5
+    ],
+    [
+     655.0,
+     -9.5
+    ],
+    [
+     655.2,
+     -43.5
+    ],
+    [
+     632.5,
+     -43.5
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     658.12,
+     74.09
+    ],
+    [
+     689.91,
+     73.5
+    ],
+    [
+     689.89,
+     68.23
+    ],
+    [
+     658.1,
+     68.39
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     735.96,
+     74.59
+    ],
+    [
+     750.0,
+     74.53
+    ],
+    [
+     750.0,
+     68.39
+    ],
+    [
+     735.93,
+     68.45
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     682.0,
+     -20.0
+    ],
+    [
+     714.0,
+     2.0
+    ],
+    [
+     740.0,
+     2.0
+    ],
+    [
+     741.0,
+     -30.0
+    ],
+    [
+     700.0,
+     -36.0
+    ],
+    [
+     688.0,
+     -32.0
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     701.0,
+     -93.0
+    ],
+    [
+     750.0,
+     -93.0
+    ],
+    [
+     750.0,
+     -116.0
+    ],
+    [
+     702.0,
+     -116.0
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "concrete",
+   "use": "yard",
+   "poly": [
+    [
+     559.5,
+     -9.5
+    ],
+    [
+     631.0,
+     -9.5
+    ],
+    [
+     631.0,
+     -14.5
+    ],
+    [
+     560.7,
+     -14.5
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "concrete",
+   "use": "yard",
+   "poly": [
+    [
+     560.7,
+     -14.5
+    ],
+    [
+     592.0,
+     -14.5
+    ],
+    [
+     592.0,
+     -24.0
+    ],
+    [
+     621.0,
+     -24.0
+    ],
+    [
+     621.0,
+     -14.5
+    ],
+    [
+     631.0,
+     -14.5
+    ],
+    [
+     632.3,
+     -17.0
+    ],
+    [
+     636.6,
+     -44.5
+    ],
+    [
+     638.0,
+     -52.2
+    ],
+    [
+     638.0,
+     -73.7
+    ],
+    [
+     611.7,
+     -74.0
+    ],
+    [
+     611.6,
+     -90.8
+    ],
+    [
+     579.4,
+     -91.4
+    ],
+    [
+     562.0,
+     -20.0
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     572.03,
+     100.12
+    ],
+    [
+     600.53,
+     99.99
+    ],
+    [
+     600.43,
+     78.06
+    ],
+    [
+     571.92,
+     78.2
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     638.87,
+     82.07
+    ],
+    [
+     654.87,
+     82.65
+    ],
+    [
+     712.98,
+     83.03
+    ],
+    [
+     713.05,
+     98.82
+    ],
+    [
+     737.18,
+     99.58
+    ],
+    [
+     737.1,
+     84.24
+    ],
+    [
+     750.0,
+     84.17
+    ],
+    [
+     750.0,
+     67.95
+    ],
+    [
+     723.87,
+     67.42
+    ],
+    [
+     701.94,
+     66.86
+    ],
+    [
+     692.08,
+     68.66
+    ],
+    [
+     658.1,
+     68.39
+    ],
+    [
+     642.76,
+     71.09
+    ],
+    [
+     638.82,
+     72.86
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "plaza",
+   "poly": [
+    [
+     638.55,
+     -92.29
+    ],
+    [
+     654.57,
+     -89.07
+    ],
+    [
+     654.28,
+     -150.0
+    ],
+    [
+     645.51,
+     -150.0
+    ],
+    [
+     645.6,
+     -131.57
+    ],
+    [
+     638.36,
+     -131.53
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     655.04,
+     -81.84
+    ],
+    [
+     672.61,
+     -76.0
+    ],
+    [
+     690.17,
+     -72.14
+    ],
+    [
+     691.88,
+     -82.01
+    ],
+    [
+     696.15,
+     -105.06
+    ],
+    [
+     696.93,
+     -126.99
+    ],
+    [
+     677.85,
+     -126.9
+    ],
+    [
+     677.74,
+     -150.0
+    ],
+    [
+     654.72,
+     -150.0
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     550.3,
+     40.0
+    ],
+    [
+     633.0,
+     40.0
+    ],
+    [
+     642.0,
+     1.5
+    ],
+    [
+     653.0,
+     -2.0
+    ],
+    [
+     661.3,
+     -18.0
+    ],
+    [
+     672.8,
+     -41.4
+    ],
+    [
+     678.85,
+     -54.54
+    ],
+    [
+     685.81,
+     -67.73
+    ],
+    [
+     689.07,
+     -72.13
+    ],
+    [
+     677.0,
+     -75.37
+    ],
+    [
+     655.04,
+     -82.94
+    ],
+    [
+     628.68,
+     -91.58
+    ],
+    [
+     604.52,
+     -100.24
+    ],
+    [
+     582.56,
+     -107.81
+    ],
+    [
+     579.31,
+     -100.12
+    ],
+    [
+     579.4,
+     -91.4
+    ],
+    [
+     611.6,
+     -90.8
+    ],
+    [
+     611.7,
+     -74.0
+    ],
+    [
+     638.0,
+     -73.7
+    ],
+    [
+     638.0,
+     -52.2
+    ],
+    [
+     636.6,
+     -44.5
+    ],
+    [
+     632.3,
+     -17.0
+    ],
+    [
+     631.0,
+     -9.5
+    ],
+    [
+     561.5,
+     -9.5
+    ],
+    [
+     561.3,
+     -7.9
+    ],
+    [
+     558.8,
+     2.6
+    ],
+    [
+     555.1,
+     18.0
+    ],
+    [
+     551.9,
+     31.1
+    ]
+   ]
+  },
+  {
+   "type": "footpath",
+   "line": [
+    [
+     550.95,
+     49.77
+    ],
+    [
+     547.84,
+     42.55
+    ],
+    [
+     549.98,
+     31.13
+    ],
+    [
+     553.21,
+     17.96
+    ],
+    [
+     556.86,
+     2.6
+    ],
+    [
+     559.44,
+     -7.94
+    ],
+    [
+     561.6,
+     -14.97
+    ]
+   ],
+   "width": 3.5,
+   "surface": "paving"
+  },
+  {
+   "type": "footpath",
+   "line": [
+    [
+     637.7,
+     -49.5
+    ],
+    [
+     655.2,
+     -45.3
+    ],
+    [
+     672.8,
+     -40.2
+    ],
+    [
+     677.5,
+     -38.9
+    ]
+   ],
+   "width": 4.0,
+   "surface": "paving"
+  },
+  {
+   "type": "footpath",
+   "line": [
+    [
+     571.26,
+     -11.94
+    ],
+    [
+     572.18,
+     -2.96
+    ],
+    [
+     573.98,
+     6.9
+    ],
+    [
+     576.65,
+     13.47
+    ],
+    [
+     581.49,
+     17.83
+    ],
+    [
+     588.08,
+     19.99
+    ],
+    [
+     596.86,
+     21.48
+    ],
+    [
+     606.72,
+     21.44
+    ]
+   ],
+   "width": 1.5,
+   "surface": "dirt"
+  },
+  {
+   "type": "alley",
+   "line": [
+    [
+     639.5,
+     78.0
+    ],
+    [
+     700.0,
+     78.2
+    ],
+    [
+     750.0,
+     78.3
+    ]
+   ],
+   "width": 6,
+   "surface": "asphalt"
+  },
+  {
+   "type": "alley",
+   "line": [
+    [
+     686.17,
+     70.88
+    ],
+    [
+     690.29,
+     61.0
+    ],
+    [
+     697.04,
+     50.0
+    ],
+    [
+     702.91,
+     40.11
+    ],
+    [
+     707.26,
+     32.41
+    ]
+   ],
+   "width": 4.5,
+   "surface": "asphalt"
+  }
+ ],
+ "notes": "Landscape-only pass (buildings/walls skipped). Views: Yandex z18 overview (+2x CSS magnified corners) and 3 z19 close views (school W/N + river channel; NE apartment yards; school S + Tartuga centre). School No.61 grounds (x 550-690, y -108..50): open bare dirt traced as one yard/soil polygon (NOTE: 06_zone_partition maps yard+soil to Lawn, so this open dirt school ground will render green unless that rule is relaxed for non-tree dirt); inside it: asphalt tennis court (577-607, 26-38, matches OSM), dark-green turf mini-pitch (612-642, -3..42, matches OSM 'multi'), beige sand/clay court with light frame (632-655, -10..-44, traced sport/soil, surface uncertain), worn dirt arc track (dirt footpath), paved W walkway (3.5 m) from the N building corner to the S building apron, paved E walkway (4 m) from apron to the E gate/street. Concrete apron around the S school building traced in 2 pieces (its inner courtyard lawn 592-621,-14..-24 left out). N forecourt of the main school building (572-600, 78-100) asphalt. Model red playground at ~(600,25) has NO equipment (bare dirt) -> not a playground; dirt polygon covers it. NE apartments: 13 m asphalt driveway/yard S of the long block (model has only a footpath) -> asphalt yard + 6 m alley line; cars nose-in along it (2 parking strips); lane SE between the diagonal block and the square block (car on it) -> alley 4.5 m; yard lot SE of the diagonal block with scattered cars -> parking. SE: parking lot between the two blocks E of the street (701-750, -93..-116, cars; imagery roofs lean ~5 m S/E of model footprints). Tartuga centre S of the school fence: terracotta-paved courtyard + tree-lined pedestrian strip (plaza paving); large asphalt yard with scattered trees and only 2 cars (yard, not parking; this overrides the OSM/model parking strip at x 657-666 where no cars are visible; model also has a building ~(676,-100) that is open asphalt in imagery and Private_Plot at ~(690,-120)). RIVER: the Ala-Archa concrete channel (~30 m wide between walls: W wall x~485->520->560, E wall x~516->551->576 for y 100->-37->-150, stepped weirs, shallow water/sediment) is modelled only as a narrow Water_Channel strip plus Private_Plot/Yard_Hard/Street_Green/Lawn - needs a proper water/channel polygon (no area type for it in this schema, not traced). W of the main road (x 450-520): 5-storey blocks, service lanes (modelled) and tree-covered yards (lawn) - nothing clear to add at z18; cars along the main road's W edge are on the road."
+}

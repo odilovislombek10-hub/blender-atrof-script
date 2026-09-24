@@ -1,0 +1,1326 @@
+{
+ "tile": [
+  -2,
+  -2
+ ],
+ "bounds": [
+  -750,
+  -750,
+  -450,
+  -450
+ ],
+ "source": "Yandex z18/z19",
+ "traced_by": "landB3",
+ "complete": true,
+ "features": [
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "plaza",
+   "poly": [
+    [
+     -671.05,
+     -637.87
+    ],
+    [
+     -679.28,
+     -638.6
+    ],
+    [
+     -669.33,
+     -622.75
+    ],
+    [
+     -666.79,
+     -619.69
+    ],
+    [
+     -663.22,
+     -620.86
+    ],
+    [
+     -663.22,
+     -625.35
+    ],
+    [
+     -664.62,
+     -624.64
+    ],
+    [
+     -666.06,
+     -626.93
+    ],
+    [
+     -664.43,
+     -629.9
+    ],
+    [
+     -663.22,
+     -631.0
+    ],
+    [
+     -663.22,
+     -637.74
+    ]
+   ],
+   "note": "paved public square (pinkish paving) between lawn beds, south of the E-W street"
+  },
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "plaza",
+   "poly": [
+    [
+     -663.51,
+     -664.66
+    ],
+    [
+     -668.43,
+     -663.1
+    ],
+    [
+     -672.26,
+     -660.56
+    ],
+    [
+     -674.65,
+     -656.71
+    ],
+    [
+     -675.5,
+     -651.78
+    ],
+    [
+     -674.6,
+     -647.39
+    ],
+    [
+     -672.18,
+     -644.45
+    ],
+    [
+     -668.33,
+     -642.27
+    ],
+    [
+     -663.22,
+     -641.18
+    ],
+    [
+     -663.22,
+     -644.71
+    ],
+    [
+     -665.05,
+     -645.0
+    ],
+    [
+     -666.74,
+     -645.84
+    ],
+    [
+     -668.08,
+     -647.17
+    ],
+    [
+     -668.94,
+     -648.85
+    ],
+    [
+     -669.25,
+     -650.71
+    ],
+    [
+     -668.96,
+     -652.58
+    ],
+    [
+     -668.11,
+     -654.26
+    ],
+    [
+     -666.79,
+     -655.6
+    ],
+    [
+     -665.11,
+     -656.47
+    ],
+    [
+     -663.22,
+     -656.76
+    ],
+    [
+     -663.22,
+     -664.7
+    ]
+   ],
+   "note": "paved public square (pinkish paving) between lawn beds, south of the E-W street"
+  },
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "plaza",
+   "poly": [
+    [
+     -629.32,
+     -624.92
+    ],
+    [
+     -625.83,
+     -628.45
+    ],
+    [
+     -620.61,
+     -636.15
+    ],
+    [
+     -616.25,
+     -642.97
+    ],
+    [
+     -614.95,
+     -646.26
+    ],
+    [
+     -617.38,
+     -648.23
+    ],
+    [
+     -622.87,
+     -651.49
+    ],
+    [
+     -629.57,
+     -652.79
+    ],
+    [
+     -629.57,
+     -649.26
+    ],
+    [
+     -622.86,
+     -648.42
+    ],
+    [
+     -617.59,
+     -646.58
+    ],
+    [
+     -618.45,
+     -643.83
+    ],
+    [
+     -622.25,
+     -635.92
+    ],
+    [
+     -624.99,
+     -635.91
+    ],
+    [
+     -629.57,
+     -637.17
+    ],
+    [
+     -629.57,
+     -624.82
+    ]
+   ],
+   "note": "paved public square (pinkish paving) between lawn beds, south of the E-W street"
+  },
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "plaza",
+   "poly": [
+    [
+     -636.02,
+     -649.23
+    ],
+    [
+     -629.57,
+     -649.26
+    ],
+    [
+     -629.57,
+     -652.79
+    ],
+    [
+     -636.04,
+     -653.83
+    ],
+    [
+     -638.85,
+     -655.33
+    ],
+    [
+     -638.79,
+     -654.92
+    ],
+    [
+     -639.03,
+     -653.01
+    ],
+    [
+     -639.75,
+     -651.24
+    ],
+    [
+     -640.91,
+     -649.71
+    ],
+    [
+     -641.22,
+     -649.47
+    ],
+    [
+     -641.22,
+     -647.64
+    ]
+   ],
+   "note": "paved public square (pinkish paving) between lawn beds, south of the E-W street"
+  },
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "plaza",
+   "poly": [
+    [
+     -638.09,
+     -624.66
+    ],
+    [
+     -633.15,
+     -623.37
+    ],
+    [
+     -629.57,
+     -624.82
+    ],
+    [
+     -629.57,
+     -637.17
+    ],
+    [
+     -630.48,
+     -637.42
+    ],
+    [
+     -635.97,
+     -640.02
+    ],
+    [
+     -640.37,
+     -642.41
+    ],
+    [
+     -641.22,
+     -643.04
+    ],
+    [
+     -641.22,
+     -635.72
+    ],
+    [
+     -640.34,
+     -635.5
+    ],
+    [
+     -634.84,
+     -632.79
+    ],
+    [
+     -630.65,
+     -628.42
+    ],
+    [
+     -633.16,
+     -626.0
+    ],
+    [
+     -638.11,
+     -628.94
+    ],
+    [
+     -641.22,
+     -629.6
+    ],
+    [
+     -641.22,
+     -624.76
+    ]
+   ],
+   "note": "paved public square (pinkish paving) between lawn beds, south of the E-W street"
+  },
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "plaza",
+   "poly": [
+    [
+     -654.53,
+     -623.48
+    ],
+    [
+     -646.86,
+     -624.95
+    ],
+    [
+     -641.22,
+     -624.76
+    ],
+    [
+     -641.22,
+     -629.6
+    ],
+    [
+     -643.6,
+     -630.11
+    ],
+    [
+     -649.63,
+     -630.09
+    ],
+    [
+     -649.66,
+     -637.1
+    ],
+    [
+     -644.73,
+     -636.58
+    ],
+    [
+     -641.22,
+     -635.72
+    ],
+    [
+     -641.22,
+     -643.04
+    ],
+    [
+     -643.89,
+     -645.02
+    ],
+    [
+     -641.49,
+     -647.56
+    ],
+    [
+     -641.22,
+     -647.64
+    ],
+    [
+     -641.22,
+     -649.47
+    ],
+    [
+     -642.43,
+     -648.54
+    ],
+    [
+     -644.2,
+     -647.8
+    ],
+    [
+     -646.1,
+     -647.54
+    ],
+    [
+     -648.0,
+     -647.78
+    ],
+    [
+     -649.78,
+     -648.5
+    ],
+    [
+     -651.3,
+     -649.66
+    ],
+    [
+     -652.48,
+     -651.18
+    ],
+    [
+     -653.22,
+     -652.94
+    ],
+    [
+     -653.48,
+     -654.84
+    ],
+    [
+     -653.24,
+     -656.75
+    ],
+    [
+     -652.51,
+     -658.52
+    ],
+    [
+     -651.35,
+     -660.05
+    ],
+    [
+     -649.84,
+     -661.22
+    ],
+    [
+     -648.07,
+     -661.97
+    ],
+    [
+     -646.17,
+     -662.23
+    ],
+    [
+     -644.54,
+     -662.02
+    ],
+    [
+     -644.86,
+     -662.34
+    ],
+    [
+     -648.15,
+     -663.97
+    ],
+    [
+     -652.54,
+     -665.05
+    ],
+    [
+     -658.03,
+     -665.35
+    ],
+    [
+     -663.22,
+     -664.7
+    ],
+    [
+     -663.22,
+     -656.76
+    ],
+    [
+     -661.38,
+     -656.48
+    ],
+    [
+     -659.7,
+     -655.64
+    ],
+    [
+     -658.36,
+     -654.31
+    ],
+    [
+     -657.49,
+     -652.63
+    ],
+    [
+     -657.19,
+     -650.77
+    ],
+    [
+     -657.47,
+     -648.91
+    ],
+    [
+     -658.32,
+     -647.22
+    ],
+    [
+     -659.65,
+     -645.88
+    ],
+    [
+     -661.33,
+     -645.01
+    ],
+    [
+     -663.22,
+     -644.71
+    ],
+    [
+     -663.22,
+     -641.18
+    ],
+    [
+     -655.93,
+     -640.36
+    ],
+    [
+     -655.15,
+     -637.95
+    ],
+    [
+     -661.18,
+     -637.7
+    ],
+    [
+     -663.22,
+     -637.74
+    ],
+    [
+     -663.22,
+     -631.0
+    ],
+    [
+     -661.16,
+     -632.88
+    ],
+    [
+     -656.78,
+     -635.42
+    ],
+    [
+     -652.08,
+     -636.87
+    ],
+    [
+     -652.15,
+     -629.74
+    ],
+    [
+     -655.11,
+     -629.07
+    ],
+    [
+     -660.03,
+     -626.96
+    ],
+    [
+     -663.22,
+     -625.35
+    ],
+    [
+     -663.22,
+     -620.86
+    ],
+    [
+     -660.01,
+     -621.92
+    ]
+   ],
+   "note": "paved public square (pinkish paving) between lawn beds, south of the E-W street"
+  },
+  {
+   "type": "area",
+   "surface": "rubber",
+   "use": "sport",
+   "poly": [
+    [
+     -639.05,
+     -656.82
+    ],
+    [
+     -639.79,
+     -658.59
+    ],
+    [
+     -640.97,
+     -660.1
+    ],
+    [
+     -642.49,
+     -661.26
+    ],
+    [
+     -644.27,
+     -661.99
+    ],
+    [
+     -646.17,
+     -662.23
+    ],
+    [
+     -648.07,
+     -661.97
+    ],
+    [
+     -649.84,
+     -661.22
+    ],
+    [
+     -651.35,
+     -660.05
+    ],
+    [
+     -652.51,
+     -658.52
+    ],
+    [
+     -653.24,
+     -656.75
+    ],
+    [
+     -653.48,
+     -654.84
+    ],
+    [
+     -653.22,
+     -652.94
+    ],
+    [
+     -652.48,
+     -651.18
+    ],
+    [
+     -651.3,
+     -649.66
+    ],
+    [
+     -649.78,
+     -648.5
+    ],
+    [
+     -648.0,
+     -647.78
+    ],
+    [
+     -646.1,
+     -647.54
+    ],
+    [
+     -644.2,
+     -647.8
+    ],
+    [
+     -642.43,
+     -648.54
+    ],
+    [
+     -640.91,
+     -649.71
+    ],
+    [
+     -639.75,
+     -651.24
+    ],
+    [
+     -639.03,
+     -653.01
+    ],
+    [
+     -638.79,
+     -654.92
+    ]
+   ],
+   "note": "round rubber-surfaced street-workout zone with bar frames in the square"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     -660.44,
+     -599.22
+    ],
+    [
+     -658.83,
+     -605.26
+    ],
+    [
+     -656.67,
+     -612.4
+    ],
+    [
+     -654.29,
+     -618.99
+    ],
+    [
+     -655.07,
+     -621.18
+    ],
+    [
+     -660.0,
+     -620.82
+    ],
+    [
+     -663.06,
+     -617.85
+    ],
+    [
+     -664.56,
+     -612.36
+    ],
+    [
+     -665.96,
+     -606.32
+    ],
+    [
+     -668.13,
+     -601.93
+    ]
+   ],
+   "note": "trampled bare-earth corner of the square (NW), sparse trees"
+  },
+  {
+   "type": "footpath",
+   "line": [
+    [
+     -630.96,
+     -624.26
+    ],
+    [
+     -624.34,
+     -615.85
+    ],
+    [
+     -619.37,
+     -608.75
+    ],
+    [
+     -613.85,
+     -600.55
+    ]
+   ],
+   "width": 5.5,
+   "surface": "paving",
+   "note": "wide paved walkway from the square NE to the street"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -619.63,
+     -615.87
+    ],
+    [
+     -615.55,
+     -610.96
+    ],
+    [
+     -611.15,
+     -608.57
+    ],
+    [
+     -605.12,
+     -607.94
+    ],
+    [
+     -605.19,
+     -623.07
+    ],
+    [
+     -611.78,
+     -624.35
+    ],
+    [
+     -618.36,
+     -624.98
+    ],
+    [
+     -623.61,
+     -622.1
+    ]
+   ],
+   "note": "yard parking lot west of the tall building, row of ~6 cars"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -641.7,
+     -578.59
+    ],
+    [
+     -641.52,
+     -585.39
+    ],
+    [
+     -659.83,
+     -585.74
+    ],
+    [
+     -659.79,
+     -578.72
+    ]
+   ],
+   "note": "perpendicular parking (4 cars) on the forecourt in front of the building north of the E-W street"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     -700.84,
+     -564.49
+    ],
+    [
+     -699.23,
+     -571.62
+    ],
+    [
+     -700.15,
+     -580.94
+    ],
+    [
+     -700.94,
+     -584.77
+    ],
+    [
+     -711.36,
+     -585.81
+    ],
+    [
+     -720.12,
+     -584.67
+    ],
+    [
+     -721.17,
+     -575.35
+    ],
+    [
+     -720.57,
+     -564.61
+    ]
+   ],
+   "note": "bare earth lot behind the street, north side"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -683.32,
+     -569.51
+    ],
+    [
+     -687.16,
+     -569.49
+    ],
+    [
+     -688.4,
+     -563.34
+    ],
+    [
+     -688.33,
+     -549.09
+    ],
+    [
+     -682.19,
+     -549.12
+    ],
+    [
+     -682.26,
+     -563.37
+    ]
+   ],
+   "note": "row of 3-4 cars parked along the east kerb of the N-S lane west of the L-shaped building"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -710.59,
+     -651.93
+    ],
+    [
+     -685.31,
+     -639.12
+    ],
+    [
+     -683.79,
+     -641.98
+    ],
+    [
+     -711.7,
+     -655.0
+    ]
+   ],
+   "note": "cars parked along the driveway on the south facade of the west block"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -611.19,
+     -475.97
+    ],
+    [
+     -611.8,
+     -510.5
+    ],
+    [
+     -615.53,
+     -510.49
+    ],
+    [
+     -615.14,
+     -475.95
+    ]
+   ],
+   "note": "row of ~6 cars parked along the east edge of the N-S yard driveway west of the 4-storey blocks"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     -586.46,
+     -714.46
+    ],
+    [
+     -582.09,
+     -716.23
+    ],
+    [
+     -579.95,
+     -727.21
+    ],
+    [
+     -584.42,
+     -744.73
+    ],
+    [
+     -590.28,
+     -747.04
+    ],
+    [
+     -583.96,
+     -740.78
+    ],
+    [
+     -586.58,
+     -738.14
+    ],
+    [
+     -592.75,
+     -744.69
+    ],
+    [
+     -590.68,
+     -747.2
+    ],
+    [
+     -591.01,
+     -747.33
+    ],
+    [
+     -597.58,
+     -744.66
+    ],
+    [
+     -601.49,
+     -736.97
+    ],
+    [
+     -602.99,
+     -731.48
+    ],
+    [
+     -597.32,
+     -724.26
+    ],
+    [
+     -594.85,
+     -726.04
+    ],
+    [
+     -587.36,
+     -717.96
+    ],
+    [
+     -589.16,
+     -716.66
+    ]
+   ],
+   "note": "asphalt service yard of the courtyard south of the long curved block"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -590.42,
+     -715.75
+    ],
+    [
+     -587.36,
+     -717.96
+    ],
+    [
+     -594.85,
+     -726.04
+    ],
+    [
+     -597.91,
+     -723.83
+    ]
+   ],
+   "note": "cars parked perpendicular along the south facade of the long block (courtyard)"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -586.58,
+     -738.14
+    ],
+    [
+     -583.96,
+     -740.78
+    ],
+    [
+     -590.57,
+     -747.33
+    ],
+    [
+     -592.75,
+     -744.69
+    ]
+   ],
+   "note": "2-3 cars parked in the courtyard yard"
+  },
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "plaza",
+   "poly": [
+    [
+     -560.08,
+     -699.68
+    ],
+    [
+     -551.31,
+     -701.03
+    ],
+    [
+     -549.7,
+     -706.52
+    ],
+    [
+     -556.85,
+     -713.07
+    ],
+    [
+     -564.54,
+     -715.77
+    ],
+    [
+     -570.57,
+     -715.19
+    ],
+    [
+     -571.63,
+     -708.61
+    ],
+    [
+     -570.5,
+     -700.39
+    ]
+   ],
+   "note": "small paved garden square with round fountain and lawn beds in the courtyard"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     -511.64,
+     -659.57
+    ],
+    [
+     -512.36,
+     -716.58
+    ],
+    [
+     -525.07,
+     -716.51
+    ],
+    [
+     -531.61,
+     -707.71
+    ],
+    [
+     -537.04,
+     -696.72
+    ],
+    [
+     -533.72,
+     -691.25
+    ],
+    [
+     -524.94,
+     -689.1
+    ],
+    [
+     -519.88,
+     -685.84
+    ],
+    [
+     -519.75,
+     -659.53
+    ]
+   ],
+   "note": "asphalt driveway/service yard east of the long block, along the avenue tree row"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -582.56,
+     -663.24
+    ],
+    [
+     -581.04,
+     -665.36
+    ],
+    [
+     -626.24,
+     -697.76
+    ],
+    [
+     -627.76,
+     -695.64
+    ]
+   ],
+   "note": "row of cars parallel-parked along the SE kerb of the boulevard (south carriageway), in front of the long block"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     -721.0,
+     -460.78
+    ],
+    [
+     -708.97,
+     -466.76
+    ],
+    [
+     -705.09,
+     -478.84
+    ],
+    [
+     -702.52,
+     -492.01
+    ],
+    [
+     -702.65,
+     -518.32
+    ],
+    [
+     -711.44,
+     -521.56
+    ],
+    [
+     -722.44,
+     -529.18
+    ],
+    [
+     -723.64,
+     -551.11
+    ],
+    [
+     -735.72,
+     -553.68
+    ],
+    [
+     -750.0,
+     -553.61
+    ],
+    [
+     -750.0,
+     -461.44
+    ]
+   ],
+   "note": "large open bare-earth lot with rubble/debris (cleared plot) between the west blocks and the N-S lane; only a few trees at its edges"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -629.29,
+     -537.98
+    ],
+    [
+     -628.73,
+     -558.59
+    ],
+    [
+     -660.75,
+     -558.43
+    ],
+    [
+     -660.65,
+     -538.26
+    ]
+   ],
+   "note": "enclosed asphalt courtyard of the L-shaped building used for parking (4-5 cars visible)"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -723.99,
+     -591.01
+    ],
+    [
+     -724.01,
+     -593.87
+    ],
+    [
+     -747.58,
+     -593.75
+    ],
+    [
+     -747.56,
+     -590.9
+    ]
+   ],
+   "note": "cars parallel-parked on the north kerb of the E-W street (west part)"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -684.23,
+     -696.03
+    ],
+    [
+     -684.31,
+     -710.94
+    ],
+    [
+     -700.31,
+     -710.2
+    ],
+    [
+     -701.33,
+     -694.19
+    ]
+   ],
+   "note": "cluster of ~5 parked cars on the paved apron west of the roundabout, in front of the red-roofed building (next to the already modelled row)"
+  }
+ ],
+ "notes": "Landscape-only trace of tile (-2,-2) (Yandex z18 overview + three z19 close views, magnified 2x in-page). Main items: (1) the public square S of the E-W street: model shows it mostly as lawn, but it is a paved square (pinkish paving) with lawn beds - traced as 'paving/plaza' pieces around the beds (beds left as lawn), the round rubber street-workout zone (earlier decision P9: bar frames, not a children's playground) as 'rubber/sport', the trampled bare-earth NW corner as soil, and the wide NE walkway as a 5.5 m footpath; (2) large cleared bare-earth lot with rubble in the NW corner (x -750..-702, y -461..-554) and a smaller bare lot N of the E-W street (x -721..-700, y -566..-588); (3) parking only where cars are visible: 4-storey-block west driveway, L-building courtyard, lane W of it, forecourt N of the street, NE corner lot of the square, driveway along the S facade of the west block, kerb parking on the E-W street (west part) and on the boulevard's south carriageway in front of the long curved block, courtyard of the long block, apron W of the roundabout (next to the already modelled row); (4) courtyard of the long curved block: asphalt service yards (west and east driveway) and a small paved garden square with a fountain. Yards between the 4-storey blocks (x -690..-560, y -460..-590) and most strips along the avenue are under closed tree canopy = lawn, nothing traced; the model's loop roads there cannot be verified. No playground equipment seen anywhere in the tile; the model's red playground polygon at about (-548..-526, -748..-770) (mostly in tile -2,-3) sits on roofs/dirt with no equipment visible. No missing alleys found (all visible lanes exist in the model, the courtyard lane E of the long block is ~4 m west of its real position). SW corner beyond 1000 m and everything outside x -750..-450 / y -750..-450 was clipped."
+}

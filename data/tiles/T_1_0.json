@@ -1,0 +1,985 @@
+{
+"tile": [
+1,
+0
+],
+"bounds": [
+150,
+-150,
+450,
+150
+],
+"source": "Yandex z18/z19 + Esri Wayback release 2026-08-05 (Vantor WV03 capture 2020-03-20, leaf-off)",
+"traced_by": "agent-east",
+"complete": true,
+"features": [
+{
+"type": "area",
+"surface": "asphalt",
+"use": "parking",
+"poly": [
+[
+164.93,
+126.17
+],
+[
+209.88,
+127.27
+],
+[
+209.83,
+116.74
+],
+[
+164.88,
+115.21
+]
+]
+},
+{
+"type": "area",
+"surface": "asphalt",
+"use": "parking",
+"poly": [
+[
+167.85,
+141.5
+],
+[
+173.99,
+141.47
+],
+[
+173.92,
+126.78
+],
+[
+167.78,
+126.81
+]
+]
+},
+{
+"type": "building_missing",
+"poly": [
+[
+260.37,
+139.52
+],
+[
+291.07,
+140.47
+],
+[
+291.04,
+134.99
+],
+[
+260.34,
+134.48
+]
+],
+"levels": 1
+},
+{
+"type": "building_missing",
+"poly": [
+[
+276.14,
+136.16
+],
+[
+291.05,
+136.52
+],
+[
+291.45,
+128.63
+],
+[
+276.54,
+128.26
+]
+],
+"levels": 1
+},
+{
+"type": "area",
+"surface": "asphalt",
+"use": "parking",
+"poly": [
+[
+193.2,
+79.11
+],
+[
+203.08,
+81.26
+],
+[
+206.06,
+63.04
+],
+[
+195.53,
+61.12
+]
+]
+},
+{
+"type": "area",
+"surface": "asphalt",
+"use": "parking",
+"poly": [
+[
+218.33,
+59.69
+],
+[
+255.64,
+68.72
+],
+[
+257.37,
+62.8
+],
+[
+220.05,
+53.77
+]
+]
+},
+{
+"type": "area",
+"surface": "asphalt",
+"use": "parking",
+"poly": [
+[
+229.52,
+106.78
+],
+[
+251.47,
+112.16
+],
+[
+252.76,
+107.33
+],
+[
+230.81,
+101.73
+]
+]
+},
+{
+"type": "area",
+"surface": "soil",
+"use": "yard",
+"poly": [
+[
+172.5,
+104.86
+],
+[
+203.2,
+105.81
+],
+[
+203.08,
+81.26
+],
+[
+193.2,
+79.11
+],
+[
+195.53,
+61.12
+],
+[
+207.37,
+61.94
+],
+[
+209.53,
+54.26
+],
+[
+191.95,
+46.67
+],
+[
+180.96,
+40.14
+],
+[
+173.27,
+37.99
+]
+]
+},
+{
+"type": "area",
+"surface": "soil",
+"use": "yard",
+"poly": [
+[
+169.98,
+38.0
+],
+[
+187.55,
+43.4
+],
+[
+191.87,
+29.13
+],
+[
+189.53,
+-1.56
+],
+[
+169.79,
+-1.46
+]
+]
+},
+{
+"type": "area",
+"surface": "soil",
+"use": "yard",
+"poly": [
+[
+206.94,
+62.38
+],
+[
+280.92,
+81.76
+],
+[
+284.57,
+65.52
+],
+[
+210.59,
+46.14
+]
+]
+},
+{
+"type": "alley",
+"line": [
+[
+179.1,
+104.71
+],
+[
+177.76,
+53.38
+],
+[
+173.11,
+-1.21
+]
+],
+"width": 6.0,
+"surface": "dirt",
+"in_model": true
+},
+{
+"type": "area",
+"surface": "soil",
+"use": "yard",
+"poly": [
+[
+367.18,
+94.29
+],
+[
+432.52,
+93.98
+],
+[
+434.46,
+42.22
+],
+[
+375.69,
+39.87
+],
+[
+366.92,
+39.48
+]
+]
+},
+{
+"type": "area",
+"surface": "asphalt",
+"use": "parking",
+"poly": [
+[
+360.57,
+88.18
+],
+[
+365.4,
+88.16
+],
+[
+366.04,
+38.82
+],
+[
+361.21,
+38.85
+]
+]
+},
+{
+"type": "area",
+"surface": "asphalt",
+"use": "parking",
+"poly": [
+[
+392.38,
+45.93
+],
+[
+418.69,
+46.24
+],
+[
+418.66,
+39.67
+],
+[
+392.35,
+39.35
+]
+]
+},
+{
+"type": "area",
+"surface": "asphalt",
+"use": "parking",
+"poly": [
+[
+429.8,
+76.89
+],
+[
+435.5,
+76.86
+],
+[
+435.77,
+41.78
+],
+[
+430.07,
+41.8
+]
+]
+},
+{
+"type": "area",
+"surface": "asphalt",
+"use": "parking",
+"poly": [
+[
+431.14,
+127.75
+],
+[
+460.75,
+128.48
+],
+[
+460.71,
+120.59
+],
+[
+431.1,
+119.64
+]
+]
+},
+{
+"type": "area",
+"surface": "asphalt",
+"use": "parking",
+"poly": [
+[
+440.52,
+26.41
+],
+[
+454.12,
+26.34
+],
+[
+454.05,
+12.75
+],
+[
+440.46,
+12.81
+]
+]
+},
+{
+"type": "area",
+"surface": "paving",
+"use": "plaza",
+"poly": [
+[
+332.28,
+86.12
+],
+[
+349.82,
+86.04
+],
+[
+349.76,
+73.98
+],
+[
+332.22,
+74.07
+]
+]
+},
+{
+"type": "building_missing",
+"poly": [
+[
+300.8,
+59.96
+],
+[
+316.15,
+60.33
+],
+[
+316.51,
+44.98
+],
+[
+301.16,
+44.62
+]
+],
+"levels": 1
+},
+{
+"type": "building_missing",
+"poly": [
+[
+223.68,
+-28.91
+],
+[
+258.14,
+-20.96
+],
+[
+261.57,
+-37.86
+],
+[
+227.76,
+-45.38
+]
+],
+"levels": 1
+},
+{
+"type": "building_missing",
+"poly": [
+[
+241.28,
+-106.83
+],
+[
+252.91,
+-106.45
+],
+[
+253.31,
+-114.57
+],
+[
+241.68,
+-114.95
+]
+],
+"levels": 1
+},
+{
+"type": "area",
+"surface": "paving",
+"use": "plaza",
+"poly": [
+[
+193.26,
+-62.75
+],
+[
+238.2,
+-62.97
+],
+[
+238.51,
+-90.38
+],
+[
+193.13,
+-90.16
+]
+]
+},
+{
+"type": "area",
+"surface": "asphalt",
+"use": "parking",
+"poly": [
+[
+176.5,
+-35.7
+],
+[
+184.62,
+-35.74
+],
+[
+184.56,
+-48.02
+],
+[
+176.45,
+-47.98
+]
+]
+},
+{
+"type": "area",
+"surface": "asphalt",
+"use": "parking",
+"poly": [
+[
+176.18,
+-103.23
+],
+[
+185.39,
+-103.28
+],
+[
+185.3,
+-120.82
+],
+[
+176.09,
+-120.77
+]
+]
+},
+{
+"type": "area",
+"surface": "asphalt",
+"use": "parking",
+"poly": [
+[
+172.53,
+-132.16
+],
+[
+180.86,
+-132.2
+],
+[
+180.77,
+-151.05
+],
+[
+172.44,
+-151.01
+]
+]
+},
+{
+"type": "area",
+"surface": "asphalt",
+"use": "parking",
+"poly": [
+[
+160.21,
+-95.48
+],
+[
+168.32,
+-95.52
+],
+[
+168.29,
+-102.1
+],
+[
+160.18,
+-102.06
+]
+]
+},
+{
+"type": "alley",
+"line": [
+[
+176.04,
+1.7
+],
+[
+174.73,
+-41.99
+],
+[
+173.42,
+-85.68
+],
+[
+172.16,
+-120.62
+],
+[
+169.82,
+-151.2
+]
+],
+"width": 6.0,
+"surface": "dirt",
+"in_model": true
+},
+{
+"type": "building_missing",
+"poly": [
+[
+350.08,
+-12.19
+],
+[
+357.98,
+-12.23
+],
+[
+357.83,
+-43.36
+],
+[
+349.93,
+-43.32
+]
+],
+"levels": 1
+},
+{
+"type": "building_missing",
+"poly": [
+[
+278.5,
+-79.38
+],
+[
+328.93,
+-80.5
+],
+[
+328.87,
+-92.34
+],
+[
+278.44,
+-91.65
+]
+],
+"levels": 1
+},
+{
+"type": "building_missing",
+"poly": [
+[
+297.07,
+-93.28
+],
+[
+311.76,
+-92.69
+],
+[
+311.56,
+-135.01
+],
+[
+296.87,
+-135.6
+]
+],
+"levels": 1
+},
+{
+"type": "building_missing",
+"poly": [
+[
+317.9,
+-92.72
+],
+[
+327.77,
+-92.77
+],
+[
+327.55,
+-138.37
+],
+[
+317.68,
+-138.33
+]
+],
+"levels": 1
+},
+{
+"type": "building_missing",
+"poly": [
+[
+276.69,
+-90.99
+],
+[
+290.28,
+-91.05
+],
+[
+290.07,
+-135.56
+],
+[
+276.48,
+-135.5
+]
+],
+"levels": 1
+},
+{
+"type": "area",
+"surface": "soil",
+"use": "sport",
+"poly": [
+[
+279.55,
+-44.3
+],
+[
+358.7,
+-44.68
+],
+[
+359.63,
+-79.33
+],
+[
+279.38,
+-78.94
+]
+]
+},
+{
+"type": "area",
+"surface": "asphalt",
+"use": "sport",
+"poly": [
+[
+327.83,
+-80.93
+],
+[
+366.2,
+-81.11
+],
+[
+365.91,
+-141.85
+],
+[
+327.54,
+-141.66
+]
+]
+},
+{
+"type": "area",
+"surface": "asphalt",
+"use": "parking",
+"poly": [
+[
+403.05,
+-77.34
+],
+[
+412.7,
+-77.39
+],
+[
+412.58,
+-101.51
+],
+[
+402.94,
+-101.46
+]
+]
+},
+{
+"type": "area",
+"surface": "asphalt",
+"use": "parking",
+"poly": [
+[
+398.37,
+-2.77
+],
+[
+410.42,
+-2.83
+],
+[
+410.27,
+-35.72
+],
+[
+398.21,
+-35.66
+]
+]
+},
+{
+"type": "area",
+"surface": "asphalt",
+"use": "yard",
+"poly": [
+[
+381.45,
+-100.92
+],
+[
+409.95,
+-101.06
+],
+[
+409.89,
+-114.65
+],
+[
+381.39,
+-114.51
+]
+]
+},
+{
+"type": "area",
+"surface": "soil",
+"use": "yard",
+"poly": [
+[
+410.87,
+-0.64
+],
+[
+458.24,
+1.33
+],
+[
+456.72,
+-41.42
+],
+[
+413.53,
+-40.12
+]
+]
+},
+{
+"type": "area",
+"surface": "soil",
+"use": "yard",
+"poly": [
+[
+441.83,
+-83.01
+],
+[
+462.67,
+-82.01
+],
+[
+462.52,
+-112.71
+],
+[
+441.69,
+-112.61
+]
+]
+},
+{
+"type": "area",
+"surface": "soil",
+"use": "yard",
+"poly": [
+[
+287.6,
+-11.01
+],
+[
+349.87,
+-11.31
+],
+[
+349.71,
+-43.76
+],
+[
+287.44,
+-43.46
+]
+]
+},
+{
+"type": "footpath",
+"line": [
+[
+418.65,
+-116.72
+],
+[
+421.31,
+-111.92
+],
+[
+451.31,
+-74.05
+],
+[
+455.72,
+-67.96
+]
+],
+"width": 2.0,
+"surface": "asphalt"
+}
+],
+"notes": "Soviet microdistrict (apartment blocks, school/office buildings, stadium). Yards: west yard strip (x~160-250) and inter-block strips are packed soil under trees (Esri leaf-off 2020-03-20 confirms bare ground), cars parked on hard ground; N-S service lane at x~175 is dirt, not asphalt (alley features flagged in_model:true = geometry already in model, surface correction only). Model playground at ~(230,-41) is actually a flat-roof 1-storey building (building_missing added); model playground at ~(329,-38) is a storage/debris yard (soil area added); model playground at ~(411,75) and playground-to-verify P16 at ~(429,-86) show no equipment (trees/dirt, lawn with a diagonal asphalt path). Dark-roof building at ~(330,5) is in model and Yandex (not yet in 2020 Esri). Stadium: soil pitch + cracked asphalt court; warehouse/garage rows east of main road (x~280-330, y~-90..-135) missing from model. Parking polygons may overlap yard polygons: parking wins. Area polygons may cover building footprints: buildings win."
+}

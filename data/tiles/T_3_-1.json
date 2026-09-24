@@ -1,0 +1,346 @@
+{
+ "tile": [
+  3,
+  -1
+ ],
+ "bounds": [
+  750,
+  -450,
+  1050,
+  -150
+ ],
+ "source": "Yandex z18/z19",
+ "traced_by": "landB8",
+ "complete": true,
+ "features": [
+  {
+   "type": "area",
+   "surface": "turf",
+   "use": "sport",
+   "poly": [
+    [
+     846.99,
+     -181.84
+    ],
+    [
+     873.31,
+     -181.96
+    ],
+    [
+     873.23,
+     -198.63
+    ],
+    [
+     846.92,
+     -198.5
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     838.25,
+     -176.53
+    ],
+    [
+     860.11,
+     -176.64
+    ],
+    [
+     860.11,
+     -181.9
+    ],
+    [
+     846.99,
+     -181.84
+    ],
+    [
+     846.92,
+     -198.5
+    ],
+    [
+     860.11,
+     -198.57
+    ],
+    [
+     860.11,
+     -210.4
+    ],
+    [
+     838.09,
+     -210.3
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     860.11,
+     -210.4
+    ],
+    [
+     860.11,
+     -198.57
+    ],
+    [
+     873.23,
+     -198.63
+    ],
+    [
+     873.31,
+     -181.96
+    ],
+    [
+     860.11,
+     -181.9
+    ],
+    [
+     860.11,
+     -176.64
+    ],
+    [
+     879.03,
+     -176.73
+    ],
+    [
+     878.87,
+     -210.49
+    ]
+   ]
+  },
+  {
+   "type": "footpath",
+   "line": [
+    [
+     878.21,
+     -210.49
+    ],
+    [
+     878.05,
+     -244.26
+    ]
+   ],
+   "width": 4,
+   "surface": "asphalt"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     923.9,
+     -150.0
+    ],
+    [
+     923.9,
+     -246.0
+    ],
+    [
+     911.0,
+     -246.0
+    ],
+    [
+     908.4,
+     -228.0
+    ],
+    [
+     907.5,
+     -205.0
+    ],
+    [
+     904.0,
+     -195.0
+    ],
+    [
+     904.0,
+     -150.0
+    ]
+   ]
+  },
+  {
+   "type": "footpath",
+   "line": [
+    [
+     925.2,
+     -246.5
+    ],
+    [
+     925.4,
+     -210.9
+    ],
+    [
+     925.4,
+     -150.0
+    ]
+   ],
+   "width": 2.5,
+   "surface": "paving"
+  },
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "plaza",
+   "poly": [
+    [
+     956.6,
+     -249.2
+    ],
+    [
+     956.7,
+     -214.14
+    ],
+    [
+     925.2,
+     -214.0
+    ],
+    [
+     925.2,
+     -207.8
+    ],
+    [
+     978.12,
+     -208.04
+    ],
+    [
+     975.7,
+     -219.1
+    ],
+    [
+     972.94,
+     -231.06
+    ],
+    [
+     968.44,
+     -249.25
+    ]
+   ]
+  },
+  {
+   "type": "footpath",
+   "line": [
+    [
+     925.3,
+     -236.8
+    ],
+    [
+     956.6,
+     -236.95
+    ]
+   ],
+   "width": 3.5,
+   "surface": "paving"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     946.5,
+     -289.6
+    ],
+    [
+     946.5,
+     -297.2
+    ],
+    [
+     924.0,
+     -297.1
+    ],
+    [
+     924.0,
+     -289.5
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     912.0,
+     -297.1
+    ],
+    [
+     946.5,
+     -297.2
+    ],
+    [
+     952.0,
+     -297.3
+    ],
+    [
+     950.0,
+     -306.5
+    ],
+    [
+     912.5,
+     -306.0
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     819.54,
+     -330.91
+    ],
+    [
+     819.49,
+     -340.56
+    ],
+    [
+     799.75,
+     -340.91
+    ],
+    [
+     789.9,
+     -338.89
+    ],
+    [
+     789.93,
+     -330.77
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     864.92,
+     -332.66
+    ],
+    [
+     864.85,
+     -346.92
+    ],
+    [
+     844.67,
+     -349.01
+    ],
+    [
+     829.76,
+     -348.94
+    ],
+    [
+     829.83,
+     -332.5
+    ]
+   ]
+  }
+ ],
+ "notes": "Landscape-only pass (buildings/walls skipped). Views: Yandex z18 overview + 3 z19 close views (school/N strip, institute forecourt/E, S apartment yards). Only ~55% of the tile is within 1000 m (circle cuts from x~989 at y-150 to x~894 at y-450); features clipped to it. N of main road: school courtyard (838-880,-176..-211) is asphalt with a green artificial-turf pitch (847-873,-182..-199) -> sport/turf, courtyard split in 2 yard polys around it; 4 m asphalt passage from courtyard S to the main-road N sidewalk (x~882). E of school: fenced bare-soil vacant lot (904-924,-150..-246) with a few trees; the model playground at (909-928,-215..-230) is bare dirt, no equipment -> not a playground (covered by the soil yard). 2.5 m paved path x~925 along the lot's E edge from the sidewalk north to the tile edge (continues into tile 3,0). Institute forecourt: paved N band (y -208..-214) + central paved square with monument (957-979,-214..-249) as one plaza poly (clipped at 1000 m); S paved band (y~-237) as 3.5 m footpath joining the x~925 path to the square; lawn squares left as lawn (model already has them). S of main road: row of 3-4 parked cars (924-946,-290..-297) N of the eastern block's service road -> parking; open bare ground S of it (912-952,-297..-306). Open hard yards S of the first apartment row (790-820,-331..-341 and 830-865,-333..-349) with a few scattered parked cars -> asphalt yard (not enough cars in a row for parking). Not traced: all other apartment yards (lawn under dense canopy, no paths visible), cars parked along existing model driveways/streets (x~765 N yard, N-S road x~890), dark flat structure/garages at (852-868,-391..-408). No playgrounds seen; no missing alleys (all visible streets/driveways already in model)."
+}

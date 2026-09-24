@@ -1,0 +1,322 @@
+{
+ "when": "2026-09-24 23:27",
+ "ok": false,
+ "gates": {
+  "hole": {
+   "count": 0,
+   "max": 0,
+   "ok": true
+  },
+  "open_chain_long": {
+   "count": 0,
+   "max": 0,
+   "ok": true
+  },
+  "terrain_seam_uncovered": {
+   "count": 0,
+   "max": 0,
+   "ok": true
+  },
+  "overlap_zfight": {
+   "count": 0,
+   "max": 0,
+   "ok": true
+  },
+  "tree_on_hard": {
+   "count": 0,
+   "max": 0,
+   "ok": true
+  },
+  "tree_in_building": {
+   "count": 0,
+   "max": 0,
+   "ok": true
+  },
+  "building_overlap": {
+   "count": 0,
+   "max": 0,
+   "ok": true
+  },
+  "building_on_road": {
+   "count": 0,
+   "max": 0,
+   "ok": true
+  },
+  "building_floating": {
+   "count": 0,
+   "max": 10,
+   "ok": true
+  },
+  "nonmanifold_edge": {
+   "count": 0,
+   "max": 30,
+   "ok": true
+  },
+  "sliver": {
+   "count": 38,
+   "max": 100,
+   "ok": true
+  },
+  "road_fragment": {
+   "count": 0,
+   "max": 10,
+   "ok": true
+  },
+  "path_dead_end": {
+   "count": 1,
+   "max": 5,
+   "ok": true
+  },
+  "house_without_wall": {
+   "count": 191,
+   "max": 150,
+   "ok": false
+  },
+  "marking_gap_main": {
+   "count": 0,
+   "max": 3,
+   "ok": true
+  },
+  "wall_on_street": {
+   "count": 0,
+   "max": 0,
+   "ok": true
+  }
+ },
+ "issue_counts": {
+  "degenerate_face": 971,
+  "entrance_not_at_building": 4,
+  "playground_no_path": 11,
+  "sliver": 38,
+  "tjunction": 64,
+  "tjunction_vertical": 64,
+  "hole": 0,
+  "open_chain_long": 0,
+  "nonmanifold_edge": 0,
+  "terrain_seam_uncovered": 0,
+  "path_dead_end": 1,
+  "house_without_wall": 191,
+  "wall_on_street": 0,
+  "private_houses": 987,
+  "marking_gap_main": 0
+ },
+ "previous_counts": {
+  "degenerate_face": 956,
+  "entrance_not_at_building": 1,
+  "playground_no_path": 11,
+  "sliver": 36,
+  "tjunction": 60,
+  "tjunction_vertical": 60,
+  "hole": 0,
+  "open_chain_long": 0,
+  "nonmanifold_edge": 0,
+  "terrain_seam_uncovered": 0,
+  "path_dead_end": 1,
+  "house_without_wall": 61,
+  "wall_on_street": 6,
+  "private_houses": 988,
+  "marking_gap_main": 0
+ },
+ "ground_objects": {
+  "Apron_Concrete": {
+   "faces": 22026,
+   "area_m2": 58257.0,
+   "degenerate": 124,
+   "flipped": 0,
+   "loose_verts": 0,
+   "duplicate_verts": 2
+  },
+  "Aryk": {
+   "faces": 41517,
+   "area_m2": 27279.3,
+   "degenerate": 270,
+   "flipped": 0,
+   "loose_verts": 0,
+   "duplicate_verts": 48
+  },
+  "Asphalt_Road": {
+   "faces": 133266,
+   "area_m2": 361939.6,
+   "degenerate": 1750,
+   "flipped": 0,
+   "loose_verts": 0,
+   "duplicate_verts": 0
+  },
+  "Bare_Soil": {
+   "faces": 54163,
+   "area_m2": 218755.2,
+   "degenerate": 973,
+   "flipped": 0,
+   "loose_verts": 0,
+   "duplicate_verts": 0
+  },
+  "Channel_Bank": {
+   "faces": 2523,
+   "area_m2": 20211.7,
+   "degenerate": 6,
+   "flipped": 0,
+   "loose_verts": 0,
+   "duplicate_verts": 0
+  },
+  "Crosswalk": {
+   "faces": 4358,
+   "area_m2": 3683.5,
+   "degenerate": 80,
+   "flipped": 0,
+   "loose_verts": 0,
+   "duplicate_verts": 0
+  },
+  "Curb": {
+   "faces": 133119,
+   "area_m2": 21950.9,
+   "degenerate": 981,
+   "flipped": 0,
+   "loose_verts": 0,
+   "duplicate_verts": 8
+  },
+  "Cycleway": {
+   "faces": 2072,
+   "area_m2": 7564.5,
+   "degenerate": 130,
+   "flipped": 0,
+   "loose_verts": 0,
+   "duplicate_verts": 0
+  },
+  "Dirt_Track": {
+   "faces": 1345,
+   "area_m2": 3846.2,
+   "degenerate": 22,
+   "flipped": 0,
+   "loose_verts": 0,
+   "duplicate_verts": 0
+  },
+  "Entrance_Paving": {
+   "faces": 13165,
+   "area_m2": 21043.2,
+   "degenerate": 60,
+   "flipped": 0,
+   "loose_verts": 0,
+   "duplicate_verts": 0
+  },
+  "Forecourt_Paving": {
+   "faces": 5925,
+   "area_m2": 34422.5,
+   "degenerate": 35,
+   "flipped": 0,
+   "loose_verts": 0,
+   "duplicate_verts": 0
+  },
+  "Lawn": {
+   "faces": 67632,
+   "area_m2": 859943.0,
+   "degenerate": 2287,
+   "flipped": 0,
+   "loose_verts": 0,
+   "duplicate_verts": 0
+  },
+  "Parking_Asphalt": {
+   "faces": 3427,
+   "area_m2": 20689.2,
+   "degenerate": 67,
+   "flipped": 0,
+   "loose_verts": 0,
+   "duplicate_verts": 0
+  },
+  "Parking_Lane": {
+   "faces": 390,
+   "area_m2": 711.6,
+   "degenerate": 0,
+   "flipped": 0,
+   "loose_verts": 0,
+   "duplicate_verts": 0
+  },
+  "Path_Paving": {
+   "faces": 12677,
+   "area_m2": 36674.3,
+   "degenerate": 879,
+   "flipped": 0,
+   "loose_verts": 0,
+   "duplicate_verts": 1
+  },
+  "Playground": {
+   "faces": 1263,
+   "area_m2": 14673.1,
+   "degenerate": 19,
+   "flipped": 0,
+   "loose_verts": 0,
+   "duplicate_verts": 0
+  },
+  "Private_Plot": {
+   "faces": 32792,
+   "area_m2": 291263.4,
+   "degenerate": 157,
+   "flipped": 0,
+   "loose_verts": 0,
+   "duplicate_verts": 0
+  },
+  "Road_Marking": {
+   "faces": 8671,
+   "area_m2": 2523.8,
+   "degenerate": 76,
+   "flipped": 0,
+   "loose_verts": 0,
+   "duplicate_verts": 0
+  },
+  "Sidewalk_Paving": {
+   "faces": 70636,
+   "area_m2": 103855.5,
+   "degenerate": 1385,
+   "flipped": 0,
+   "loose_verts": 0,
+   "duplicate_verts": 0
+  },
+  "Sport_Pitch": {
+   "faces": 4859,
+   "area_m2": 38606.9,
+   "degenerate": 93,
+   "flipped": 0,
+   "loose_verts": 0,
+   "duplicate_verts": 0
+  },
+  "Street_Green": {
+   "faces": 47775,
+   "area_m2": 36912.9,
+   "degenerate": 1072,
+   "flipped": 0,
+   "loose_verts": 0,
+   "duplicate_verts": 0
+  },
+  "Trees_Ground": {
+   "faces": 8213,
+   "area_m2": 50849.7,
+   "degenerate": 39,
+   "flipped": 0,
+   "loose_verts": 0,
+   "duplicate_verts": 0
+  },
+  "Water": {
+   "faces": 19,
+   "area_m2": 133.7,
+   "degenerate": 0,
+   "flipped": 0,
+   "loose_verts": 0,
+   "duplicate_verts": 0
+  },
+  "Water_Channel": {
+   "faces": 703,
+   "area_m2": 7096.2,
+   "degenerate": 0,
+   "flipped": 0,
+   "loose_verts": 0,
+   "duplicate_verts": 0
+  },
+  "Yard_Hard": {
+   "faces": 53131,
+   "area_m2": 382016.8,
+   "degenerate": 553,
+   "flipped": 0,
+   "loose_verts": 0,
+   "duplicate_verts": 0
+  }
+ }
+}

@@ -1,0 +1,294 @@
+{
+ "tile": [
+  -2,
+  -1
+ ],
+ "bounds": [
+  -750,
+  -450,
+  -450,
+  -150
+ ],
+ "source": "Yandex z18/z19 (+1 z20 check of the court)",
+ "traced_by": "landB2",
+ "complete": true,
+ "features": [
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     -677.1,
+     -234.19
+    ],
+    [
+     -677.18,
+     -251.29
+    ],
+    [
+     -687.05,
+     -250.8
+    ],
+    [
+     -686.97,
+     -234.14
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -654.19,
+     -257.54
+    ],
+    [
+     -653.84,
+     -275.09
+    ],
+    [
+     -679.05,
+     -274.3
+    ],
+    [
+     -678.97,
+     -257.42
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -642.87,
+     -185.68
+    ],
+    [
+     -642.9,
+     -191.16
+    ],
+    [
+     -657.59,
+     -190.65
+    ],
+    [
+     -657.56,
+     -185.17
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -611.09,
+     -187.59
+    ],
+    [
+     -611.11,
+     -191.54
+    ],
+    [
+     -627.99,
+     -191.02
+    ],
+    [
+     -627.97,
+     -187.07
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -648.46,
+     -207.8
+    ],
+    [
+     -648.48,
+     -211.74
+    ],
+    [
+     -684.22,
+     -210.91
+    ],
+    [
+     -684.2,
+     -206.74
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -528.1,
+     -246.53
+    ],
+    [
+     -528.15,
+     -256.18
+    ],
+    [
+     -539.55,
+     -256.13
+    ],
+    [
+     -539.5,
+     -246.48
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -528.23,
+     -272.19
+    ],
+    [
+     -528.29,
+     -285.34
+    ],
+    [
+     -539.26,
+     -285.29
+    ],
+    [
+     -539.19,
+     -272.13
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -656.88,
+     -360.43
+    ],
+    [
+     -656.99,
+     -382.35
+    ],
+    [
+     -668.7,
+     -382.29
+    ],
+    [
+     -668.59,
+     -360.37
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -739.17,
+     -346.62
+    ],
+    [
+     -739.42,
+     -396.57
+    ],
+    [
+     -750.0,
+     -396.52
+    ],
+    [
+     -750.0,
+     -346.57
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -526.48,
+     -374.3
+    ],
+    [
+     -526.57,
+     -391.34
+    ],
+    [
+     -541.19,
+     -391.27
+    ],
+    [
+     -541.11,
+     -374.23
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "sport",
+   "poly": [
+    [
+     -593.93,
+     -372.74
+    ],
+    [
+     -594.08,
+     -403.79
+    ],
+    [
+     -611.13,
+     -403.71
+    ],
+    [
+     -610.97,
+     -372.65
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "playground",
+   "poly": [
+    [
+     -570.17,
+     -373.09
+    ],
+    [
+     -570.24,
+     -387.47
+    ],
+    [
+     -594.0,
+     -387.35
+    ],
+    [
+     -593.93,
+     -372.98
+    ]
+   ]
+  }
+ ],
+ "notes": "Dense 1960s 5-storey microdistrict: two main roads (E-W at y~-200, N-S at x~-470) and a west street (x~-697); the model already has all yard driveways/loops, so no missing alleys were found. Most yard ground is under tree canopy (left as lawn); no footpaths are distinguishable under the canopy at z19, so none traced. Parking traced only where parked cars are visible: yard lot east of the west street (-679..-654,-257..-275), strip in the west yard at the tile edge (-750..-739,-347..-397), car cluster on the yard drive between the two N-S blocks (-669..-657,-360..-382), two car groups along the drive west of the long N-S block (-540..-528,-246..-285), cars at the yard entrance west of a dark-roof pavilion (-541..-527,-374..-391), a few cars/truck on the road verges in front of buildings along the main road. OSM playground (-613..-587,-409..-370) is in fact a light-grey asphalt sport court (-611..-594,-373..-404, traced as sport) plus a fenced playground with equipment east of it (-594..-570,-373..-387, traced as playground, soil); the rest of the OSM polygon south of it is under trees. Model generated playground at about (-676..-657,-246..-260) shows no play equipment (tree canopy + parked cars) so it is not traced. Not traced (outside the job): a dark-roof pavilion ~(-557..-545,-373..-385) and a kiosk ~(-690..-680,-252..-267) missing from the model buildings."
+}

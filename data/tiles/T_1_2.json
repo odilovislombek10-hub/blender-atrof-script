@@ -1,0 +1,826 @@
+{
+ "tile": [
+  1,
+  2
+ ],
+ "bounds": [
+  150,
+  450,
+  450,
+  750
+ ],
+ "source": "Yandex z18/z19",
+ "traced_by": "landA8",
+ "complete": true,
+ "features": [
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "yard",
+   "poly": [
+    [
+     225.5,
+     675.32
+    ],
+    [
+     225.47,
+     669.18
+    ],
+    [
+     233.58,
+     668.7
+    ],
+    [
+     244.1,
+     668.43
+    ],
+    [
+     244.06,
+     658.79
+    ],
+    [
+     201.96,
+     658.99
+    ],
+    [
+     196.29,
+     665.15
+    ],
+    [
+     167.36,
+     666.39
+    ],
+    [
+     167.41,
+     675.82
+    ]
+   ],
+   "note": "light paved yard between long grey-roof building and green-roof institution"
+  },
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "yard",
+   "poly": [
+    [
+     201.96,
+     658.99
+    ],
+    [
+     202.28,
+     588.39
+    ],
+    [
+     195.92,
+     588.42
+    ],
+    [
+     196.29,
+     665.15
+    ]
+   ],
+   "note": "paved strip along W side of green-roof institution"
+  },
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "yard",
+   "poly": [
+    [
+     242.91,
+     647.39
+    ],
+    [
+     244.37,
+     632.04
+    ],
+    [
+     244.3,
+     618.44
+    ],
+    [
+     231.15,
+     618.51
+    ],
+    [
+     231.29,
+     647.45
+    ]
+   ],
+   "note": "paved inner courtyard E of institution T-wing"
+  },
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "yard",
+   "poly": [
+    [
+     253.69,
+     611.16
+    ],
+    [
+     253.64,
+     599.11
+    ],
+    [
+     242.67,
+     599.16
+    ],
+    [
+     242.73,
+     611.22
+    ]
+   ],
+   "note": "small paved inner court with round planter"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     190.58,
+     707.06
+    ],
+    [
+     190.55,
+     702.23
+    ],
+    [
+     164.9,
+     702.79
+    ],
+    [
+     164.93,
+     707.62
+    ]
+   ],
+   "note": "cars parked along front of N building (N edge of street)"
+  },
+  {
+   "type": "alley",
+   "line": [
+    [
+     203.05,
+     702.17
+    ],
+    [
+     220.15,
+     702.53
+    ],
+    [
+     237.69,
+     702.66
+    ],
+    [
+     245.35,
+     699.12
+    ],
+    [
+     251.69,
+     695.58
+    ]
+   ],
+   "width": 6,
+   "surface": "asphalt",
+   "note": "lane between building and garages linking street bend to canal-side street end"
+  },
+  {
+   "type": "area",
+   "surface": "turf",
+   "use": "sport",
+   "poly": [
+    [
+     217.75,
+     542.26
+    ],
+    [
+     217.67,
+     525.82
+    ],
+    [
+     181.72,
+     526.65
+    ],
+    [
+     181.8,
+     543.31
+    ]
+   ],
+   "note": "artificial-turf football pitch (white lines)"
+  },
+  {
+   "type": "area",
+   "surface": "rubber",
+   "use": "sport",
+   "poly": [
+    [
+     218.52,
+     565.5
+    ],
+    [
+     218.43,
+     545.77
+    ],
+    [
+     198.7,
+     545.86
+    ],
+    [
+     198.79,
+     566.03
+    ]
+   ],
+   "note": "dark-green hard court N of pitch (2 white objects on it)"
+  },
+  {
+   "type": "area",
+   "surface": "rubber",
+   "use": "playground",
+   "poly": [
+    [
+     240.67,
+     566.49
+    ],
+    [
+     240.54,
+     539.52
+    ],
+    [
+     218.62,
+     539.63
+    ],
+    [
+     218.75,
+     566.59
+    ]
+   ],
+   "note": "red-brown rubber play surface (schoolyard), 2 trees on it"
+  },
+  {
+   "type": "area",
+   "surface": "rubber",
+   "use": "sport",
+   "poly": [
+    [
+     239.44,
+     539.09
+    ],
+    [
+     239.38,
+     525.72
+    ],
+    [
+     218.55,
+     525.82
+    ],
+    [
+     218.62,
+     539.19
+    ]
+   ],
+   "note": "blue sport court with white lines"
+  },
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "plaza",
+   "poly": [
+    [
+     288.92,
+     569.55
+    ],
+    [
+     288.87,
+     558.58
+    ],
+    [
+     253.13,
+     558.76
+    ],
+    [
+     253.06,
+     544.51
+    ],
+    [
+     266.87,
+     544.44
+    ],
+    [
+     266.84,
+     536.77
+    ],
+    [
+     240.53,
+     536.89
+    ],
+    [
+     240.69,
+     569.78
+    ]
+   ],
+   "note": "school forecourt paving between access road, courts and building"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "sport",
+   "poly": [
+    [
+     304.91,
+     566.18
+    ],
+    [
+     304.77,
+     537.68
+    ],
+    [
+     290.08,
+     537.75
+    ],
+    [
+     290.22,
+     566.25
+    ]
+   ],
+   "note": "basketball court (2 hoops, centre circle); model marks it playground"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     253.59,
+     517.1
+    ],
+    [
+     253.54,
+     506.57
+    ],
+    [
+     236.0,
+     507.1
+    ],
+    [
+     236.05,
+     517.62
+    ]
+   ],
+   "note": "3 cars nose-in S of street"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     177.88,
+     503.65
+    ],
+    [
+     177.85,
+     496.41
+    ],
+    [
+     206.35,
+     496.06
+    ],
+    [
+     219.47,
+     488.76
+    ],
+    [
+     234.83,
+     492.63
+    ],
+    [
+     250.18,
+     491.9
+    ],
+    [
+     257.84,
+     488.58
+    ],
+    [
+     259.28,
+     468.84
+    ],
+    [
+     259.19,
+     450.0
+    ],
+    [
+     201.11,
+     450.0
+    ],
+    [
+     201.33,
+     454.86
+    ],
+    [
+     201.89,
+     481.17
+    ],
+    [
+     150.0,
+     481.42
+    ],
+    [
+     150.04,
+     504.44
+    ]
+   ],
+   "note": "open bare-earth construction lot around unfinished building"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     379.63,
+     675.41
+    ],
+    [
+     379.08,
+     652.84
+    ],
+    [
+     378.32,
+     630.92
+    ],
+    [
+     378.87,
+     608.99
+    ],
+    [
+     381.02,
+     600.21
+    ],
+    [
+     375.96,
+     596.51
+    ],
+    [
+     365.09,
+     615.19
+    ],
+    [
+     365.38,
+     675.48
+    ]
+   ],
+   "note": "dark asphalt service yard along E side of L-shaped building"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     386.63,
+     672.09
+    ],
+    [
+     387.25,
+     664.2
+    ],
+    [
+     394.92,
+     663.72
+    ],
+    [
+     396.62,
+     652.75
+    ],
+    [
+     392.06,
+     617.7
+    ],
+    [
+     390.23,
+     600.17
+    ],
+    [
+     381.02,
+     600.21
+    ],
+    [
+     378.87,
+     608.99
+    ],
+    [
+     378.32,
+     630.92
+    ],
+    [
+     379.08,
+     652.84
+    ],
+    [
+     379.61,
+     672.56
+    ]
+   ],
+   "note": "open bare-earth lot E of asphalt yard"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     426.88,
+     653.7
+    ],
+    [
+     426.91,
+     660.28
+    ],
+    [
+     433.27,
+     660.25
+    ],
+    [
+     433.15,
+     635.48
+    ],
+    [
+     418.9,
+     635.54
+    ],
+    [
+     418.98,
+     653.74
+    ]
+   ],
+   "note": "paved forecourt W of white-roof building (1 car)"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     450.0,
+     629.47
+    ],
+    [
+     450.0,
+     609.74
+    ],
+    [
+     415.49,
+     609.91
+    ],
+    [
+     415.58,
+     629.64
+    ]
+   ],
+   "note": "bare earth with a few young trees S of E-W street"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     444.93,
+     538.49
+    ],
+    [
+     444.9,
+     532.57
+    ],
+    [
+     427.8,
+     533.31
+    ],
+    [
+     427.83,
+     539.23
+    ]
+   ],
+   "note": "row of 4 cars nose-in on S side of E street"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     351.02,
+     524.9
+    ],
+    [
+     354.91,
+     511.29
+    ],
+    [
+     355.32,
+     505.37
+    ],
+    [
+     326.82,
+     505.51
+    ],
+    [
+     323.78,
+     512.54
+    ],
+    [
+     323.82,
+     521.31
+    ]
+   ],
+   "note": "walled bare-earth vacant plot W of canal street"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     411.98,
+     731.99
+    ],
+    [
+     411.92,
+     718.18
+    ],
+    [
+     410.15,
+     715.99
+    ],
+    [
+     410.07,
+     698.45
+    ],
+    [
+     403.05,
+     698.49
+    ],
+    [
+     403.11,
+     710.54
+    ],
+    [
+     391.05,
+     710.6
+    ],
+    [
+     391.11,
+     722.0
+    ],
+    [
+     368.09,
+     722.11
+    ],
+    [
+     368.14,
+     732.2
+    ]
+   ],
+   "note": "service yard S of big flat-roof building incl. entrance apron from street"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     375.71,
+     710.68
+    ],
+    [
+     403.11,
+     710.54
+    ],
+    [
+     403.05,
+     698.49
+    ],
+    [
+     398.67,
+     697.41
+    ],
+    [
+     398.55,
+     673.3
+    ],
+    [
+     379.59,
+     673.39
+    ],
+    [
+     379.64,
+     675.41
+    ],
+    [
+     379.64,
+     675.41
+    ],
+    [
+     379.64,
+     675.41
+    ],
+    [
+     379.64,
+     675.41
+    ],
+    [
+     379.64,
+     675.41
+    ],
+    [
+     379.64,
+     675.41
+    ],
+    [
+     379.64,
+     675.42
+    ],
+    [
+     379.64,
+     675.42
+    ],
+    [
+     379.64,
+     675.42
+    ],
+    [
+     379.64,
+     675.42
+    ],
+    [
+     379.64,
+     675.42
+    ],
+    [
+     379.63,
+     675.42
+    ],
+    [
+     379.63,
+     675.42
+    ],
+    [
+     379.63,
+     675.42
+    ],
+    [
+     379.63,
+     675.42
+    ],
+    [
+     379.63,
+     675.42
+    ],
+    [
+     379.63,
+     675.42
+    ],
+    [
+     366.82,
+     675.48
+    ],
+    [
+     368.09,
+     722.11
+    ],
+    [
+     375.76,
+     722.08
+    ]
+   ],
+   "note": "service yard (vehicles, machinery) N of L-shaped building"
+  },
+  {
+   "type": "footpath",
+   "line": [
+    [
+     199.17,
+     590.84
+    ],
+    [
+     199.52,
+     572.86
+    ],
+    [
+     218.81,
+     572.33
+    ],
+    [
+     237.67,
+     572.24
+    ]
+   ],
+   "width": 4,
+   "surface": "paving",
+   "note": "paved lane from W strip of institution to end of school access road (N edge of courts)"
+  }
+ ],
+ "notes": "landA8 landscape-only pass (buildings/walls skipped). Views: Yandex z18 overview + z19 close views (NW institution, SW school sports/construction lot, E L-building yard, SE canal/bridge, NE service yard), all features cross-checked on the z18 overview. Institution with green roofs (x~194-282,y~580-660): light paved yard N of it, 6-7 m paved strip along its W side (model has lawn/building there), paved inner courtyards; a paved lane (footpath 4 m) joins the strip to the end of the school access road at (237.7,572.2). School cluster S of it: artificial-turf pitch (sport/turf, x~187-223,y~526-544; model sport pitch is ~6 m further W), dark-green hard court N of it with 2 white objects (sport/rubber, uncertain type), red-brown rubber play surface (playground/rubber, no equipment visible, trees on it), blue court (sport), paved forecourt (plaza), basketball court (sport/asphalt) which the model marks as playground (x~289-307,y~540-554). Model playgrounds NOT confirmed: under tree canopy W of institution (x~159-191,y~583-670), in private-house gardens NW of the pitch (x~160-191,y~551-597), and the fenced grass square in the service yard N of the L-shaped building (x~374-391,y~700-722, grass, no equipment - excluded from the yard polygons). Parking only where cars stand: 3 cars along front of N building (x~160-186,y~712-717), 3 cars nose-in S of the E-W street (x~290-307,y~502-513), 4 cars nose-in on S side of E street (x~427-445,y~535-541). Soil: large bare-earth construction lot around the unfinished building in the SW (clipped at y=450), bare lot E of the L-building asphalt yard, walled vacant plot W of the canal street, bare ground with young trees S of the NE E-W street. Alley: lane (6 m) between the N building row and garages linking the street bend at (203,702) to the dead end of the canal-side street at (251.7,695.6). Note for building pass: the long L-shaped grey-roof building (x~354-376,y~593-676) is missing from the model footprints. No other visible footpaths (yards between houses are under canopy)."
+}

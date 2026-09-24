@@ -1,0 +1,658 @@
+{
+ "tile": [
+  1,
+  1
+ ],
+ "bounds": [
+  150,
+  150,
+  450,
+  450
+ ],
+ "source": "Yandex z18/z19",
+ "traced_by": "landB1",
+ "complete": true,
+ "features": [
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     207.16,
+     341.12
+    ],
+    [
+     213.09,
+     343.73
+    ],
+    [
+     218.59,
+     348.09
+    ],
+    [
+     223.0,
+     353.11
+    ],
+    [
+     228.07,
+     357.25
+    ],
+    [
+     231.12,
+     354.6
+    ],
+    [
+     235.05,
+     350.2
+    ],
+    [
+     236.11,
+     343.18
+    ],
+    [
+     235.41,
+     334.41
+    ],
+    [
+     234.49,
+     325.65
+    ],
+    [
+     235.99,
+     319.06
+    ],
+    [
+     237.5,
+     313.57
+    ],
+    [
+     234.41,
+     309.2
+    ],
+    [
+     232.2,
+     305.92
+    ],
+    [
+     206.98,
+     304.73
+    ]
+   ],
+   "note": "open hard courtyard between 5-storey blocks (worn asphalt), cars parked on it"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     207.13,
+     334.55
+    ],
+    [
+     211.29,
+     334.53
+    ],
+    [
+     211.23,
+     320.93
+    ],
+    [
+     207.06,
+     320.95
+    ]
+   ],
+   "note": "cars parked along E edge of yard driveway"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     215.62,
+     321.35
+    ],
+    [
+     233.78,
+     315.12
+    ],
+    [
+     233.1,
+     309.87
+    ],
+    [
+     215.15,
+     316.53
+    ]
+   ],
+   "note": "3 cars parked in S part of yard"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     189.64,
+     345.16
+    ],
+    [
+     199.93,
+     342.26
+    ],
+    [
+     199.04,
+     338.97
+    ],
+    [
+     188.97,
+     341.87
+    ]
+   ],
+   "note": "row of 4 cars at W corner of block"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "playground",
+   "poly": [
+    [
+     241.77,
+     288.34
+    ],
+    [
+     259.97,
+     288.69
+    ],
+    [
+     260.57,
+     276.85
+    ],
+    [
+     242.37,
+     276.28
+    ]
+   ],
+   "note": "sand playground with red equipment (model playground at ~(248,320) is under trees, not a playground)"
+  },
+  {
+   "type": "area",
+   "surface": "turf",
+   "use": "sport",
+   "poly": [
+    [
+     358.86,
+     266.87
+    ],
+    [
+     402.26,
+     264.47
+    ],
+    [
+     399.61,
+     217.12
+    ],
+    [
+     356.22,
+     219.96
+    ]
+   ],
+   "note": "fenced artificial-turf mini-football pitch (2 courts)"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     346.74,
+     300.03
+    ],
+    [
+     358.15,
+     302.83
+    ],
+    [
+     375.69,
+     302.74
+    ],
+    [
+     391.03,
+     301.57
+    ],
+    [
+     410.76,
+     299.72
+    ],
+    [
+     413.36,
+     294.23
+    ],
+    [
+     412.39,
+     274.5
+    ],
+    [
+     405.79,
+     270.15
+    ],
+    [
+     393.1,
+     274.59
+    ],
+    [
+     379.95,
+     276.19
+    ],
+    [
+     366.79,
+     275.16
+    ],
+    [
+     358.0,
+     272.13
+    ],
+    [
+     354.7,
+     268.2
+    ],
+    [
+     347.03,
+     269.33
+    ],
+    [
+     344.88,
+     279.21
+    ]
+   ],
+   "note": "open bare-dirt field N of the pitch"
+  },
+  {
+   "type": "area",
+   "surface": "concrete",
+   "use": "yard",
+   "poly": [
+    [
+     392.27,
+     331.6
+    ],
+    [
+     404.34,
+     334.18
+    ],
+    [
+     407.54,
+     315.09
+    ],
+    [
+     402.06,
+     314.02
+    ],
+    [
+     392.2,
+     317.35
+    ]
+   ],
+   "note": "hard yard E of the 1-storey building, off the main road"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     168.69,
+     157.66
+    ],
+    [
+     174.39,
+     157.63
+    ],
+    [
+     174.31,
+     141.5
+    ],
+    [
+     168.61,
+     141.5
+    ]
+   ],
+   "note": "continuation of T_1_0 parking row (cars along W side of the big building)"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     237.89,
+     184.51
+    ],
+    [
+     259.81,
+     183.97
+    ],
+    [
+     260.43,
+     175.2
+    ],
+    [
+     237.84,
+     175.31
+    ]
+   ],
+   "note": "open dirt patch S of the southern block"
+  },
+  {
+   "type": "area",
+   "surface": "concrete",
+   "use": "yard",
+   "poly": [
+    [
+     265.16,
+     156.54
+    ],
+    [
+     293.67,
+     157.5
+    ],
+    [
+     299.13,
+     154.18
+    ],
+    [
+     297.97,
+     139.94
+    ],
+    [
+     265.08,
+     140.09
+    ]
+   ],
+   "note": "hard yard E of the red-roof (kindergarten?) building"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     200.76,
+     450.5
+    ],
+    [
+     256.37,
+     450.39
+    ],
+    [
+     256.23,
+     421.23
+    ],
+    [
+     246.14,
+     421.28
+    ],
+    [
+     240.03,
+     426.35
+    ],
+    [
+     235.28,
+     442.16
+    ],
+    [
+     200.72,
+     442.17
+    ]
+   ],
+   "note": "walled bare-earth vacant/construction lot N of the main road (model playground at ~(240,445) sits in it, no equipment)"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     303.08,
+     407.19
+    ],
+    [
+     320.62,
+     406.67
+    ],
+    [
+     320.59,
+     400.09
+    ],
+    [
+     303.05,
+     400.61
+    ]
+   ],
+   "note": "5 cars perpendicular in front of the gated cottage complex"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     347.0,
+     218.68
+    ],
+    [
+     356.22,
+     219.96
+    ],
+    [
+     399.83,
+     217.12
+    ],
+    [
+     411.89,
+     215.74
+    ],
+    [
+     412.27,
+     205.22
+    ],
+    [
+     400.42,
+     202.64
+    ],
+    [
+     390.58,
+     207.07
+    ],
+    [
+     369.76,
+     209.37
+    ],
+    [
+     363.17,
+     208.08
+    ],
+    [
+     351.12,
+     209.46
+    ],
+    [
+     346.97,
+     212.11
+    ]
+   ],
+   "note": "paved school apron S of the turf pitch (open part, trees excluded)"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     332.4,
+     191.35
+    ],
+    [
+     369.68,
+     192.7
+    ],
+    [
+     389.4,
+     189.98
+    ],
+    [
+     405.18,
+     189.46
+    ],
+    [
+     405.13,
+     177.84
+    ],
+    [
+     342.21,
+     180.34
+    ],
+    [
+     342.19,
+     174.86
+    ],
+    [
+     332.32,
+     174.9
+    ]
+   ],
+   "note": "paved school forecourt N/W of the school wings"
+  },
+  {
+   "type": "footpath",
+   "line": [
+    [
+     334.39,
+     285.4
+    ],
+    [
+     348.2,
+     285.33
+    ],
+    [
+     379.99,
+     283.87
+    ],
+    [
+     409.58,
+     282.19
+    ],
+    [
+     417.57,
+     281.7
+    ]
+   ],
+   "width": 2.0,
+   "surface": "dirt",
+   "note": "worn path across the dirt field"
+  },
+  {
+   "type": "footpath",
+   "line": [
+    [
+     354.44,
+     215.58
+    ],
+    [
+     355.11,
+     263.81
+    ],
+    [
+     358.0,
+     272.13
+    ],
+    [
+     366.79,
+     275.16
+    ],
+    [
+     379.95,
+     276.19
+    ],
+    [
+     393.1,
+     274.59
+    ],
+    [
+     402.95,
+     271.92
+    ],
+    [
+     405.77,
+     265.76
+    ],
+    [
+     404.21,
+     214.25
+    ]
+   ],
+   "width": 3.0,
+   "surface": "dirt",
+   "note": "running-track ring around the turf pitch"
+  },
+  {
+   "type": "footpath",
+   "line": [
+    [
+     348.2,
+     285.33
+    ],
+    [
+     344.84,
+     270.44
+    ],
+    [
+     340.77,
+     244.15
+    ],
+    [
+     336.89,
+     213.47
+    ],
+    [
+     334.0,
+     191.0
+    ]
+   ],
+   "width": 2.0,
+   "surface": "dirt",
+   "note": "dirt path W of the stadium along the tree row, to the school forecourt"
+  },
+  {
+   "type": "footpath",
+   "line": [
+    [
+     285.25,
+     408.59
+    ],
+    [
+     285.58,
+     415.61
+    ],
+    [
+     305.38,
+     430.42
+    ],
+    [
+     333.95,
+     443.22
+    ],
+    [
+     355.91,
+     451.88
+    ]
+   ],
+   "width": 3.5,
+   "surface": "paving",
+   "note": "paved internal lane of gated cottage complex"
+  }
+ ],
+ "notes": "Landscape-only pass (buildings/walls skipped). Views: Yandex z18 overview + z19 close views of the NW apartment yard, stadium, SW blocks, N strip and school. NW yard (x~190-238, y~305-357): open worn-asphalt courtyard between 5-storey blocks, traced as yard + 3 parking polygons only where cars stand (row along yard driveway, 3 cars in S part, 4 cars at W corner of block at ~(194,342)). Playground: real sand playground with red equipment at (242-261, 276-289); the model playground at ~(248,320) is under tree canopy with no equipment - not confirmed. Model playground at ~(240,445) N of the main road lies inside a walled bare-earth vacant/construction lot (traced as soil yard); a yellow frame structure at (233-240, 414-427) next to it is unclear (not traced as playground). Model playground at ~(255,160) (W of the red-roof building) is trees/building - not confirmed. Stadium: fenced artificial-turf mini-football pitch (356-402, 217-267) = sport/turf; open bare-dirt field N of it (345-413, 269-303) = soil yard with a worn E-W path joining both sidewalks; dirt running-track ring (U) around the pitch joins the paved school apron S of it; dirt path W of the stadium runs to the school forecourt. Gated cottage complex N of the main road: 5 cars in perpendicular bays at the gate (303-321, 400-407); its paved internal lane traced as footpath paving 3.5 m (joins the road-side path). Parking row W of the big building at x~168-174 continued from T_1_0 (141.5 -> 157.7). Inter-block yards in the SW are under dense canopy (lawn, not traced). No alleys missing from the model were found."
+}

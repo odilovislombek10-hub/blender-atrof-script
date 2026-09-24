@@ -1,0 +1,971 @@
+{
+ "tile": [
+  -1,
+  0
+ ],
+ "bounds": [
+  -450,
+  -150,
+  -150,
+  150
+ ],
+ "source": "Yandex z19",
+ "traced_by": "lane0",
+ "complete": true,
+ "features": [
+  {
+   "type": "fence",
+   "line": [
+    [
+     -180.34,
+     -84.05
+    ],
+    [
+     -204.21,
+     -82.87
+    ],
+    [
+     -204.46,
+     -81.9
+    ],
+    [
+     -222.79,
+     -80.91
+    ],
+    [
+     -223.11,
+     -81.31
+    ],
+    [
+     -227.87,
+     -81.11
+    ],
+    [
+     -225.2,
+     0.0
+    ],
+    [
+     -224.5,
+     45.0
+    ],
+    [
+     -222.92,
+     102.59
+    ],
+    [
+     -164.03,
+     102.3
+    ],
+    [
+     -163.79,
+     101.54
+    ],
+    [
+     -172.11,
+     -80.91
+    ],
+    [
+     -172.64,
+     -82.41
+    ],
+    [
+     -173.91,
+     -83.42
+    ],
+    [
+     -173.95,
+     -84.1
+    ],
+    [
+     -178.65,
+     -84.02
+    ],
+    [
+     -178.8,
+     -83.31
+    ],
+    [
+     -180.01,
+     -83.22
+    ],
+    [
+     -180.34,
+     -84.05
+    ]
+   ]
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -235.78,
+     103.12
+    ],
+    [
+     -237.67,
+     -23.84
+    ],
+    [
+     -240.05,
+     -77.23
+    ],
+    [
+     -240.3,
+     -78.27
+    ],
+    [
+     -241.36,
+     -79.44
+    ],
+    [
+     -246.44,
+     -79.81
+    ],
+    [
+     -248.02,
+     -81.45
+    ],
+    [
+     -260.8,
+     -81.4
+    ],
+    [
+     -258.5,
+     103.2
+    ],
+    [
+     -235.78,
+     103.12
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -336.07,
+     60.81
+    ],
+    [
+     -318.97,
+     60.29
+    ],
+    [
+     -319.58,
+     26.53
+    ],
+    [
+     -337.12,
+     27.05
+    ]
+   ],
+   "note": "marked bays"
+  },
+  {
+   "type": "building_missing",
+   "poly": [
+    [
+     -336.06,
+     63.66
+    ],
+    [
+     -336.33,
+     53.8
+    ],
+    [
+     -377.11,
+     54.44
+    ],
+    [
+     -376.84,
+     64.3
+    ]
+   ],
+   "levels": 1
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "sport",
+   "note": "bare-soil school yard (no trees), model Sport_Pitch here also runs under the missing green-roof building",
+   "poly": [
+    [
+     -379.52,
+     53.79
+    ],
+    [
+     -336.77,
+     53.58
+    ],
+    [
+     -337.33,
+     28.81
+    ],
+    [
+     -380.08,
+     29.46
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "yard",
+   "poly": [
+    [
+     -401.72,
+     88.32
+    ],
+    [
+     -385.49,
+     88.24
+    ],
+    [
+     -385.54,
+     78.38
+    ],
+    [
+     -399.57,
+     78.45
+    ],
+    [
+     -399.63,
+     65.73
+    ],
+    [
+     -386.04,
+     65.66
+    ],
+    [
+     -386.08,
+     57.11
+    ],
+    [
+     -401.87,
+     57.19
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -451.97,
+     -25.34
+    ],
+    [
+     -440.57,
+     -25.39
+    ],
+    [
+     -440.71,
+     -54.99
+    ],
+    [
+     -452.55,
+     -54.93
+    ]
+   ],
+   "note": "cars parked perpendicular along main road"
+  },
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "plaza",
+   "poly": [
+    [
+     -436.21,
+     -31.11
+    ],
+    [
+     -365.61,
+     -31.46
+    ],
+    [
+     -365.72,
+     -53.61
+    ],
+    [
+     -396.85,
+     -53.45
+    ],
+    [
+     -407.77,
+     -44.63
+    ],
+    [
+     -436.28,
+     -44.49
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "turf",
+   "use": "sport",
+   "poly": [
+    [
+     -388.38,
+     -114.89
+    ],
+    [
+     -346.28,
+     -115.09
+    ],
+    [
+     -346.4,
+     -138.77
+    ],
+    [
+     -388.5,
+     -138.57
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "sport",
+   "poly": [
+    [
+     -344.54,
+     -116.86
+    ],
+    [
+     -316.04,
+     -117.0
+    ],
+    [
+     -316.1,
+     -130.81
+    ],
+    [
+     -344.61,
+     -130.67
+    ]
+   ],
+   "note": "bare-soil workout area with apparatus"
+  },
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "yard",
+   "poly": [
+    [
+     -388.5,
+     -138.57
+    ],
+    [
+     -346.4,
+     -138.77
+    ],
+    [
+     -346.45,
+     -148.2
+    ],
+    [
+     -388.54,
+     -148.0
+    ]
+   ]
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -214.59,
+     102.55
+    ],
+    [
+     -214.72,
+     75.8
+    ]
+   ]
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -194.86,
+     102.45
+    ],
+    [
+     -194.99,
+     75.7
+    ]
+   ]
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -223.65,
+     75.8
+    ],
+    [
+     -165.0,
+     75.8
+    ]
+   ]
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -196.6,
+     75.8
+    ],
+    [
+     -197.8,
+     40.0
+    ],
+    [
+     -198.4,
+     0.0
+    ],
+    [
+     -199.8,
+     -20.0
+    ],
+    [
+     -199.5,
+     -83.11
+    ]
+   ]
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -223.9,
+     57.0
+    ],
+    [
+     -165.91,
+     57.0
+    ]
+   ]
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -224.2,
+     44.4
+    ],
+    [
+     -197.6,
+     44.4
+    ]
+   ]
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -224.35,
+     38.5
+    ],
+    [
+     -166.8,
+     38.5
+    ]
+   ]
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -224.8,
+     25.6
+    ],
+    [
+     -198.0,
+     25.6
+    ]
+   ]
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -198.1,
+     17.0
+    ],
+    [
+     -167.76,
+     17.0
+    ]
+   ]
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -178.7,
+     17.0
+    ],
+    [
+     -178.7,
+     -0.5
+    ]
+   ]
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -225.2,
+     -0.5
+    ],
+    [
+     -168.53,
+     -0.5
+    ]
+   ]
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -225.85,
+     -19.8
+    ],
+    [
+     -169.39,
+     -19.8
+    ]
+   ]
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -199.6,
+     -37.7
+    ],
+    [
+     -170.18,
+     -37.7
+    ]
+   ]
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -226.3,
+     -45.9
+    ],
+    [
+     -199.7,
+     -45.9
+    ]
+   ]
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -226.7,
+     -58.6
+    ],
+    [
+     -199.6,
+     -58.6
+    ]
+   ]
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -199.6,
+     -62.4
+    ],
+    [
+     -171.28,
+     -62.4
+    ]
+   ]
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -258.8,
+     83.4
+    ],
+    [
+     -236.07,
+     83.4
+    ]
+   ]
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -259.1,
+     59.1
+    ],
+    [
+     -236.43,
+     59.1
+    ]
+   ]
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -259.34,
+     39.5
+    ],
+    [
+     -236.73,
+     39.5
+    ]
+   ]
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -259.58,
+     20.7
+    ],
+    [
+     -237.01,
+     20.7
+    ]
+   ]
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -259.84,
+     -0.3
+    ],
+    [
+     -237.32,
+     -0.3
+    ]
+   ]
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -260.07,
+     -19.0
+    ],
+    [
+     -237.6,
+     -19.0
+    ]
+   ]
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -260.34,
+     -40.6
+    ],
+    [
+     -238.42,
+     -40.6
+    ]
+   ]
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -260.55,
+     -57.5
+    ],
+    [
+     -239.17,
+     -57.5
+    ]
+   ]
+  },
+  {
+   "type": "alley",
+   "line": [
+    [
+     -261.5,
+     108.0
+    ],
+    [
+     -262.0,
+     0.0
+    ],
+    [
+     -262.8,
+     -80.0
+    ]
+   ],
+   "width": 4.0,
+   "surface": "dirt"
+  },
+  {
+   "type": "fence",
+   "line": [
+    [
+     -282.7,
+     119.09
+    ],
+    [
+     -162.92,
+     118.09
+    ]
+   ]
+  },
+  {
+   "type": "building_missing",
+   "poly": [
+    [
+     -195.3,
+     101.79
+    ],
+    [
+     -195.34,
+     93.02
+    ],
+    [
+     -209.59,
+     93.09
+    ],
+    [
+     -209.55,
+     101.86
+    ]
+   ],
+   "levels": 1
+  },
+  {
+   "type": "building_missing",
+   "poly": [
+    [
+     -194.91,
+     92.36
+    ],
+    [
+     -194.99,
+     75.92
+    ],
+    [
+     -214.06,
+     76.01
+    ],
+    [
+     -213.98,
+     92.46
+    ]
+   ],
+   "levels": 1
+  },
+  {
+   "type": "building_missing",
+   "poly": [
+    [
+     -236.09,
+     82.25
+    ],
+    [
+     -236.25,
+     71.73
+    ],
+    [
+     -238.2,
+     71.74
+    ],
+    [
+     -238.18,
+     75.03
+    ],
+    [
+     -255.73,
+     75.12
+    ],
+    [
+     -255.69,
+     82.35
+    ]
+   ],
+   "levels": 1
+  },
+  {
+   "type": "building_missing",
+   "poly": [
+    [
+     -251.3,
+     55.0
+    ],
+    [
+     -251.3,
+     40.8
+    ],
+    [
+     -257.3,
+     40.8
+    ],
+    [
+     -257.3,
+     55.0
+    ]
+   ],
+   "levels": 1
+  },
+  {
+   "type": "building_missing",
+   "poly": [
+    [
+     -167.04,
+     33.03
+    ],
+    [
+     -167.29,
+     27.55
+    ],
+    [
+     -171.54,
+     27.57
+    ],
+    [
+     -171.52,
+     33.05
+    ]
+   ],
+   "levels": 1
+  },
+  {
+   "type": "building_missing",
+   "poly": [
+    [
+     -167.65,
+     19.5
+    ],
+    [
+     -167.79,
+     16.2
+    ],
+    [
+     -198.0,
+     16.2
+    ],
+    [
+     -198.0,
+     19.5
+    ]
+   ],
+   "levels": 1,
+   "note": "row of sheds"
+  },
+  {
+   "type": "building_gone",
+   "at": [
+    -182.4,
+    49.55
+   ],
+   "note": "bare-soil plot, no building"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -241.55,
+     -90.71
+    ],
+    [
+     -168.1,
+     -91.07
+    ],
+    [
+     -168.17,
+     -105.54
+    ],
+    [
+     -188.34,
+     -105.44
+    ],
+    [
+     -188.45,
+     -128.9
+    ],
+    [
+     -230.77,
+     -128.69
+    ],
+    [
+     -230.86,
+     -146.89
+    ],
+    [
+     -242.48,
+     -146.84
+    ]
+   ],
+   "note": "fenced lot beside market stalls"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -159.0,
+     -24.46
+    ],
+    [
+     -150.23,
+     -24.5
+    ],
+    [
+     -150.33,
+     -45.77
+    ],
+    [
+     -159.1,
+     -45.72
+    ]
+   ],
+   "note": "roadside bay with cars"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -161.8,
+     -94.0
+    ],
+    [
+     -158.3,
+     -94.0
+    ],
+    [
+     -158.3,
+     -148.0
+    ],
+    [
+     -161.8,
+     -148.0
+    ]
+   ],
+   "note": "cars parked along east verge of street"
+  }
+ ],
+ "notes": "Tile is mostly institutional (school/college complexes) plus two private-house blocks at x -262..-162. Parking traced only where cars/bays are visible: marked-bay lot (-337..-319, 27..61), perpendicular row along the main road (-452..-441, -25..-55), fenced market lot (-242..-168, -91..-147), roadside bays (-159..-150, -24..-46) and a verge row east of the street at x~-160. No playground equipment anywhere in the tile: model playground-to-verify P1 (-406,-41) is paved forecourt with a flower bed, P17 (-355,-142) is paving south of the turf pitch. School pitch is artificial turf (-388..-346, -115..-139); the rest of the model Sport_Pitch there is a bare-soil workout area plus paving. Model Sport_Pitch at (-380..-337, 29..58) is a bare-soil yard and partly lies under a missing 1-storey green-roof building. Unpaved lane (~4 m) between the long warehouse and the west house block is missing in the model (alley, dead end at y~-80). OSM streets/buildings here sit 1-5 m west of the Yandex image; street-side plot walls were snapped to the model street corridor (off carriageway and sidewalk), inner plot divisions follow the image. Larger light-grey hall at (-225..-201, -20..0) is only partly in the model (smaller footprint) - left as is."
+}

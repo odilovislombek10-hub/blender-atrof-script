@@ -1,0 +1,587 @@
+{
+ "tile": [
+  -2,
+  0
+ ],
+ "bounds": [
+  -750,
+  -150,
+  -450,
+  150
+ ],
+ "source": "Yandex z18/z19",
+ "traced_by": "landB5",
+ "complete": true,
+ "features": [
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     -647.58,
+     130.29
+    ],
+    [
+     -628.28,
+     130.2
+    ],
+    [
+     -628.2,
+     102.79
+    ],
+    [
+     -611.36,
+     93.94
+    ],
+    [
+     -610.96,
+     86.04
+    ],
+    [
+     -631.13,
+     85.27
+    ],
+    [
+     -639.95,
+     75.88
+    ],
+    [
+     -649.16,
+     75.93
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -642.35,
+     123.03
+    ],
+    [
+     -634.9,
+     123.0
+    ],
+    [
+     -635.0,
+     102.17
+    ],
+    [
+     -642.45,
+     102.2
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -629.77,
+     94.91
+    ],
+    [
+     -621.88,
+     94.87
+    ],
+    [
+     -621.91,
+     88.95
+    ],
+    [
+     -629.8,
+     88.99
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -623.07,
+     119.65
+    ],
+    [
+     -617.81,
+     119.62
+    ],
+    [
+     -617.9,
+     102.08
+    ],
+    [
+     -623.16,
+     102.11
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -757.5,
+     26.03
+    ],
+    [
+     -698.3,
+     25.74
+    ],
+    [
+     -698.33,
+     19.82
+    ],
+    [
+     -757.53,
+     20.11
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     -674.22,
+     18.6
+    ],
+    [
+     -638.03,
+     19.96
+    ],
+    [
+     -636.98,
+     11.18
+    ],
+    [
+     -640.29,
+     7.91
+    ],
+    [
+     -674.27,
+     8.74
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -594.94,
+     127.96
+    ],
+    [
+     -567.53,
+     127.39
+    ],
+    [
+     -567.56,
+     121.69
+    ],
+    [
+     -594.96,
+     122.26
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -540.12,
+     128.13
+    ],
+    [
+     -519.29,
+     127.59
+    ],
+    [
+     -519.35,
+     115.53
+    ],
+    [
+     -521.65,
+     94.27
+    ],
+    [
+     -539.19,
+     94.36
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     -612.88,
+     45.83
+    ],
+    [
+     -569.03,
+     45.61
+    ],
+    [
+     -561.38,
+     41.19
+    ],
+    [
+     -562.52,
+     32.42
+    ],
+    [
+     -580.07,
+     29.22
+    ],
+    [
+     -599.81,
+     29.32
+    ],
+    [
+     -612.95,
+     31.58
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     -665.87,
+     7.16
+    ],
+    [
+     -642.84,
+     7.05
+    ],
+    [
+     -643.23,
+     -70.79
+    ],
+    [
+     -662.08,
+     -69.82
+    ],
+    [
+     -664.05,
+     -69.15
+    ],
+    [
+     -667.54,
+     -66.28
+    ],
+    [
+     -668.85,
+     -64.74
+    ],
+    [
+     -669.28,
+     -62.98
+    ],
+    [
+     -663.74,
+     -6.22
+    ],
+    [
+     -665.93,
+     -4.9
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     -682.73,
+     -77.17
+    ],
+    [
+     -670.65,
+     -73.94
+    ],
+    [
+     -629.66,
+     -75.46
+    ],
+    [
+     -626.6,
+     -77.45
+    ],
+    [
+     -625.96,
+     -81.18
+    ],
+    [
+     -630.18,
+     -92.34
+    ],
+    [
+     -639.87,
+     -100.4
+    ],
+    [
+     -663.79,
+     -104.67
+    ],
+    [
+     -682.43,
+     -105.68
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -656.43,
+     -79.93
+    ],
+    [
+     -635.6,
+     -80.69
+    ],
+    [
+     -636.11,
+     -94.94
+    ],
+    [
+     -656.5,
+     -94.84
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -660.28,
+     -104.25
+    ],
+    [
+     -646.24,
+     -103.66
+    ],
+    [
+     -645.83,
+     -109.36
+    ],
+    [
+     -660.3,
+     -109.73
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     -741.81,
+     -52.76
+    ],
+    [
+     -718.79,
+     -53.97
+    ],
+    [
+     -717.78,
+     -70.42
+    ],
+    [
+     -740.8,
+     -70.3
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -737.1,
+     -120.32
+    ],
+    [
+     -727.01,
+     -120.37
+    ],
+    [
+     -727.05,
+     -127.82
+    ],
+    [
+     -737.14,
+     -127.77
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     -616.0,
+     -6.5
+    ],
+    [
+     -587.19,
+     -7.14
+    ],
+    [
+     -587.39,
+     -47.26
+    ],
+    [
+     -516.13,
+     -47.61
+    ],
+    [
+     -516.08,
+     -36.65
+    ],
+    [
+     -514.98,
+     -36.66
+    ],
+    [
+     -498.1,
+     -36.08
+    ],
+    [
+     -497.58,
+     -64.15
+    ],
+    [
+     -533.75,
+     -63.97
+    ],
+    [
+     -540.31,
+     -59.55
+    ],
+    [
+     -546.86,
+     -54.7
+    ],
+    [
+     -579.75,
+     -53.22
+    ],
+    [
+     -599.47,
+     -52.25
+    ],
+    [
+     -616.0,
+     -54.9
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "plaza",
+   "poly": [
+    [
+     -514.88,
+     -16.92
+    ],
+    [
+     -498.44,
+     -17.0
+    ],
+    [
+     -498.1,
+     -36.08
+    ],
+    [
+     -514.98,
+     -36.66
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -519.42,
+     -47.82
+    ],
+    [
+     -501.88,
+     -47.9
+    ],
+    [
+     -501.96,
+     -64.57
+    ],
+    [
+     -512.93,
+     -64.51
+    ],
+    [
+     -519.45,
+     -53.52
+    ]
+   ]
+  },
+  {
+   "type": "footpath",
+   "line": [
+    [
+     -574.5,
+     -53.4
+    ],
+    [
+     -573.22,
+     -62.9
+    ],
+    [
+     -568.87,
+     -70.38
+    ],
+    [
+     -562.76,
+     -76.98
+    ],
+    [
+     -561.92,
+     -84.66
+    ],
+    [
+     -560.19,
+     -90.15
+    ]
+   ],
+   "width": 2.0,
+   "surface": "asphalt"
+  }
+ ],
+ "notes": "Landscape-only trace (buildings/walls skipped). Dense 1960s 5-storey microdistrict + tall block and private houses in the NW corner, a large hall at (-587..-516,-18..-47). Views: z18 overview + four z19 quadrant views (-675/-525, +-75) + one z20 check at (-655,-30). Hard yards traced where the ground is open grey asphalt (not under canopy): driveway-loop yard E of the long N-S block (-648..-611, 76..130), service yard S of the red-roofed buildings (-674..-637, 8..20), yard W of the long block (-669..-643, 7..-71), island S of it (-683..-626, -74..-106), and hard ground wrapping the hall W/S/E sides; paved forecourt NE of the hall. Parking only where cars are visible: 10-car row along the S facade of the tall block (y 20..26), 3 small car clusters in the NW loop yard, car row along the S side of the northern street (-595..-568), lot W of the N-S block at x~-510 (-540..-519, 94..128), 2 clusters in the island S of the long block, cluster at (-737..-727,-120..-128), SE corner of the hall forecourt. Model's OSM parking (-610..-572, 78..98) is open dirt with only 2 cars at its S edge (kept, not duplicated). Playgrounds: none traced - no equipment/sand/rubber visible. The OSM playground (-656..-645, -43..-9) is plain grey hard ground with a kiosk and a paved pad (checked at z20), now covered by the traced asphalt yard; generated playgrounds at (-557..-538,15..30) and (-565..-547,-82..-96) are under dense canopy. No missing alleys: all yard driveways/loops are already in the model. One footpath (asphalt, 2 m) traced from the hall's S forecourt into the treed yard; other paths are hidden under canopy. Soil yards (2) are open dirt patches (pipeline renders them as lawn)."
+}

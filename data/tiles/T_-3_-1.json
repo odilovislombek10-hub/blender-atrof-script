@@ -1,0 +1,390 @@
+{
+ "tile": [
+  -3,
+  -1
+ ],
+ "bounds": [
+  -1050,
+  -450,
+  -750,
+  -150
+ ],
+ "source": "Yandex z18/z19",
+ "traced_by": "landA5",
+ "complete": true,
+ "features": [
+  {
+   "type": "area",
+   "surface": "turf",
+   "use": "playground",
+   "poly": [
+    [
+     -827.86,
+     -331.13
+    ],
+    [
+     -824.35,
+     -330.71
+    ],
+    [
+     -808.56,
+     -330.35
+    ],
+    [
+     -808.3,
+     -322.02
+    ],
+    [
+     -799.09,
+     -322.06
+    ],
+    [
+     -798.8,
+     -352.32
+    ],
+    [
+     -827.75,
+     -353.49
+    ]
+   ],
+   "note": "private school: fenced artificial-turf yard with red play equipment and a small white pavilion"
+  },
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "yard",
+   "poly": [
+    [
+     -843.11,
+     -355.61
+    ],
+    [
+     -797.5,
+     -353.64
+    ],
+    [
+     -797.26,
+     -394.21
+    ],
+    [
+     -842.22,
+     -395.52
+    ]
+   ],
+   "note": "private school: light paved forecourt ring around the main L-shaped building"
+  },
+  {
+   "type": "area",
+   "surface": "turf",
+   "use": "playground",
+   "poly": [
+    [
+     -836.73,
+     -394.67
+    ],
+    [
+     -799.01,
+     -393.98
+    ],
+    [
+     -798.62,
+     -403.19
+    ],
+    [
+     -836.34,
+     -403.88
+    ]
+   ],
+   "note": "private school: south artificial-turf strip with colourful play equipment"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "playground",
+   "poly": [
+    [
+     -796.27,
+     -328.0
+    ],
+    [
+     -777.85,
+     -327.65
+    ],
+    [
+     -777.17,
+     -322.61
+    ],
+    [
+     -758.75,
+     -323.14
+    ],
+    [
+     -758.08,
+     -363.93
+    ],
+    [
+     -794.92,
+     -364.62
+    ]
+   ],
+   "note": "kindergarten: sandy play yard with gazebos/play equipment under scattered trees"
+  },
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "yard",
+   "poly": [
+    [
+     -796.01,
+     -364.61
+    ],
+    [
+     -758.08,
+     -364.36
+    ],
+    [
+     -757.34,
+     -391.78
+    ],
+    [
+     -795.93,
+     -392.24
+    ]
+   ],
+   "note": "kindergarten: light paved apron around the building"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     -811.13,
+     -406.42
+    ],
+    [
+     -797.75,
+     -405.17
+    ],
+    [
+     -797.19,
+     -423.81
+    ],
+    [
+     -810.57,
+     -424.62
+    ]
+   ],
+   "note": "open bare-earth lot behind the school"
+  },
+  {
+   "type": "area",
+   "surface": "concrete",
+   "use": "yard",
+   "poly": [
+    [
+     -852.67,
+     -424.85
+    ],
+    [
+     -815.38,
+     -423.72
+    ],
+    [
+     -815.02,
+     -439.07
+    ],
+    [
+     -852.3,
+     -439.77
+    ]
+   ],
+   "note": "hard grey service yard between the low white building and the red-roof building"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -833.58,
+     -274.46
+    ],
+    [
+     -813.19,
+     -275.0
+    ],
+    [
+     -813.23,
+     -282.9
+    ],
+    [
+     -833.62,
+     -282.14
+    ]
+   ],
+   "note": "row of ~6 cars parked in the pocket between the 4-storey block and the yard road"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     -858.15,
+     -232.24
+    ],
+    [
+     -827.89,
+     -232.61
+    ],
+    [
+     -827.91,
+     -237.0
+    ],
+    [
+     -858.17,
+     -237.29
+    ]
+   ],
+   "note": "asphalt service strip south of the church annex, joining the west yard drive"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     -878.08,
+     -273.15
+    ],
+    [
+     -860.54,
+     -273.23
+    ],
+    [
+     -859.95,
+     -285.3
+    ],
+    [
+     -877.49,
+     -285.21
+    ]
+   ],
+   "note": "asphalt service apron at the south end of the N-S block (small shed on it)"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     -800.25,
+     -229.24
+    ],
+    [
+     -787.31,
+     -229.09
+    ],
+    [
+     -784.59,
+     -233.7
+    ],
+    [
+     -785.18,
+     -241.38
+    ],
+    [
+     -790.67,
+     -243.32
+    ],
+    [
+     -798.33,
+     -241.31
+    ]
+   ],
+   "note": "open packed-earth patch in the inner yard (not under canopy)"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     -857.33,
+     -391.94
+    ],
+    [
+     -843.73,
+     -392.44
+    ],
+    [
+     -843.76,
+     -397.27
+    ],
+    [
+     -837.18,
+     -397.3
+    ],
+    [
+     -836.34,
+     -404.32
+    ],
+    [
+     -811.34,
+     -403.57
+    ],
+    [
+     -811.36,
+     -407.95
+    ],
+    [
+     -820.35,
+     -408.57
+    ],
+    [
+     -821.46,
+     -410.54
+    ],
+    [
+     -842.29,
+     -410.87
+    ],
+    [
+     -852.16,
+     -410.38
+    ],
+    [
+     -856.97,
+     -407.73
+    ]
+   ],
+   "note": "asphalt service yard west and south of the school turf strip (small square outbuilding on it)"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     -854.77,
+     -319.37
+    ],
+    [
+     -828.03,
+     -319.94
+    ],
+    [
+     -828.06,
+     -326.74
+    ],
+    [
+     -853.94,
+     -327.27
+    ]
+   ],
+   "note": "asphalt yard at the north-west corner of the school (small brown-roof shed on it)"
+  }
+ ],
+ "notes": "Landscape only (no buildings/fences). West part of tile (private houses, x<-960 / beyond 1000 m circle) skipped; private-house plots west of the N-S boulevard have no public hard surfaces to add (lanes already in model). East half = Soviet 4-5 storey blocks with yards almost fully under tree canopy (left as lawn); traced only visible hard/bare ground: private school (turf playgrounds + paved forecourt + asphalt service yards), kindergarten (sandy play yard + paved apron), one parking pocket with ~6 cars south of the middle block, small asphalt aprons and bare-earth patches. No separate footpaths/alleys visible beyond what the model already has (yard roads + boulevard paths). Model yard road along the school's west fence sits ~6-8 m west of the visible dirt drive (not changed). Traced from Yandex z18 + three z19 views with 2x CSS zoom checks."
+}

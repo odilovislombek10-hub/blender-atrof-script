@@ -1,0 +1,260 @@
+{
+ "tile": [
+  2,
+  1
+ ],
+ "bounds": [
+  450,
+  150,
+  750,
+  450
+ ],
+ "source": "Yandex z18/z19",
+ "traced_by": "landA3",
+ "complete": true,
+ "features": [
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     491.19,
+     384.37
+    ],
+    [
+     532.89,
+     394.26
+    ],
+    [
+     534.61,
+     386.36
+    ],
+    [
+     492.91,
+     376.47
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "paving",
+   "use": "plaza",
+   "poly": [
+    [
+     572.16,
+     450.0
+    ],
+    [
+     598.47,
+     450.0
+    ],
+    [
+     598.42,
+     433.63
+    ],
+    [
+     572.55,
+     434.41
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     589.29,
+     359.13
+    ],
+    [
+     621.52,
+     358.54
+    ],
+    [
+     621.42,
+     338.15
+    ],
+    [
+     588.54,
+     338.31
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     603.0,
+     318.0
+    ],
+    [
+     618.2,
+     318.0
+    ],
+    [
+     618.2,
+     272.0
+    ],
+    [
+     603.5,
+     272.0
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     524.09,
+     291.8
+    ],
+    [
+     559.18,
+     293.82
+    ],
+    [
+     562.37,
+     274.08
+    ],
+    [
+     544.8,
+     267.14
+    ],
+    [
+     525.05,
+     263.29
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     610.44,
+     238.77
+    ],
+    [
+     615.6,
+     238.74
+    ],
+    [
+     615.6,
+     206.94
+    ],
+    [
+     611.17,
+     206.97
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     639.85,
+     318.19
+    ],
+    [
+     695.1,
+     317.49
+    ],
+    [
+     695.29,
+     265.96
+    ],
+    [
+     640.05,
+     266.66
+    ],
+    [
+     640.08,
+     273.46
+    ],
+    [
+     648.85,
+     273.85
+    ],
+    [
+     649.39,
+     295.34
+    ],
+    [
+     639.75,
+     295.82
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     674.39,
+     341.7
+    ],
+    [
+     699.59,
+     340.49
+    ],
+    [
+     700.58,
+     318.34
+    ],
+    [
+     674.28,
+     318.46
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     714.5,
+     302.5
+    ],
+    [
+     743.5,
+     302.0
+    ],
+    [
+     743.8,
+     265.5
+    ],
+    [
+     714.5,
+     266.0
+    ]
+   ]
+  },
+  {
+   "type": "alley",
+   "line": [
+    [
+     594.91,
+     433.65
+    ],
+    [
+     594.55,
+     358.67
+    ]
+   ],
+   "width": 5,
+   "surface": "asphalt"
+  }
+ ],
+ "notes": "Landscape-only pass (buildings/walls skipped). Views: Yandex z18 overview + 3 z19 close views (NW apartment yards, SW apartment yards + main-road parking, E vacant lot/tall building). West half = 5-storey microdistrict under dense tree canopy (yards = lawn under trees, not traced); model ring driveways around each yard are correct. Yard between N blocks (~490-535,376-394): cars parked in the clearing -> parking. Inner yard of the loop at (~524-562,263-294): open bare ground, traced soil yard (could be worn asphalt). Parking lot W of main road actually at x~603-618, y~272-318 (cars in rows); the model parking polygon there is shifted ~8-10 m west onto trees. Cars parked on the W verge of the main road at x~611-616, y~207-239. Institution W of main road: asphalt lane (~5 m) along its W side at x~595, y~359-434 (missing in model), asphalt forecourt with round flowerbed at (589-622,338-359), paved plaza at N edge (572-598,434-450, partly hidden by map UI, not verified at z18). E of main road: fenced vacant lot with debris = bare soil (640-695,266-318; SW tree clump excluded); model playground at ~(648,290) sits on this lot, no equipment -> not a playground. Soil yard N of the lot fence (674-700,318-342). Tall L-shaped building leans ~9 m to the E/S in the imagery; its courtyard parking (cars) traced to the model footprint's inner walls (714-744,266-302). Model playgrounds at ~(735,353) (orchard) and ~(571,180) (tree canopy) show no visible equipment - not confirmed. No playgrounds, sport courts or visible footpaths found (paths hidden under canopy). SE private-house block (x>637, y<255) and NE orchard reviewed at z18 only: no clear unmodeled hard surfaces; model lanes there look right."
+}

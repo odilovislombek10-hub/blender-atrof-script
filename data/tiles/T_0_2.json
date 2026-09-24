@@ -1,0 +1,242 @@
+{
+ "tile": [
+  0,
+  2
+ ],
+ "bounds": [
+  -150,
+  450,
+  150,
+  750
+ ],
+ "source": "Yandex z18/z19",
+ "traced_by": "landA10",
+ "complete": true,
+ "features": [
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     88.98,
+     691.75
+    ],
+    [
+     150.0,
+     690.73
+    ],
+    [
+     162.2,
+     690.52
+    ],
+    [
+     162.59,
+     679.12
+    ],
+    [
+     153.35,
+     673.03
+    ],
+    [
+     136.7,
+     675.74
+    ],
+    [
+     116.98,
+     677.59
+    ],
+    [
+     90.68,
+     679.9
+    ],
+    [
+     88.95,
+     684.74
+    ]
+   ],
+   "note": "open asphalt lot (row of 5 lamp posts, no parked cars) between the N street and the tree yard of the apartment blocks; model has lawn / nothing here (its driveway only crosses the S edge); runs to the E block wall at x~162 (T_1_2 has nothing there)"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     87.5,
+     702.28
+    ],
+    [
+     102.84,
+     701.77
+    ],
+    [
+     102.83,
+     698.04
+    ],
+    [
+     87.48,
+     698.56
+    ]
+   ],
+   "note": "2 cars parked at the S kerb of the N street"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     58.13,
+     658.58
+    ],
+    [
+     62.95,
+     658.55
+    ],
+    [
+     61.85,
+     611.42
+    ],
+    [
+     57.02,
+     611.45
+    ]
+   ],
+   "note": "row of 5 cars parked along the E kerb of the main street (inside the model carriageway)"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     -150.0,
+     750.0
+    ],
+    [
+     -141.55,
+     750.0
+    ],
+    [
+     -141.6,
+     741.0
+    ],
+    [
+     -141.74,
+     666.46
+    ],
+    [
+     -150.0,
+     666.07
+    ]
+   ],
+   "note": "E end of the walled bare-earth field (continues T_-1_2 soil yard up to the wall)"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     -141.1,
+     750.0
+    ],
+    [
+     -128.6,
+     750.0
+    ],
+    [
+     -129.18,
+     679.56
+    ],
+    [
+     -130.13,
+     665.31
+    ],
+    [
+     -141.08,
+     666.02
+    ]
+   ],
+   "note": "~13 m bare-dirt verge between the field wall and the narrow asphalt street (visible asphalt x~-128.7..-121.5; model street sits ~4 m further W)"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     15.28,
+     584.58
+    ],
+    [
+     36.0,
+     584.0
+    ],
+    [
+     36.0,
+     565.0
+    ],
+    [
+     16.06,
+     565.72
+    ]
+   ],
+   "note": "vacant bare-earth plot on W side of the main street, between a red-roof house and a dark flat-roof building"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     -88.1,
+     651.29
+    ],
+    [
+     -74.95,
+     651.23
+    ],
+    [
+     -75.04,
+     632.16
+    ],
+    [
+     -88.19,
+     632.22
+    ]
+   ],
+   "note": "vacant bare-earth house plot"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     140.33,
+     503.82
+    ],
+    [
+     150.0,
+     503.56
+    ],
+    [
+     150.0,
+     481.19
+    ],
+    [
+     147.02,
+     481.21
+    ],
+    [
+     141.36,
+     488.47
+    ]
+   ],
+   "note": "W end of the bare-earth construction lot (continues T_1_2 soil yard)"
+  }
+ ],
+ "notes": "landA10 landscape-only pass (buildings/walls skipped). Views: Yandex z18 overview + three z19 close views (NE apartment yards (95,665), SE long block/park (95,515), NW field/private houses (-95,675)); all cross-checked on z18. Tile = low-rise private houses W of the main street (x~46-62) and Soviet apartment blocks E of it whose yards are fully under tree canopy (lawn, no visible paths). Traced: open asphalt lot N of the tree yard (x 89-162, y 673-692; model lawn/nothing; row of lamp posts, no cars so not parking); parking only where cars stand: 2 cars at S kerb of N street (x 87-103, y~700), 5 cars along E kerb of main street (x 57-63, y 611-659, inside the model carriageway so probably overridden by the road). Soil: E end of the walled bare field W of the NW street (continues T_-1_2) plus the 13 m dirt verge between its wall and the narrow asphalt street; two vacant bare house plots (x 15-36,y 565-585; x -88..-75,y 632-651); W end of the construction lot at (140-150, 481-504) continuing T_1_2. No playgrounds, sport courts or plazas visible in the tile; no footpaths beyond the model's (park S of the long block already has them, model ~4 m N of imagery there); no missing alleys (all lanes incl. dead-end lane at y~674 are in the model). Model issues for other passes: NW N-S street (x~-133..-127) is ~4 m W of the visible asphalt (x~-129..-121); main street W edge/sidewalk around y 600-700 looks ~5-8 m too far W. Uncertain/not traced: light grey flat area (roof or hard yard) at x~-129..-90, y~535-547; light patch at x~-3..10, y~590-612 (possible house construction)."
+}

@@ -1,0 +1,222 @@
+{
+ "tile": [
+  0,
+  -1
+ ],
+ "bounds": [
+  -150,
+  -450,
+  150,
+  -150
+ ],
+ "source": "Yandex z18/z19",
+ "traced_by": "landA1",
+ "complete": true,
+ "features": [
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     101.74,
+     -320.93
+    ],
+    [
+     126.74,
+     -319.96
+    ],
+    [
+     136.16,
+     -322.19
+    ],
+    [
+     136.07,
+     -342.37
+    ],
+    [
+     130.13,
+     -344.97
+    ],
+    [
+     128.77,
+     -354.39
+    ],
+    [
+     123.9,
+     -364.23
+    ],
+    [
+     105.26,
+     -365.24
+    ],
+    [
+     103.13,
+     -352.07
+    ],
+    [
+     93.73,
+     -345.45
+    ],
+    [
+     101.64,
+     -342.2
+    ]
+   ],
+   "note": "open packed-soil lot in the centre of the 5-storey block (model shows lawn + service-road ring here); tree clump at its NW left out"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "parking",
+   "poly": [
+    [
+     101.74,
+     -322.47
+    ],
+    [
+     135.06,
+     -323.07
+    ],
+    [
+     134.97,
+     -341.48
+    ],
+    [
+     101.64,
+     -341.32
+    ]
+   ],
+   "note": "cars parked loosely on the packed-soil lot, garage/kiosk at its E edge"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     47.87,
+     -290.2
+    ],
+    [
+     78.64,
+     -275.0
+    ],
+    [
+     81.91,
+     -279.84
+    ],
+    [
+     51.14,
+     -295.48
+    ]
+   ],
+   "note": "row of parked cars along the SE face of the block, on/next to the service drive"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -98.64,
+     -162.74
+    ],
+    [
+     -93.59,
+     -162.77
+    ],
+    [
+     -93.69,
+     -182.06
+    ],
+    [
+     -98.73,
+     -182.04
+    ]
+   ],
+   "note": "cars parked along the lane W of the big grey commercial building"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     -52.87,
+     -362.4
+    ],
+    [
+     -7.26,
+     -360.87
+    ],
+    [
+     -10.3,
+     -447.25
+    ],
+    [
+     -82.22,
+     -446.02
+    ],
+    [
+     -81.52,
+     -392.08
+    ],
+    [
+     -55.64,
+     -390.45
+    ]
+   ],
+   "note": "vacant / demolished lot W of the main N-S road: bare soil with rubble heaps, inner plot walls not traced"
+  },
+  {
+   "type": "alley",
+   "line": [
+    [
+     91.41,
+     -218.93
+    ],
+    [
+     91.04,
+     -206.43
+    ],
+    [
+     90.5,
+     -181.21
+    ],
+    [
+     89.5,
+     -161.47
+    ],
+    [
+     89.11,
+     -150.29
+    ]
+   ],
+   "width": 4.5,
+   "surface": "asphalt",
+   "note": "yard drive from the main E-W road north along the E end of the block (not in model), continues past tile edge"
+  },
+  {
+   "type": "footpath",
+   "line": [
+    [
+     91.04,
+     -206.43
+    ],
+    [
+     103.12,
+     -201.22
+    ],
+    [
+     112.57,
+     -197.1
+    ]
+   ],
+   "width": 1.5,
+   "surface": "dirt",
+   "note": "worn path from the yard drive NE across the bare yard"
+  }
+ ],
+ "notes": "Tile (0,-1): E half = Soviet 5-storey microdistrict (x 10..150), W half = private-house plots, NW = commercial blocks N of the main E-W road (y~-222), SW = vacant lot. Traced: central packed-soil yard lot (88..137,-320..-365) with loosely parked cars (parking wins over yard); parked-car row SE of the block at (48..82,-275..-295) overlapping the model service drive; cars along the lane W of the big grey commercial building (-99..-94,-163..-182); bare-soil demolished lot (-82..-6,-361..-447) between the N-S side street and the main N-S road; asphalt yard drive x~90 from the main road north to the tile edge (missing in model) with a worn dirt path NE from it. Most yard ground in the microdistrict is under dense tree canopy (lawn, not traced); no playground equipment or sport courts visible anywhere in the tile. Model playground at ~(78..96,-187..-202) lies under dense canopy, no equipment visible (not confirmed). Model parking at ~(-134..-113,-316..-349) matches a paved yard (left as is). Model streets in the private-house area match the image; no missing lanes found. Imagery z19 is soft (effectively ~0.4 m/px); coordinates +-1 m."
+}

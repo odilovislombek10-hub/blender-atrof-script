@@ -1,0 +1,366 @@
+{
+ "tile": [
+  -1,
+  -1
+ ],
+ "bounds": [
+  -450,
+  -450,
+  -150,
+  -150
+ ],
+ "source": "Yandex z18/z19",
+ "traced_by": "landB0",
+ "complete": true,
+ "features": [
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     -352.5,
+     -255.91
+    ],
+    [
+     -346.14,
+     -263.77
+    ],
+    [
+     -345.97,
+     -263.73
+    ],
+    [
+     -344.14,
+     -262.28
+    ],
+    [
+     -342.79,
+     -263.35
+    ],
+    [
+     -333.53,
+     -264.3
+    ],
+    [
+     -321.78,
+     -266.17
+    ],
+    [
+     -303.48,
+     -268.29
+    ],
+    [
+     -296.0,
+     -270.08
+    ],
+    [
+     -296.0,
+     -287.63
+    ],
+    [
+     -301.1,
+     -288.88
+    ],
+    [
+     -310.13,
+     -286.12
+    ],
+    [
+     -319.16,
+     -284.72
+    ],
+    [
+     -328.65,
+     -283.09
+    ],
+    [
+     -336.12,
+     -286.44
+    ],
+    [
+     -342.93,
+     -290.93
+    ],
+    [
+     -351.97,
+     -290.21
+    ],
+    [
+     -357.6,
+     -285.89
+    ],
+    [
+     -365.73,
+     -284.49
+    ],
+    [
+     -374.99,
+     -283.31
+    ],
+    [
+     -378.57,
+     -276.06
+    ],
+    [
+     -380.11,
+     -267.65
+    ],
+    [
+     -380.09,
+     -263.62
+    ],
+    [
+     -372.17,
+     -262.08
+    ],
+    [
+     -363.11,
+     -258.51
+    ]
+   ],
+   "note": "open packed-earth yard between the first and second rows of angled 4-5 storey blocks; scattered single trees inside; the model's yard loop road/sidewalks here are not visible as pavement"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     -387.24,
+     -263.87
+    ],
+    [
+     -386.58,
+     -264.7
+    ],
+    [
+     -386.44,
+     -264.76
+    ],
+    [
+     -385.33,
+     -263.93
+    ],
+    [
+     -380.77,
+     -264.07
+    ],
+    [
+     -378.57,
+     -276.06
+    ],
+    [
+     -377.26,
+     -285.11
+    ],
+    [
+     -378.68,
+     -298.22
+    ],
+    [
+     -385.92,
+     -299.08
+    ],
+    [
+     -394.95,
+     -298.14
+    ],
+    [
+     -397.15,
+     -285.01
+    ],
+    [
+     -398.9,
+     -273.7
+    ],
+    [
+     -398.63,
+     -263.53
+    ]
+   ],
+   "note": "grey paved yard around the garage/driveway west of the dirt yard"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -391.24,
+     -277.36
+    ],
+    [
+     -383.55,
+     -277.4
+    ],
+    [
+     -382.29,
+     -296.39
+    ],
+    [
+     -388.62,
+     -296.36
+    ]
+   ],
+   "note": "cars parked along the east edge of the yard driveway"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     -387.88,
+     -409.24
+    ],
+    [
+     -384.12,
+     -409.26
+    ],
+    [
+     -383.97,
+     -425.21
+    ],
+    [
+     -387.74,
+     -425.19
+    ]
+   ],
+   "note": "row of ~5 cars parallel-parked on the west side of the N-S driveway"
+  },
+  {
+   "type": "area",
+   "surface": "concrete",
+   "use": "yard",
+   "poly": [
+    [
+     -343.47,
+     -385.54
+    ],
+    [
+     -320.87,
+     -384.32
+    ],
+    [
+     -320.48,
+     -394.96
+    ],
+    [
+     -343.07,
+     -395.29
+    ]
+   ],
+   "note": "smooth light paved pad north of the 2-storey (kindergarten-like) building; no play equipment discernible"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     -363.25,
+     -381.29
+    ],
+    [
+     -354.12,
+     -382.71
+    ],
+    [
+     -344.31,
+     -385.04
+    ],
+    [
+     -344.36,
+     -394.63
+    ],
+    [
+     -355.32,
+     -395.03
+    ],
+    [
+     -362.17,
+     -394.54
+    ],
+    [
+     -363.97,
+     -388.14
+    ]
+   ],
+   "note": "small open dirt patch between the third-row block and the paved pad"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     -319.19,
+     -385.62
+    ],
+    [
+     -288.35,
+     -385.08
+    ],
+    [
+     -288.41,
+     -397.19
+    ],
+    [
+     -318.33,
+     -397.04
+    ]
+   ],
+   "note": "bare ground in front of a garage row, west of the N-S street"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     -194.37,
+     -387.42
+    ],
+    [
+     -179.97,
+     -387.49
+    ],
+    [
+     -180.06,
+     -406.32
+    ],
+    [
+     -194.46,
+     -406.25
+    ]
+   ],
+   "note": "vacant bare-dirt private plot (model building at -195..-186,-389..-397 not visible)"
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     -248.16,
+     -405.12
+    ],
+    [
+     -232.18,
+     -405.19
+    ],
+    [
+     -232.0,
+     -417.07
+    ],
+    [
+     -247.99,
+     -416.99
+    ]
+   ],
+   "note": "vacant bare-dirt private plot"
+  }
+ ],
+ "notes": "Tile is split: west half (x<-290) is a Soviet 4-5 storey microdistrict with three rows of angled blocks and long N-S blocks; east half is a private-house district. Microdistrict yard ground is mostly under dense tree canopy (left as lawn); the open ground between the 1st and 2nd rows is bare packed earth (soil yard -380..-296,-256..-291) - the model's yard loop road and its sidewalks through it (from the B/C gap at ~(-360,-260) east to the N-S street at x~-292) are not visible as pavement, only packed dirt. Paved yard with a garage and cars west of it (-399..-377,-263..-299) along the model driveway; parking only where cars are visible: 3 cars E of that driveway, ~5 cars parallel-parked on the W side of the N-S driveway (-388..-384,-409..-425). Smooth light pad N of the 2-storey kindergarten-like building (-343..-321,-384..-395) traced as concrete yard - no play equipment or rubber discernible at z19, so NOT marked playground; lawn W of it is fenced grass. Bare ground in front of a garage row (-319..-288,-385..-397). Private district: two vacant bare-dirt plots traced; the model building at (-195..-186,-389..-397) sits on an empty dirt plot (appears demolished). No sport courts or playground equipment visible anywhere in the tile. No footpaths added: yard paths are under canopy and the model already has the forecourt/entrance paths; no missing alleys identified (private-district lanes match the model streets; the NE private block x>-270,y>-282 was only checked at z18). Cars parked on carriageways (E-W street y~-437, N-S street x~-288) not traced. Imagery z19 soft; coordinates +-1.5 m."
+}

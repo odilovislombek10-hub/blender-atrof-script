@@ -1,0 +1,504 @@
+{
+ "tile": [
+  3,
+  0
+ ],
+ "bounds": [
+  750,
+  -150,
+  1050,
+  150
+ ],
+ "source": "Yandex z18/z19",
+ "traced_by": "landB4",
+ "complete": true,
+ "features": [
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     820.79,
+     76.2
+    ],
+    [
+     821.41,
+     67.86
+    ],
+    [
+     750.0,
+     66.93
+    ],
+    [
+     750.0,
+     74.84
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     823.01,
+     81.67
+    ],
+    [
+     820.79,
+     76.2
+    ],
+    [
+     750.0,
+     74.84
+    ],
+    [
+     750.0,
+     81.38
+    ]
+   ]
+  },
+  {
+   "type": "alley",
+   "line": [
+    [
+     838.5,
+     117.2
+    ],
+    [
+     865.96,
+     117.08
+    ],
+    [
+     881.33,
+     122.49
+    ],
+    [
+     903.29,
+     128.96
+    ],
+    [
+     925.25,
+     135.87
+    ],
+    [
+     937.33,
+     140.86
+    ],
+    [
+     942.2,
+     148.5
+    ]
+   ],
+   "width": 6,
+   "surface": "asphalt"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     881.3,
+     115.91
+    ],
+    [
+     881.27,
+     109.33
+    ],
+    [
+     898.81,
+     108.15
+    ],
+    [
+     898.74,
+     95.0
+    ],
+    [
+     865.86,
+     95.15
+    ],
+    [
+     865.94,
+     113.35
+    ]
+   ]
+  },
+  {
+   "type": "alley",
+   "line": [
+    [
+     868.05,
+     95.5
+    ],
+    [
+     867.8,
+     37.0
+    ]
+   ],
+   "width": 4,
+   "surface": "asphalt"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "yard",
+   "poly": [
+    [
+     916.53,
+     53.26
+    ],
+    [
+     916.46,
+     39.0
+    ],
+    [
+     898.48,
+     39.09
+    ],
+    [
+     898.55,
+     53.34
+    ]
+   ]
+  },
+  {
+   "type": "alley",
+   "line": [
+    [
+     915.17,
+     91.63
+    ],
+    [
+     914.99,
+     53.0
+    ]
+   ],
+   "width": 3.5,
+   "surface": "asphalt"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     873.77,
+     145.33
+    ],
+    [
+     874.84,
+     141.37
+    ],
+    [
+     851.14,
+     136.22
+    ],
+    [
+     850.28,
+     140.17
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     965.46,
+     61.14
+    ],
+    [
+     965.41,
+     51.93
+    ],
+    [
+     990.62,
+     49.62
+    ],
+    [
+     998.87,
+     47.51
+    ],
+    [
+     999.32,
+     36.81
+    ],
+    [
+     999.79,
+     20.45
+    ],
+    [
+     990.43,
+     10.15
+    ],
+    [
+     966.31,
+     10.27
+    ],
+    [
+     964.21,
+     30.01
+    ],
+    [
+     953.26,
+     31.81
+    ],
+    [
+     950.96,
+     8.15
+    ],
+    [
+     944.82,
+     8.17
+    ],
+    [
+     945.08,
+     62.99
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     974.54,
+     127.53
+    ],
+    [
+     960.3,
+     130.89
+    ],
+    [
+     960.39,
+     150.0
+    ],
+    [
+     988.68,
+     150.0
+    ],
+    [
+     990.06,
+     140.66
+    ],
+    [
+     991.76,
+     128.09
+    ]
+   ]
+  },
+  {
+   "type": "alley",
+   "line": [
+    [
+     948.8,
+     -37.5
+    ],
+    [
+     948.5,
+     -20.85
+    ],
+    [
+     945.4,
+     18.63
+    ],
+    [
+     945.6,
+     24.0
+    ]
+   ],
+   "width": 3.5,
+   "surface": "dirt"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     883.76,
+     -54.6
+    ],
+    [
+     883.24,
+     -70.82
+    ],
+    [
+     848.6,
+     -69.78
+    ],
+    [
+     846.44,
+     -64.07
+    ],
+    [
+     847.15,
+     -53.55
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "soil",
+   "use": "yard",
+   "poly": [
+    [
+     919.8,
+     -56.6
+    ],
+    [
+     919.67,
+     -90.88
+    ],
+    [
+     912.0,
+     -90.84
+    ],
+    [
+     911.94,
+     -101.8
+    ],
+    [
+     899.89,
+     -101.75
+    ],
+    [
+     899.94,
+     -90.78
+    ],
+    [
+     884.3,
+     -90.7
+    ],
+    [
+     884.4,
+     -55.3
+    ]
+   ]
+  },
+  {
+   "type": "alley",
+   "line": [
+    [
+     928.7,
+     -48.0
+    ],
+    [
+     928.62,
+     -52.55
+    ],
+    [
+     928.24,
+     -86.53
+    ],
+    [
+     927.86,
+     -121.61
+    ],
+    [
+     927.6,
+     -140.0
+    ]
+   ],
+   "width": 6,
+   "surface": "asphalt"
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     924.62,
+     -64.59
+    ],
+    [
+     924.48,
+     -93.09
+    ],
+    [
+     920.76,
+     -93.07
+    ],
+    [
+     920.89,
+     -64.57
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     958.3,
+     -35.8
+    ],
+    [
+     958.28,
+     -41.07
+    ],
+    [
+     940.74,
+     -40.55
+    ],
+    [
+     940.76,
+     -35.06
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     996.52,
+     -83.31
+    ],
+    [
+     995.63,
+     -93.38
+    ],
+    [
+     974.48,
+     -92.45
+    ],
+    [
+     974.53,
+     -82.36
+    ]
+   ]
+  },
+  {
+   "type": "area",
+   "surface": "asphalt",
+   "use": "parking",
+   "poly": [
+    [
+     792.21,
+     -78.73
+    ],
+    [
+     792.75,
+     -103.73
+    ],
+    [
+     757.01,
+     -103.56
+    ],
+    [
+     756.47,
+     -78.56
+    ]
+   ]
+  }
+ ],
+ "notes": "Landscape-only pass (buildings/walls skipped). Views: Yandex z18 overview + 4 z19 close views (NW yard/compound, SW, SE, NE compound+lots); parts >1000 m from site clipped. W of main road: asphalt driveway + row of parked cars along the S side of the long block (747-823, 67-82). Parking lot with cars W of the institution at (757-793,-79..-104); model playground at ~(762-781,-99..-85) sits on this lot/tree, no equipment -> not a playground. E of main road N: industrial compound. Its internal asphalt road (alley, 6 m) runs from main road along N end of the long warehouse (y~117) NE to (942,148); the model's diagonal street is ~20-25 m further N and cuts through a building in the imagery. Cars parked in a row on the S shoulder of that street (850-875,136-145). Open asphalt yard W of the sheds (866-899,95-116), service driveway along warehouse E wall (x~868, y 37-95), yard (898-917,39-53) + 3.5 m passage x~915 between buildings. E half: bare-soil vacant lot with debris S of the big hangar (945-1000, 8-63) and soil lot N (960-990,128-150); dirt lane (3.5 m) x~946-949 from E-W street N to the lot (under canopy in the middle). Model playgrounds at (926-942,126-146) and (950-966,-17..2) show only trees/road, no equipment - not confirmed. S of E-W street (y~-45): parking lot with marked bays + cars (846-884,-54..-71); fenced vacant soil lot (884-920,-55..-91, +S notch) with model playground at (896-915,-90..-76) -> bare dirt, no equipment, not a playground; asphalt lane (6 m, x~928, y -48..-140, missing in model) W of the tall building with a parallel parking row on its W side (921-925,-65..-93). Cars parked on the N sidewalk of the E-W street (941-958,-35..-41) and S of the E branch road (974-996,-82..-93, partly in tall-building shadow). Not traced: institution grounds W (lawn under trees; model sport pitches at x 750-769 not visible under canopy), SE strip x 922-1000,y<-122 (z18 only, building shadows). No footpaths visible (all under canopy), no playgrounds or sport courts seen."
+}
