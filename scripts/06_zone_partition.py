@@ -84,7 +84,12 @@ ALL_LINES = []
 # Generated guesses are OFF by default.
 MAN_PARKING = None
 GEN_PARKING_LANES = os.environ.get("BISHKEK_GEN_PARKING_LANES", "0") == "1"
-GEN_YARD_PARKING = os.environ.get("BISHKEK_GEN_YARD_PARKING", "0") == "1"
+# SHEF decision (25 Sep, option a): yard parking by rule - rows along the yard driveways where the satellite sees
+# hard ground: NOT green in September (Sentinel-2, 10 m). The January snow test was measured and dropped: yards are not
+# cleared of snow (tile 1,0: 1 % of driveway pixels snow-free, their NDSI is even higher than the yard lawns'),
+# only main roads are; so it cannot tell parking from lawn.
+GEN_YARD_PARKING = os.environ.get("BISHKEK_GEN_YARD_PARKING", "1") == "1"
+SAT_HARD = None     # set in build() from the September / January scenes
 GEN_PLAYGROUNDS = os.environ.get("BISHKEK_GEN_PLAYGROUNDS", "1") == "1"  # kept only where they clash with nothing (see yard_details)
 CHAN_G = None
 CHAN_OUT = None
@@ -317,24 +322,39 @@ def mask_to_poly(mask, g):
     if not cells:
         return Polygon()
     P = unary_union(cells)
-    P = P.buffer(3.0, quad_segs=6).buffer(-5.0, quad_segs=6).buffer(2.0, quad_segs=6)
-    return shapely.simplify(P, 0.8)
+    # city seams: only local, deterministic steps (close/open by buffers). The former Douglas-Peucker simplify depended
+    # on the whole ring, so two neighbouring tiles got different vegetation edges at their shared border.
+    return P.buffer(3.0, quad_segs=2).buffer(-5.0, quad_segs=2).buffer(2.0, quad_segs=2)
 
 
 # ------------------------------------------------------------------ yard / street details
 def _dashes(line, dash, gap):
-    from shapely.ops import substring
+    """dashed lane line. The dash phase is anchored to the world, segment by segment (station = absolute position along
+    the segment's own direction), not to where the line starts: two tiles that see different lengths of the same street
+    (or of its offset lane line) put the dashes at the same places (city seams)."""
     out = []
+    per = dash + gap
     for ln in getattr(line, "geoms", [line]):
-        if ln.geom_type != "LineString":
+        if ln.geom_type != "LineString" or ln.length < 0.5:
             continue
-        s_ = 0.0
-        L = ln.length
-        while s_ < L:
-            seg = substring(ln, s_, min(s_ + dash, L))
-            if seg.length > 0.2:
-                out.append(seg)
-            s_ += dash + gap
+        C = np.asarray(ln.coords)[:, :2]
+        for a, b in zip(C[:-1], C[1:]):
+            v = b - a; n = float(np.hypot(*v))
+            if n < 1e-6:
+                continue
+            u = v / n
+            d = -u if (u[0] < -1e-9 or (abs(u[0]) <= 1e-9 and u[1] < 0)) else u   # orientation-independent
+            sa = float(a @ d); sb = float(b @ d)
+            lo, hi = min(sa, sb), max(sa, sb)
+            k = np.floor(lo / per)
+            while k * per < hi:
+                s0 = max(lo, k * per); s1 = min(hi, k * per + dash)
+                if s1 - s0 > 0.2:
+                    # station -> point on the segment
+                    t0 = (s0 - sa) / (sb - sa); t1 = (s1 - sa) / (sb - sa)
+                    p0 = a + v * t0; p1 = a + v * t1
+                    out.append(LineString([tuple(p0), tuple(p1)]))
+                k += 1
     return out
 
 
@@ -425,11 +445,15 @@ def yard_details(roads, overrides, CW, SW, HARDPATHS, GROUND_VEG, bpolys, A, XW,
             if g is not None:
                 bands.append(g)
     PARK = Polygon()
-    if bands and apts and GEN_YARD_PARKING:
+    if bands and apts and GEN_YARD_PARKING and SAT_HARD is not None and not SAT_HARD.is_empty:
+        # rows 2.2-7.5 m beside each yard driveway, 4-45 m from the blocks, only on ground the satellite sees as hard
+        # (not green in September), never on entrances / carriageway / under the tree canopy (lawn, SHEF rule)
         PARK = unary_union(bands).intersection(APTU.buffer(45)).difference(APTU.buffer(4.0))
-        PARK = PARK.difference(GROUND_VEG).difference(ENTR.buffer(0.5)).difference(CW)
+        PARK = PARK.intersection(SAT_HARD.buffer(2.0)).difference(ENTR.buffer(0.5)).difference(CW)
+        if CANOPY_G is not None and not CANOPY_G.is_empty:
+            PARK = PARK.difference(CANOPY_G)
         PARK = PARK.buffer(-2.2, join_style="mitre").buffer(2.2, join_style="mitre")
-        PARK = unary_union([g for g in getattr(PARK, "geoms", [PARK]) if g.area >= 35])
+        PARK = unary_union([g for g in getattr(PARK, "geoms", [PARK]) if g.geom_type == "Polygon" and g.area >= 35])
     # 4) playgrounds in courtyards that have none
     gen_pg = []
     if apts and GEN_PLAYGROUNDS:
@@ -1002,6 +1026,7 @@ def build():
             # not green in September: snow lay on it in January -> unpaved (soil / dry grass); snow-free -> hard
             SEAS_SOIL = mask_to_poly((~green_sep) & snow_jan, gx)
             SEAS_HARD = mask_to_poly((~green_sep) & (~snow_jan), gx)
+            globals()["SAT_HARD"] = mask_to_poly(~green_sep, gx)   # not green in September (yard parking rule)
             veg0 = GROUND_VEG.area
             SEPG = SEP_GREEN.buffer(5.0)
             # what was taken for lawn but is NOT green in September = dry / bare ground (dirt fields, pitches, lots)
@@ -1237,9 +1262,12 @@ def _triangulate(f):
     return []
 
 
-def _merge_slivers(faces, cls, min_area=0.5):
-    """QA: tiny category islands (<0.5 m2 lawn/paving crumbs) take the class of the neighbour they share most border with."""
-    small = [i for i, f in enumerate(faces) if f.area < min_area and cls[i] not in THIN_OK]
+def _merge_slivers(faces, cls, min_area=0.5, edge=None):
+    """QA: tiny category islands (<0.5 m2 lawn/paving crumbs) take the class of the neighbour they share most border with.
+    Faces on the zone / tile border are left alone: they are pieces of a face the tile edge cut, and the neighbouring
+    tile must give the other piece the same class (city seams)."""
+    small = [i for i, f in enumerate(faces) if f.area < min_area and cls[i] not in THIN_OK
+             and (edge is None or f.distance(edge) > 0.01)]
     if not small:
         return cls
     tree = STRtree(faces)
@@ -1321,7 +1349,7 @@ def arrangement_mesh(order, BUILD, zone, HOUSEBUF, APTBUF):
     cls, rps = _classify(faces, geoms, names)
     cls = [c if c is not None else ("Private_Plot" if (HOUSEBUF.contains(rp) and not APTBUF.contains(rp)) else "Yard_Hard")
            for c, rp in zip(cls, rps)]
-    cls = _merge_slivers(faces, cls)
+    cls = _merge_slivers(faces, cls, edge=zone.boundary)
     verts = {}
     V = []
 
@@ -1370,6 +1398,104 @@ def arrangement_mesh(order, BUILD, zone, HOUSEBUF, APTBUF):
         log("WARNING untriangulated faces", len(FAILED_FACES), FAILED_FACES[:10])
     final = {k: unary_union(v) for k, v in keep.items() if v}
     return np.array(V, dtype=np.float64), np.array(tris, dtype=np.int64), np.array(tcls, dtype=np.int32), areas, final
+
+
+def fix_tjunctions(V, T, C, tol=1e-5, rounds=6):
+    # tol: only truly zero-thickness triangles / exact T-junctions. Tested with 1 mm on city tile 1,0 (25 Sep): it removed
+    # 2 494 thin slivers but the later height / wall step then made 61 wall T-junctions instead of 2 -> slivers stay
+    # (they are valid, watertight faces); cracks are closed on the final meshes in 08_repair_ground.
+    """QA degenerate_face / tjunction: zero-area triangles (three collinear vertices after the 1 mm vertex merge) and
+    vertices lying on a neighbour's edge left hairline slits in the ground (Unreal shows them as cracks).
+    Slivers (height < 1 mm: a vertex that the 2 mm snapping left just off a straight edge) are dropped; every open
+    edge that has other open-edge vertices lying on it (within 1 mm) is split there (its triangle becomes a fan).
+    Watertight and planar: only the triangulation changes, never the surface."""
+
+    def _heights(TT):
+        P = V2[np.array(TT)]
+        ar = 0.5 * np.abs((P[:, 1, 0] - P[:, 0, 0]) * (P[:, 2, 1] - P[:, 0, 1]) - (P[:, 2, 0] - P[:, 0, 0]) * (P[:, 1, 1] - P[:, 0, 1]))
+        L = np.max(np.stack([np.hypot(*(P[:, 1] - P[:, 0]).T), np.hypot(*(P[:, 2] - P[:, 1]).T), np.hypot(*(P[:, 0] - P[:, 2]).T)], 1), 1)
+        return 2 * ar / np.maximum(L, 1e-12)
+    V2 = np.asarray(V)[:, :2]
+    T = [list(map(int, t)) for t in T]; C = list(map(int, C))
+    n_split = n_drop = 0
+    for _ in range(rounds):
+        # drop slivers (their edges are covered by the neighbours once those are split)
+        keep = _heights(T) >= tol
+        n_drop += int((~keep).sum())
+        T = [t for t, k in zip(T, keep) if k]; C = [c for c, k in zip(C, keep) if k]
+        # open (use-once) directed edges
+        cnt = {}
+        for ti, t in enumerate(T):
+            for k in range(3):
+                a_, b_ = t[k], t[(k + 1) % 3]
+                key = (min(a_, b_), max(a_, b_))
+                cnt[key] = cnt.get(key, 0) + 1
+        open_e = []
+        for ti, t in enumerate(T):
+            for k in range(3):
+                a_, b_ = t[k], t[(k + 1) % 3]
+                if cnt[(min(a_, b_), max(a_, b_))] == 1:
+                    open_e.append((ti, k, a_, b_))
+        if not open_e:
+            break
+        ov = np.unique(np.array([[e[2], e[3]] for e in open_e]).ravel())
+        vt = STRtree(shapely.points(V2[ov]))
+        splits = {}
+        for ti, k, a_, b_ in open_e:
+            A_, B_ = V2[a_], V2[b_]
+            L = float(np.hypot(*(B_ - A_)))
+            if L < 3 * tol:
+                continue
+            seg = LineString([tuple(A_), tuple(B_)])
+            hits = [int(ov[j]) for j in vt.query(seg, predicate="dwithin", distance=tol)]
+            on = []
+            for v in hits:
+                if v in (a_, b_):
+                    continue
+                t_ = float(np.dot(V2[v] - A_, B_ - A_) / (L * L))
+                if tol / L < t_ < 1 - tol / L:
+                    on.append((t_, v))
+            if on:
+                splits.setdefault(ti, []).append((k, sorted(on)))
+        if not splits:
+            break
+        newT, newC = [], []
+        for ti, t in enumerate(T):
+            if ti not in splits:
+                newT.append(t); newC.append(C[ti]); continue
+            # polygon ring of the triangle with the extra vertices inserted on its split edges, then fan-triangulate
+            # from the vertex that is not on a split edge (ear fan keeps every piece inside the triangle)
+            ins = {k: [v for _, v in on] for k, on in splits[ti]}
+            ring = []
+            for k in range(3):
+                ring.append(t[k]); ring += ins.get(k, [])
+            apex = next((t[k] for k in range(3) if (k not in ins) and ((k + 2) % 3 not in ins)), None)
+            if apex is None:
+                # every corner touches a split edge: triangulate the ring polygon properly
+                poly = Polygon(V2[ring])
+                if not poly.is_valid or poly.area <= 1e-9:
+                    newT.append(t); newC.append(C[ti]); continue
+                tri_ = shapely.constrained_delaunay_triangles(poly)
+                look = {(round(V2[v][0], 6), round(V2[v][1], 6)): v for v in ring}
+                for g in getattr(tri_, "geoms", []):
+                    ids = [look.get((round(x, 6), round(y, 6))) for x, y in list(g.exterior.coords)[:3]]
+                    if None in ids or len(set(ids)) < 3:
+                        continue
+                    (x0, y0), (x1, y1), (x2, y2) = V2[ids[0]], V2[ids[1]], V2[ids[2]]
+                    if (x1 - x0) * (y2 - y0) - (y1 - y0) * (x2 - x0) < 0:
+                        ids = [ids[0], ids[2], ids[1]]
+                    newT.append(ids); newC.append(C[ti])
+            else:
+                i0 = ring.index(apex)
+                rr = ring[i0:] + ring[:i0]
+                for j in range(1, len(rr) - 1):
+                    newT.append([rr[0], rr[j], rr[j + 1]]); newC.append(C[ti])
+            n_split += 1
+        T, C = newT, newC
+    T = np.array(T, dtype=np.int64); C = np.array(C, dtype=np.int32)
+    left = int((_heights(T) < tol).sum())
+    log("T-junctions / slivers: triangles split", n_split, "slivers removed", n_drop, "slivers left", left)
+    return T, C
 
 
 def walls_and_heights(V, T, C, dtm_sampler):
@@ -1530,6 +1656,7 @@ def main():
     order, BUILD, zone, D, HB, AB = build()
     globals()["zone"] = zone
     V, T, C, areas, parts = arrangement_mesh(order, BUILD, zone, HB, AB)
+    T, C = fix_tjunctions(V, T, C)
     log("planar mesh", len(V), "verts", len(T), "tris")
     z = np.load(os.path.join(ROOT, "data", "dtm_crop.npz"))
     dem = geo.DEM(z["dtm"], float(z["lon_min_edge"]), float(z["lat_max_edge"]), float(z["d"]), float(z["d"]))

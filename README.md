@@ -20,6 +20,7 @@ Ishchi papka: `D:\Bishkek_35km`. Asosiy fayl: `Bishkek_35km.blend`. Shahar plitk
 | — | `unthrottle.py` | Windows EcoQoS (orqa fon jarayonlarini sekinlashtirish) ni o'chiradi, taxminan 3 marta tez |
 
 Bir tugma bilan ishga tushirish:
+- `REBUILD_ALL.bat` — hammasi: 1 km zona + barcha shahar plitkalari (majburiy) + ulash + hisobot;
 - `REBUILD_ZONE.bat` — 1 km zona;
 - `RUN_CITY.bat` — shahar plitkalari;
 - `INTEGRATE_CITY.bat` — ulash va hisobot.
@@ -35,6 +36,12 @@ Bir tugma bilan ishga tushirish:
 - Daraxt ostida gazon (yashil) bo'ladi. Asfalt, bruschatka, beton va tuproqning teksturalari har xil.
 - Yo'l chiziqlari uzluksiz. Devor hech qachon yo'l ustida bo'lmaydi.
 - Xatolar geometriyadan topiladi. Har bir tuzatish skriptga, har bir tekshiruv QA ga yoziladi.
+
+## 25 sentyabr o'zgarishlari
+- **Hovli parkovkasi (SHEF qarori, a variant):** hovli ichidagi proezd bo'ylab (bloklardan 4–45 m), sentyabr Sentinel suratida yashil bo'lmagan joyga parkovka qatori qo'yiladi, daraxt tagiga qo'yilmaydi. Yanvar qor sharti o'lchanib, olib tashlandi: hovlilar qordan tozalanmaydi.
+- **Plitkalar chegarasi:** o'simlik qatlami endi faqat mahalliy, deterministik amallar bilan olinadi (soddalashtirish olib tashlandi). Chekkadagi bo'laklar qo'shniga qo'shilmaydi. Yo'l chizig'i shtrixlari dunyo koordinatasiga bog'langan. Natija: ikki qo'shni plitkaning chegarasida qatlamlar bir xil.
+- **Geometriya:** QA dagi "degenerate" endi haqiqiy nol yuza (< 1 mm²) degani. Mayda va ingichka yuzalar alohida ko'rsatiladi. Tekis T-birikmalar 08 da yopiladi.
+- **Shahar chekkasidagi terrain** plitkaning haqiqiy yer chekkasidan 3 sm pastga qo'yiladi.
 
 ## Ma'lumotlar
 - `data/tiles/T_i_j.json` — yaqin sputnik suratidan qo'lda chizilgan 300 m plitkalar: parkovka, hovli, yo'lak, devor, yetishmayotgan binolar.

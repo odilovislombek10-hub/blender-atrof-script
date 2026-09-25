@@ -289,11 +289,23 @@ def main(make_markers=True):
     AR = np.linalg.norm(NN, axis=1) / 2
     NZ = np.where(AR > 0, NN[:, 2] / np.maximum(2 * AR, 1e-30), 0.0)
     allF = np.split(LV, LS[1:]) if len(LS) else []
+    # degenerate = no real surface (< 1 mm2). Before 25 Sep every face under 1 cm2 was counted (600-970 per tile);
+    # those are small or thin but valid, watertight pieces -> reported per object as tiny_faces / thin_slivers.
+    LMAX = np.zeros(len(LS))
+    if len(LS):
+        nxt = np.arange(len(LV)) + 1
+        ends = LS + LT
+        nxt[ends - 1] = LS
+        el = np.linalg.norm(V[LV[nxt]] - V[LV], axis=1)
+        LMAX = np.maximum.reduceat(el, LS)
+    THK = 2 * AR / np.maximum(LMAX, 1e-12)
     stats = {}
     loop_obj = FO[np.repeat(np.arange(len(LS)), LT)] if len(LS) else np.zeros(0, np.int64)
     for gi, ob in enumerate(grounds):
         fi = np.nonzero(FO == gi)[0]
-        degen = fi[AR[fi] < 1e-4]
+        degen = fi[AR[fi] < 1e-6]                 # no surface at all (< 1 mm2)
+        tiny = int((AR[fi] < 1e-4).sum())         # info: small valid faces (< 1 cm2)
+        thin = int((THK[fi] < 1e-3).sum())        # info: slivers thinner than 1 mm (valid, watertight)
         flipped = fi[NZ[fi] < -0.5]
         vi = np.unique(LV[loop_obj == gi])
         me = ob.data
@@ -304,7 +316,7 @@ def main(make_markers=True):
             qk = np.round(co * Q).astype(np.int64)
             _, cnt = np.unique(qk, axis=0, return_counts=True)
             dup = int((cnt > 1).sum())
-        stats[names[gi]] = {"faces": int(len(fi)), "area_m2": round(float(AR[fi][NZ[fi] > 0.5].sum()), 1), "degenerate": int(len(degen)),
+        stats[names[gi]] = {"faces": int(len(fi)), "area_m2": round(float(AR[fi][NZ[fi] > 0.5].sum()), 1), "degenerate": int(len(degen)), "tiny_faces": tiny, "thin_slivers": thin,
                             "flipped": int(len(flipped)), "loose_verts": int(loose), "duplicate_verts": dup}
         for i in flipped[:200]:
             c = V[allF[i]].mean(0); issue("flipped_face", 2, *c, obj=ob.name)

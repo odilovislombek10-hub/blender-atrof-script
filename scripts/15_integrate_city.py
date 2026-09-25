@@ -207,7 +207,42 @@ def _restore_terrain(names):
     return n
 
 
-def _clip_terrain(o, CUT, zs, zhash, chash):
+class _TileGroundZ:
+    """height of the finished ground (city tiles / 1 km zone) right at a point of the city outline: the terrain edge
+    is put 3 cm under it, so the terrain meets the real tile edge (kerbs, aryks) and not just the DTM"""
+    def __init__(self):
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("city_report16", os.path.join(ROOT, "scripts", "16_city_report.py"))
+        m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
+        self.TG = m.TileGround
+        self.cache = {}
+        self.RZ = float(os.environ.get("BISHKEK_ZONE_R", "1000"))
+
+    def _get(self, x, y):
+        if math.hypot(x, y) < self.RZ:
+            k, d = "ZONE", os.path.join(ROOT, "data")
+        else:
+            i, j = int(math.floor(x / 1000.0 + 0.5)), int(math.floor(y / 1000.0 + 0.5))
+            k, d = f"T_{i}_{j}", os.path.join(ROOT, "data", "city", f"T_{i}_{j}")
+        if k not in self.cache:
+            self.cache[k] = self.TG(d) if os.path.exists(os.path.join(d, "zone_partition.npz")) else None
+        return self.cache[k]
+
+    def z(self, xy):
+        out = np.full(len(xy), np.nan)
+        for n, (x, y) in enumerate(xy):
+            for dx, dy in ((0.05, 0), (-0.05, 0), (0, 0.05), (0, -0.05), (0.04, 0.04), (-0.04, -0.04), (0.04, -0.04), (-0.04, 0.04)):
+                g = self._get(x + dx, y + dy)
+                if g is None:
+                    continue
+                c, zz = g.sample(np.array([[x + dx, y + dy]]))
+                if c[0] is not None and np.isfinite(zz[0]):
+                    out[n] = zz[0] if np.isnan(out[n]) else min(out[n], zz[0])
+            # (lowest of the touching surfaces: the terrain never stands above an aryk / kerb edge)
+        return out
+
+
+def _clip_terrain(o, CUT, zs, zhash, chash, gz=None):
     """remove the part of a terrain tile that lies inside CUT (2D clip of every triangle, no boolean):
     triangles inside are deleted, triangles crossing the outline keep their outside part (constrained triangulation,
     heights on the original triangle plane), new outline vertices sit on the DTM 3 cm under the tile ground edge"""
@@ -277,7 +312,14 @@ def _clip_terrain(o, CUT, zs, zhash, chash):
     Wn = np.array([mw[:3, :3] @ np.array(v.co) + mw[:3, 3] for v in bm.verts]).reshape(-1, 3)
     on = (shapely.distance(edge, shapely.points(Wn[:, :2])) < 0.05) if len(Wn) else np.zeros(0, bool)
     if on.any():
-        Wn[on, 2] = zs(Wn[on, :2]) - 0.03
+        zt = zs(Wn[on, :2]) - 0.03
+        if gz is not None:
+            zg = gz.z(Wn[on, :2])
+            ok = np.isfinite(zg)
+            zt[ok] = zg[ok] - 0.03
+            _clip_terrain.matched = getattr(_clip_terrain, "matched", 0) + int(ok.sum())
+            _clip_terrain.total = getattr(_clip_terrain, "total", 0) + int(len(ok))
+        Wn[on, 2] = zt
         for i in np.nonzero(on)[0]:
             bm.verts[i].co = inv[:3, :3] @ Wn[i] + inv[:3, 3]
     bm.to_mesh(me); bm.free(); me.update()
@@ -313,7 +355,7 @@ def cut_terrain(U):
     CUT = unary_union([U, Z]).buffer(0.001, join_style="mitre").buffer(-0.001, join_style="mitre")
     shapely.prepare(CUT)
     zhash = _zone_ring_hash(zring)
-    chash = hashlib.md5(CUT.wkb).hexdigest()[:16]
+    chash = hashlib.md5(CUT.wkb + b"edge-v2").hexdigest()[:16]   # v2: terrain edge on the tile ground (25 Sep)
     x0, y0, x1, y1 = CUT.bounds
     names = []
     for o in bpy.data.objects:
@@ -331,10 +373,15 @@ def cut_terrain(U):
         log("terrain: nothing to cut"); return
     nr = _restore_terrain(names)
     zs = _dtm_sampler()
+    try:
+        gz = _TileGroundZ()
+    except Exception as e:
+        log("tile ground sampler unavailable, terrain edge on the DTM:", e); gz = None
     tot = 0
     for nm in names:
-        tot += _clip_terrain(bpy.data.objects[nm], CUT, zs, zhash, chash)
-    log("terrain tiles restored", nr, "clipped", len(names), "faces removed", tot)
+        tot += _clip_terrain(bpy.data.objects[nm], CUT, zs, zhash, chash, gz)
+    log("terrain tiles restored", nr, "clipped", len(names), "faces removed", tot,
+        "| edge vertices on the tile ground", getattr(_clip_terrain, "matched", 0), "of", getattr(_clip_terrain, "total", 0))
 
 
 def hide_ribbon(U):

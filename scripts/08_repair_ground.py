@@ -340,6 +340,84 @@ def _append_faces(o, tris):
     return len(faces_new)
 
 
+def close_tjunctions(grounds, A, log=print):
+    """QA tjunction: a zero-area boundary loop = one long edge on one side, several short edges (a vertex lying on the
+    long edge) on the other. Unreal can show a hairline crack there. The face owning the long edge gets those vertices
+    inserted into that edge (bmesh edge split, then the face is re-triangulated): the loop closes, the surface does
+    not move."""
+    import bmesh
+    GV = A["GV"]; FO = A["FO"]
+    nf = [len(o.data.polygons) for o in grounds]
+    foff = np.concatenate([[0], np.cumsum(nf)])[:-1]
+    todo = defaultdict(list)          # object index -> [(local face, pA, pB, [points])]
+    for rec in A["tjunctions"]:
+        E = rec["e"]
+        if len(E) < 3:
+            continue
+        P_ = GV[rec["v"]]
+        if float(np.ptp(P_[:, 2])) > 0.01:
+            continue      # loops on step walls are left alone (splitting there created non-manifold wall edges)
+        L = [float(np.linalg.norm(GV[b_] - GV[a_])) for a_, b_, _ in E]
+        k = int(np.argmax(L))
+        a_, b_, f = E[k]
+        pa, pb = GV[a_], GV[b_]
+        d = pb - pa; LL = float(d @ d)
+        if LL < 1e-10:
+            continue
+        pts = []
+        for v in rec["v"]:
+            if v in (a_, b_):
+                continue
+            t = float((GV[v] - pa) @ d / LL)
+            if 1e-4 < t < 1 - 1e-4 and np.linalg.norm(pa + d * t - GV[v]) < 2e-3:
+                pts.append((t, GV[v].copy()))
+        if pts:
+            oi = int(FO[f])
+            todo[oi].append((int(f - foff[oi]), pa.copy(), pb.copy(), sorted(pts, key=lambda q: q[0])))
+    n_fix = 0
+    for oi, items in todo.items():
+        o = grounds[oi]; me = o.data
+        mw = np.array(o.matrix_world); inv = np.linalg.inv(mw)
+        bm = bmesh.new(); bm.from_mesh(me); bm.faces.ensure_lookup_table()
+        touched = set()
+        for lf, pa, pb, pts in items:
+            if lf >= len(bm.faces):
+                continue
+            face = bm.faces[lf]
+            la = inv[:3, :3] @ pa + inv[:3, 3]; lb = inv[:3, :3] @ pb + inv[:3, 3]
+            va = min(face.verts, key=lambda v: (np.array(v.co) - la) @ (np.array(v.co) - la))
+            vb = min(face.verts, key=lambda v: (np.array(v.co) - lb) @ (np.array(v.co) - lb))
+            if va == vb:
+                continue
+            e = next((e_ for e_ in face.edges if set(e_.verts) == {va, vb}), None)
+            if e is None:
+                continue
+            # insert from the far end so each split keeps the remaining piece between va and the next point
+            cur_e, cur_v0 = e, va
+            for t, p in pts:
+                lp = inv[:3, :3] @ p + inv[:3, 3]
+                other = cur_e.other_vert(cur_v0)
+                seg = np.array(other.co) - np.array(cur_v0.co); sl = float(seg @ seg)
+                if sl < 1e-12:
+                    break
+                fac = float((lp - np.array(cur_v0.co)) @ seg / sl)
+                if not (1e-6 < fac < 1 - 1e-6):
+                    continue
+                ne, nv = bmesh.utils.edge_split(cur_e, cur_v0, fac)
+                nv.co = lp
+                # continue on the piece between nv and the far vertex
+                cur_e = ne if other in ne.verts else cur_e
+                cur_v0 = nv
+                n_fix += 1
+            touched.add(face)
+        faces = [f_ for f_ in touched if f_.is_valid and len(f_.verts) > 3]
+        if faces:
+            bmesh.ops.triangulate(bm, faces=faces)
+        bm.to_mesh(me); bm.free(); me.update()
+    log("t-junctions closed: vertices inserted", n_fix, "loops", len(A["tjunctions"]))
+    return n_fix
+
+
 def repair_ground(max_edges=64, max_area=200.0, close_tol=0.05, passes=2, log=print):
     grounds = ground_objects()
     if not grounds:
@@ -379,7 +457,14 @@ def repair_ground(max_edges=64, max_area=200.0, close_tol=0.05, passes=2, log=pr
         if n_fill == 0:
             break
     A = analyse(grounds, log=None) if total["fill_faces"] else A
+    if A["tjunctions"]:
+        try:
+            total["tjunction_vertices_inserted"] = close_tjunctions(grounds, A, log=log)
+            A = analyse(grounds, log=None)
+        except Exception as e:
+            log("t-junction closing failed", e)
     res = {k: (round(v, 2) if isinstance(v, float) else v) for k, v in total.items()}
+    res["remaining_tjunction_loops"] = len(A["tjunctions"])
     res.update(remaining_holes=len(A["holes"]), remaining_hole_m2=round(sum(h["area"] for h in A["holes"]), 3),
                remaining_open_chains_long=sum(1 for c in A["chains"] if c["length"] > OPEN_MIN_LEN),
                skipped_large=len(set(skipped)))

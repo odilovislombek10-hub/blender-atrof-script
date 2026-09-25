@@ -116,7 +116,9 @@ class TileGround:
         return cls, zz
 
 
-def seam_checks(done_dirs, step=1.0, eps=0.05):
+def seam_checks(done_dirs, step=1.0, eps=1e-4):
+    # eps 0.1 mm: sampling 5 cm off the edge (first version) counted real band borders that run along a street parallel
+    # to the tile edge as "mismatch" (T_-3_1 | T_-2_1: 10.6 % reported, 0.2 % real)
     """adjacent tiles (and tiles against the 1 km zone) must meet: same surface class and height at the shared edge"""
     cache = {}
 
@@ -153,16 +155,25 @@ def seam_checks(done_dirs, step=1.0, eps=0.05):
     # tiles around the 1 km zone: along the zone circle (R = 1000 m)
     RZ = float(os.environ.get("BISHKEK_ZONE_R", "1000"))
     zfile = os.path.join(ROOT, "data", "zone_partition.npz")
-    if os.path.exists(zfile):
-        th = np.arange(0, 2 * np.pi, step / RZ)
+    zring = os.path.join(ROOT, "data", "zone_ring.json")
+    if os.path.exists(zfile) and os.path.exists(zring):
+        from shapely.geometry import Polygon as _P
+        ring = _P(np.asarray(json.load(open(zring)), float)[:, :2]).exterior
+        if ring.is_ccw is False:
+            ring = _P(np.asarray(ring.coords)[::-1]).exterior
+        S = np.arange(step / 2, ring.length, step)
+        P = np.array([ring.interpolate(t).coords[0] for t in S])
+        Pn = np.array([ring.interpolate(t + 0.01).coords[0] for t in S])
+        tv = Pn - P; tv /= np.maximum(np.linalg.norm(tv, axis=1, keepdims=True), 1e-12)
+        nout = np.c_[tv[:, 1], -tv[:, 0]]          # outward normal of a CCW ring
         for k in sorted(have):
             i, j = [int(v) for v in k[2:].split("_")]
-            cx, cy = np.cos(th) * RZ, np.sin(th) * RZ
+            cx, cy = P[:, 0], P[:, 1]
             m = (cx > (i - 0.5) * 1000) & (cx < (i + 0.5) * 1000) & (cy > (j - 0.5) * 1000) & (cy < (j + 0.5) * 1000)
             if m.sum() < 10:
                 continue
-            a = np.c_[np.cos(th[m]) * (RZ - eps), np.sin(th[m]) * (RZ - eps)]
-            b = np.c_[np.cos(th[m]) * (RZ + eps), np.sin(th[m]) * (RZ + eps)]
+            a = P[m] - nout[m] * eps
+            b = P[m] + nout[m] * eps
             ca, za = get("ZONE").sample(a); cb, zb = get(k).sample(b)
             both = np.array([p is not None and q is not None for p, q in zip(ca, cb)])
             if both.sum() < 10:
