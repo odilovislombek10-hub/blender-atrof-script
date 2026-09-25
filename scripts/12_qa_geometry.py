@@ -181,6 +181,8 @@ def seam_check(A, ter, ring_poly, step=0.25):
     ter_segs = []
     for o in ter:
         co, ls, lt, lv = mesh_arrays(o)
+        if not len(co):
+            continue      # terrain tile emptied by the city cut (fully under city tiles)
         r = np.hypot(co[:, 0], co[:, 1])
         R = float(np.hypot(*np.asarray(ring_line.coords)[:, :2].T).max())
         if r.min() > R + 50:
@@ -209,7 +211,7 @@ def seam_check(A, ter, ring_poly, step=0.25):
     zt = _edge_profile(ter_segs, S, L, "max")
     # ribbon cross-sections
     lo_c = [[] for _ in range(len(S))]
-    rib = bpy.data.objects.get(SEAM_RIBBON)
+    rib = bpy.data.objects.get((SEAM_RIBBON, None))
     n_rib = 0
     if rib is not None and rib.type == 'MESH':
         co, ls, lt, lv = mesh_arrays(rib)
@@ -428,7 +430,8 @@ def main(make_markers=True):
     fpoly = np.array([Polygon(f["outer"], f.get("inner") or []) for f in fp] or [Polygon()], dtype=object)[:len(fp)]
     out_rings = rg.outline_rings()
     fline_tree = STRtree(out_rings) if out_rings else STRtree([p.exterior for p in fpoly])
-    bl = [o for o in bpy.data.objects if o.type == 'MESH' and o.users_collection and o.users_collection[0].name.startswith("Z1_Buildings")]
+    bl = [o for o in bpy.data.objects if o.type == 'MESH' and o.library is None and o.users_collection
+          and o.users_collection[0].name.startswith("Z1_Buildings")]      # local only: city tiles are linked in
     fps = []
     for o in bl:
         co = mesh_arrays(o)[0]
@@ -465,7 +468,7 @@ def main(make_markers=True):
     # ---- 5 trees on hard surfaces / in buildings
     tri_geoms = geoms; tri_cat = cat_of[hor]
     tp = None
-    ti = bpy.data.objects.get("Z1_Trees_Instancer")
+    ti = bpy.data.objects.get(("Z1_Trees_Instancer", None))
     if ti is not None:
         co, *_ = mesh_arrays(ti); tp = co
     if tp is not None and len(tp):
@@ -523,8 +526,14 @@ def main(make_markers=True):
             c = hull.centroid; issue("building_floating", 3, c.x, c.y, zmin, bld=nm, gap=round(zmin - float(zg.min()), 2))
 
     # ---- 7 terrain seam (ribbon-aware)
-    ter = [o for o in bpy.data.objects if o.type == 'MESH' and o.name.startswith("Terrain_")]
-    seam = seam_check(A, ter, ring_poly) if ter else {}
+    ter = [o for o in bpy.data.objects if o.type == 'MESH' and o.name.startswith("Terrain_") and len(o.data.vertices)]
+    # once city tiles surround the zone (15_integrate_city), the zone edge meets tile ground, not terrain: that seam is
+    # checked tile against zone by 16_city_report (surface class + height on both sides)
+    city = bpy.data.collections.get(("CITY_1km_Tiles", None))
+    if city is not None and len(city.children) and not _CT:
+        seam = {"skipped": "zone surrounded by city tiles - seam checked by 16_city_report", "uncovered_samples": 0}
+    else:
+        seam = seam_check(A, ter, ring_poly) if ter else {}
 
     counts = Counter(it["type"] for it in ISS)
     summary = {}
@@ -546,7 +555,7 @@ def main(make_markers=True):
 
 def markers():
     """one point per issue in object _QA_Markers (attribute 'issue' = type index), shown as small spheres via GN-free vertex display"""
-    old = bpy.data.objects.get("_QA_Markers")
+    old = bpy.data.objects.get(("_QA_Markers", None))
     if old:
         bpy.data.objects.remove(old, do_unlink=True)
     if not ISS:

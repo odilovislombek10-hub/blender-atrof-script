@@ -42,6 +42,11 @@ Bir tugma bilan ishga tushirish:
 - **Plitkalar chegarasi:** o'simlik qatlami endi faqat mahalliy, deterministik amallar bilan olinadi (soddalashtirish olib tashlandi). Chekkadagi bo'laklar qo'shniga qo'shilmaydi. Yo'l chizig'i shtrixlari dunyo koordinatasiga bog'langan. Natija: ikki qo'shni plitkaning chegarasida qatlamlar bir xil.
 - **Geometriya:** QA dagi "degenerate" endi haqiqiy nol yuza (< 1 mm²) degani. Mayda va ingichka yuzalar alohida ko'rsatiladi. Tekis T-birikmalar 08 da yopiladi.
 - **Shahar chekkasidagi terrain** plitkaning haqiqiy yer chekkasidan 3 sm pastga qo'yiladi.
+- **Muhim xato tuzatildi (06):** geometrik amallardan keyin "aralash to'plam" (poligon + chiziq) bo'lib qolgan qatlamning chegarasi bo'laklarga ajratishda yo'qolardi. Natijada katta bo'lak bitta nuqtaga qarab butunlay gazon yoki butunlay qattiq hovli bo'lib qolardi. Masalan, plitka (−1,1) da 47 000 m² hovli uchastkasi gazon bo'lib ketgan edi. Endi har bir qatlamdan faqat poligon qismi olinadi va chegarasi yo'qolgan qatlam haqida log yoziladi.
+- **Asosiy faylda shahar plitkalari ulangan bo'lsa:** 07/07b/08/12 faqat lokal ma'lumot bilan ishlaydi. Zona qurilayotganda plitkalar ko'rinishdan chiqarib turiladi. Zona tikuvi (terrain) plitkalar zonani o'rab olgan bo'lsa tekshirilmaydi, uni 16 tekshiradi.
+- `REBUILD_ZONE_QA.bat` — faqat zona QA (12 → 12b → 13).
+
+**Holat (25 sentyabr, 17:35):** oxirgi to'liq qayta qurish yarmida to'xtatildi (~90 / 258 plitka yangi skript bilan). Oxiriga yetkazish uchun: `scripts\REBUILD_ALL.bat` (~1 soat, kompyuterni to'liq band qiladi).
 
 ## Ma'lumotlar
 - `data/tiles/T_i_j.json` — yaqin sputnik suratidan qo'lda chizilgan 300 m plitkalar: parkovka, hovli, yo'lak, devor, yetishmayotgan binolar.

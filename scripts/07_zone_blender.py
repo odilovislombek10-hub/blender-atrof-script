@@ -69,7 +69,7 @@ def _bump(nt, height, strength, bsdf, loc=(0, -300)):
 
 
 def mat_noise(name, c1, c2, scale, rough, bump=0.15, scale2=None):
-    m = bpy.data.materials.get(name) or bpy.data.materials.new(name)
+    m = bpy.data.materials.get((name, None)) or bpy.data.materials.new(name)
     nt, bsdf, uv = _nodes(m)
     n = _noise(nt, uv.outputs["UV"], scale)
     r = _ramp(nt, n.outputs["Fac"], c1, c2, (-300, 100))
@@ -82,7 +82,7 @@ def mat_noise(name, c1, c2, scale, rough, bump=0.15, scale2=None):
 
 
 def mat_brick(name, c1, c2, mortar, brick_w, row_h, rough, offset=0.5):
-    m = bpy.data.materials.get(name) or bpy.data.materials.new(name)
+    m = bpy.data.materials.get((name, None)) or bpy.data.materials.new(name)
     nt, bsdf, uv = _nodes(m)
     br = nt.nodes.new("ShaderNodeTexBrick"); br.location = (-500, 100)
     br.offset = offset
@@ -107,7 +107,7 @@ def mat_brick(name, c1, c2, mortar, brick_w, row_h, rough, offset=0.5):
 
 
 def mat_crosswalk(name):
-    m = bpy.data.materials.get(name) or bpy.data.materials.new(name)
+    m = bpy.data.materials.get((name, None)) or bpy.data.materials.new(name)
     nt, bsdf, uv = _nodes(m)
     geo_n = nt.nodes.new("ShaderNodeNewGeometry"); geo_n.location = (-1000, 300)
     at = nt.nodes.new("ShaderNodeAttribute"); at.location = (-1000, 500)
@@ -142,7 +142,7 @@ def mat_crosswalk(name):
 
 def mat_parking(name, c1, c2, spacing=2.6, line=0.12):
     """Asphalt with painted bay separators perpendicular to the adjacent road (face attribute xw_angle)."""
-    m = bpy.data.materials.get(name) or bpy.data.materials.new(name)
+    m = bpy.data.materials.get((name, None)) or bpy.data.materials.new(name)
     nt, bsdf, uv = _nodes(m)
     geo_n = nt.nodes.new("ShaderNodeNewGeometry"); geo_n.location = (-1000, 300)
     at = nt.nodes.new("ShaderNodeAttribute"); at.location = (-1000, 500)
@@ -200,7 +200,7 @@ def build_materials():
 
 # ----------------------------------------------------------------------------- ground tiles
 def get_col(name, parent=None):
-    col = bpy.data.collections.get(name)
+    col = bpy.data.collections.get((name, None))
     if col is None:
         col = bpy.data.collections.new(name)
         (parent or bpy.context.scene.collection).children.link(col)
@@ -282,8 +282,8 @@ def build_ground(M):
 # ----------------------------------------------------------------------------- trees
 def placeholder_trees():
     col = get_col("Z1_Tree_Placeholders", get_col(ROOTCOL))
-    bark = bpy.data.materials.get("Z_Tree_Bark") or mat_noise("Z_Tree_Bark", (0.10, 0.07, 0.05), (0.18, 0.13, 0.09), 8.0, 0.9)
-    leaf = bpy.data.materials.get("Z_Tree_Leaves") or mat_noise("Z_Tree_Leaves", (0.05, 0.12, 0.03), (0.12, 0.22, 0.05), 2.0, 0.8)
+    bark = bpy.data.materials.get(("Z_Tree_Bark", None)) or mat_noise("Z_Tree_Bark", (0.10, 0.07, 0.05), (0.18, 0.13, 0.09), 8.0, 0.9)
+    leaf = bpy.data.materials.get(("Z_Tree_Leaves", None)) or mat_noise("Z_Tree_Leaves", (0.05, 0.12, 0.03), (0.12, 0.22, 0.05), 2.0, 0.8)
     # weighted mix typical for Bishkek streets/yards: elms (karagach) and maples dominate, some poplars
     specs = [("TREE_Elm_Karagach_A", 0.18, 3.2, 3.6, 1.0), ("TREE_Elm_Karagach_B", 0.22, 3.6, 4.3, 0.95),
              ("TREE_Elm_Young", 0.12, 2.4, 2.4, 1.05), ("TREE_Maple_A", 0.14, 2.6, 2.8, 1.1),
@@ -359,7 +359,7 @@ def cleanup_v1():
     ref = get_col("_REF_OSM_v1_overlays (hidden)")
     for name in ("04_Roads_Major", "05_Roads_Minor", "06_Roads_Service", "07_Paths_Sidewalks", "08_Railways",
                  "09_Water", "10_Landuse_Green", "11_Points_Trees_Lamps"):
-        c = bpy.data.collections.get(name)
+        c = bpy.data.collections.get((name, None))
         if c is None:
             continue
         for parent in [sc.collection] + list(bpy.data.collections):
@@ -724,7 +724,7 @@ def build_seam_ribbon():
     if not faces:
         log("seam ribbon: zone and terrain edges coincide, nothing to close")
         return
-    mat = bpy.data.materials.get("Z_Seam_Ribbon_Soil") or mat_noise("Z_Seam_Ribbon_Soil", (0.26, 0.23, 0.19), (0.40, 0.37, 0.31), 1.2, 0.95, 0.3)
+    mat = bpy.data.materials.get(("Z_Seam_Ribbon_Soil", None)) or mat_noise("Z_Seam_Ribbon_Soil", (0.26, 0.23, 0.19), (0.40, 0.37, 0.31), 1.2, 0.95, 0.3)
     me = bpy.data.meshes.new("Z1_Seam_Ribbon")
     me.from_pydata(verts, [], faces)
     me.materials.append(mat)
@@ -872,7 +872,7 @@ def build_zone_buildings():
     TILE_TAGS = json.load(open(tp_)) if os.path.exists(tp_) else []
     walls_m = mat_noise("Z_House_Plaster", (0.55, 0.50, 0.42), (0.72, 0.68, 0.60), 0.8, 0.85, 0.2)
     apt_m = mat_brick("Z_Apartment_Brick", (0.46, 0.33, 0.22), (0.55, 0.41, 0.28), (0.5, 0.48, 0.44), 0.25, 0.075, 0.85)
-    roof_m = bpy.data.materials.get("Z_Roof_Metal") or bpy.data.materials.new("Z_Roof_Metal")
+    roof_m = bpy.data.materials.get(("Z_Roof_Metal", None)) or bpy.data.materials.new("Z_Roof_Metal")
     nt, bsdf, uv = _nodes(roof_m)
     at = nt.nodes.new("ShaderNodeAttribute"); at.attribute_type = "GEOMETRY"; at.attribute_name = "roof_col"; at.location = (-600, 200)
     cr = nt.nodes.new("ShaderNodeValToRGB"); cr.location = (-350, 200); cr.color_ramp.interpolation = "CONSTANT"
@@ -1020,13 +1020,21 @@ def main():
         bpy.context.scene.unit_settings.system = "METRIC"
     else:
         bpy.ops.wm.open_mainfile(filepath=src)
-    old = bpy.data.collections.get("Z1_DetailZone_1km")
+    # speed: the working file links ~260 city tiles; keep them out of the view layer while the zone is rebuilt
+    # (every operator would otherwise evaluate them), restore the viewer's choice before saving
+    _tiles_state = {}
+    for lc in bpy.context.view_layer.layer_collection.children:
+        if lc.name == "CITY_1km_Tiles":
+            _tiles_state = {c.name: c.exclude for c in lc.children}
+            _tiles_state["__root__"] = lc.exclude
+            lc.exclude = True
+    old = bpy.data.collections.get(("Z1_DetailZone_1km", None))
     if old:
         for o in list(old.all_objects):
             bpy.data.objects.remove(o, do_unlink=True)
         for c in list(old.children_recursive):
             bpy.data.collections.remove(c)
-        bpy.data.orphans_purge(do_local_ids=True, do_linked_ids=True, do_recursive=True)
+        bpy.data.orphans_purge(do_local_ids=True, do_linked_ids=False, do_recursive=True)   # linked: 260 tile libraries -> minutes
     if not CITY:
         cleanup_v1()
         cut_terrain()
@@ -1045,7 +1053,7 @@ def main():
             break
     build_ground(M)
     # the seam ribbon closes the zone edge against the terrain; not needed where city tiles (15_integrate_city) surround the zone
-    if not CITY and not bpy.data.collections.get("CITY_1km_Tiles"):
+    if not CITY and not bpy.data.collections.get(("CITY_1km_Tiles", None)):
         build_seam_ribbon()
     build_plot_walls()
     build_zone_buildings()
@@ -1060,6 +1068,13 @@ def main():
             sys.modules["repair_ground"] = mod
             mod.repair_ground(log=log)
             break
+    if _tiles_state:
+        for lc in bpy.context.view_layer.layer_collection.children:
+            if lc.name == "CITY_1km_Tiles":
+                lc.exclude = _tiles_state.get("__root__", False)
+                for c in lc.children:
+                    if c.name in _tiles_state:
+                        c.exclude = _tiles_state[c.name]
     bpy.context.preferences.filepaths.save_version = 0  # no .blend1 backups next to the working file
     bpy.ops.wm.save_as_mainfile(filepath=out, compress=True)
     log("SAVED", out)

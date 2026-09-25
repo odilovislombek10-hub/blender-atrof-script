@@ -1323,14 +1323,25 @@ def arrangement_mesh(order, BUILD, zone, HOUSEBUF, APTBUF):
     Each face of the arrangement gets the highest-priority layer containing it, so
     neighbouring faces always share identical vertices -> watertight, no overlaps.
     """
+    def _polys(g):
+        """polygonal part only. A GeometryCollection (polygons + stray lines after make_valid / clipping) has NO
+        boundary in shapely (None) - its edges silently vanished from the noding and one face then spanned e.g.
+        lawn and hard yard, classed by a single point (city seams T_-1_0 | T_-1_1: 22 % of the edge)."""
+        if g is None or g.is_empty:
+            return Polygon()
+        if g.geom_type in ("Polygon", "MultiPolygon"):
+            return g
+        parts = [q for q in shapely.get_parts(g) if q.geom_type in ("Polygon", "MultiPolygon") and q.area > 1e-6]
+        return unary_union(parts) if parts else Polygon()
+
     layers = []
     for n, g in order:
         if g is None or g.is_empty:
             continue
-        g = shapely.make_valid(g).intersection(zone)
+        g = _polys(shapely.make_valid(g).intersection(zone))
         if not g.is_empty:
             layers.append((n, g))
-    B = BUILD.intersection(zone)
+    B = _polys(BUILD.intersection(zone))
     geoms = [B] + [g for _, g in layers]
     names = ["__BUILDING__"] + [n for n, _ in layers]
     grid = []
@@ -1344,6 +1355,9 @@ def arrangement_mesh(order, BUILD, zone, HOUSEBUF, APTBUF):
         noded = shapely.union_all([zone.boundary, B.boundary] + [g.boundary for _, g in layers], grid_size=GRID)
     else:
         noded = unary_union([zone.boundary, B.boundary] + [g.boundary for _, g in layers])
+    lost = [n for n, g in layers if g.boundary is None]
+    if lost:
+        log("WARNING layers without a boundary (not noded):", lost)
     noded = shapely.segmentize(noded, 12.0)
     faces = [f for f in polygonize(noded) if f.area > 1e-6]
     cls, rps = _classify(faces, geoms, names)

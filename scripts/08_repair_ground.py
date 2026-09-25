@@ -52,7 +52,9 @@ def _arrays(ob):
 
 
 def ground_objects():
-    return sorted([o for o in bpy.data.objects if o.type == 'MESH' and o.name.startswith("GROUND_")], key=lambda o: o.name)
+    # local objects only: the working file links the city tiles, whose GROUND_* objects are checked in their own files
+    return sorted([o for o in bpy.data.objects if o.type == 'MESH' and o.library is None and o.name.startswith("GROUND_")],
+                  key=lambda o: o.name)
 
 
 def collect(grounds):

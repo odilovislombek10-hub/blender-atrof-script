@@ -210,7 +210,7 @@ def _maprange(nt, val, f0, f1, t0, t1, loc, smooth=True):
 def _slot_group(root, slot, entry, log):
     """Node group PBR07b_<slot>: UV (world m) -> Color, Roughness, Normal (tangent-space colour)."""
     name = "PBR07b_" + slot
-    ng = bpy.data.node_groups.get(name)
+    ng = bpy.data.node_groups.get((name, None))
     if ng is None:
         ng = bpy.data.node_groups.new(name, "ShaderNodeTree")
     if not ng.interface.items_tree:
